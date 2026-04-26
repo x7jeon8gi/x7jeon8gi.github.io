@@ -71,7 +71,7 @@ social:
     url:  ""              # ← Add when ready
   - name: LinkedIn
     icon: linkedin
-    url:  ""              # ← Add when ready
+    url:  "https://www.linkedin.com/in/ai-namhyoung/"
   - name: CV (PDF)
     icon: pdf
     url:  "/assets/pdf/CV.pdf"
