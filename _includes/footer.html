@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="social">
+      {% for s in site.social %}
+        {% if s.url and s.url != "" %}
+          <a href="{{ s.url }}" title="{{ s.name }}"
+             {% unless s.icon == "email" or s.icon == "pdf" %}target="_blank" rel="noopener"{% endunless %}>
+            {{ s.name }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="copy">
+      © {{ "now" | date: "%Y" }} {{ site.author }} ·
+      built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>,
+      hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,16 @@
+# Most-recent first. Each item: { date: "YYYY-MM", html: "..." }
+
+- date: "2026-02"
+  html: "Successfully defended my Ph.D. dissertation, *Representation Learning in Financial Markets for Portfolio Management*, at Hanyang University."
+
+- date: "2025-11"
+  html: "Our paper *Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* was accepted to **ICAIF '25** as an **oral presentation** (acceptance rate 15.5%)."
+
+- date: "2025-07"
+  html: "Joined **Risk X tech Lab** as a Quantitative AI Researcher."
+
+- date: "2025-04"
+  html: "*FactorVQVAE* has been published in **Knowledge-Based Systems**."
+
+- date: "2024-11"
+  html: "Received the **Outstanding Paper Award** from *Korean Management Science Review* (KORMS, 2024)."

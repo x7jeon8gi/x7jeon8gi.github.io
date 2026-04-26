@@ -1,0 +1,145 @@
+# =============================================================================
+# Publications
+#
+# To add a new paper, append a new entry to the top of the appropriate section.
+# Fields:
+#   id           : unique slug (used as anchor)
+#   title        : paper title
+#   authors      : list (your name *must* contain "Namhyoung" so it gets bolded)
+#   venue        : full venue name (italic on the site)
+#   venue_short  : short badge text (e.g. "ICAIF '25")
+#   year         : 4-digit year
+#   note         : optional small italicized note (e.g. "Oral, 15.5%")
+#   selected     : true/false — selected papers show on the home page
+#   url          : link the title points to (DOI / arXiv / proceedings)
+#   links        : optional list of extra buttons
+#                  [{label: "PDF", url: "..."}, {label: "Code", url: "..."}]
+# =============================================================================
+
+international:
+  - id:          icaif25-deep-mr
+    title:       "Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading"
+    authors:     ["Namhyoung Kim", "Yosep Na", "Jae Wook Song"]
+    venue:       "Proceedings of the 6th ACM International Conference on AI in Finance (ICAIF '25)"
+    venue_short: "ICAIF '25"
+    year:        2025
+    note:        "Oral · Acceptance rate 15.5%"
+    selected:    true
+    url:         ""
+    links:       []
+
+  - id:          kbs25-factorvqvae
+    title:       "FactorVQVAE: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder"
+    authors:     ["Namhyoung Kim", "Seung Eun Ock", "Jae Wook Song"]
+    venue:       "Knowledge-Based Systems"
+    venue_short: "KBS '25"
+    year:        2025
+    # ↓ 영향력 지수와 분위는 매년 변하니, 새 JCR이 나오면 여기만 수정.
+    note:        "IF 7.6 · JCR Q1 (Top 6%, AI / Computer Science) · Vol. 2025, p. 113460"
+    selected:    true
+    url:         "https://doi.org/10.1016/j.knosys.2025.113460"
+    links:
+      - { label: "DOI", url: "https://doi.org/10.1016/j.knosys.2025.113460" }
+
+working_papers:
+  - id:          wp-vqfp
+    title:       "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction"
+    authors:     ["Namhyoung Kim", "Jae Wook Song"]
+    venue:       "Under review"
+    venue_short: "Working"
+    year:        2025
+
+  - id:          wp-lexicon
+    title:       "LEXICON: Making Factors Talk with Language-Aligned Discrete Codebooks in Stock Return Prediction"
+    authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song"]
+    venue:       "Under review"
+    venue_short: "Working"
+    year:        2025
+
+  - id:          wp-pi-deepoption
+    title:       "PI-DeepOption: Physics-Informed Operator Learning with Pretraining for Robust Option Pricing"
+    authors:     ["Namhyoung Kim", "Jae Wook Song"]
+    venue:       "Manuscript"
+    venue_short: "Working"
+    year:        2025
+
+domestic:
+  - id:          kmsr24-healthy
+    title:       "Machine Learning-based Regional Healthy Life Expectancy Estimation Model: An Empirical Analysis Using Gyeongsangbuk-do Data"
+    authors:     ["Seung Eun Ock", "Jun Young Byun", "Namhyoung Kim", "Jae Wook Song"]
+    venue:       "Korean Management Science Review, 41(1), 51–70"
+    venue_short: "KMSR '24"
+    year:        2024
+    note:        "Outstanding Paper Award (KORMS, 2024)"
+
+international_talks:
+  - id:          icaifw25-crypto
+    title:       "Probabilistic Forecasting of High-Frequency Crypto Volatility via Decomposition-Integrated Recurrent Neural Networks"
+    authors:     ["Yosep Na", "Jun Young Byun", "Jungyoon Song", "Namhyoung Kim", "Jae Wook Song"]
+    venue:       "Workshop on Rethinking Financial Time-Series, ICAIF '25 (Singapore)"
+    venue_short: "ICAIF-W '25"
+    year:        2025
+
+  - id:          cikmw25-fpqvae
+    title:       "FPQ-VAE: A Dynamic Factor Model Fusing Financial Priors and Vector-Quantized Factors for Stock Rank Prediction"
+    authors:     ["Namhyoung Kim", "Janghyuk Youn", "Jae Wook Song"]
+    venue:       "Workshop on Advances in Financial AI, CIKM '25 (Seoul)"
+    venue_short: "CIKM-W '25"
+    year:        2025
+
+  - id:          informs24-hedging
+    title:       "Deep Hedging of Equity-Linked Securities"
+    authors:     ["Jae Wook Song", "Namhyoung Kim", "Donwon Ryu"]
+    venue:       "INFORMS Annual Meeting (Seattle, WA, USA)"
+    venue_short: "INFORMS '24"
+    year:        2024
+
+  - id:          ijcaiw24-riskprop
+    title:       "Risk Propensity-specific Portfolio Recommendation via Self-supervised Learning"
+    authors:     ["Namhyoung Kim", "Seung Eun Ock", "Jae Wook Song"]
+    venue:       "Workshop on Recommender Systems in Finance (FinRecSys), IJCAI '24 (Jeju)"
+    venue_short: "IJCAI-W '24"
+    year:        2024
+
+domestic_talks:
+  - id:          kafo25-prismvq
+    title:       "PRISM-VQ: Fusing Financial Priors and Vector-Quantized Latent Factors for Dynamic Cross-Sectional Stock Prediction"
+    authors:     ["Namhyoung Kim", "Jae Wook Song"]
+    venue:       "Korean Association of Futures and Options (KAFO) Fall Conference (Seoul)"
+    venue_short: "KAFO '25"
+    year:        2025
+
+  - id:          kiie25-vq
+    title:       "Vector Quantization for Efficient Financial Representation Learning"
+    authors:     ["Namhyoung Kim", "Juhwan Kim", "Jae Wook Song"]
+    venue:       "Spring Joint Conference of KIIE/KORMS/KSS (Jeju)"
+    venue_short: "KIIE '25"
+    year:        2025
+
+  - id:          kfa25-factorvqvae
+    title:       "FactorVQVAE: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder"
+    authors:     ["Namhyoung Kim", "Seung Eun Ock", "Jae Wook Song"]
+    venue:       "Joint Conference with the Allied Korea Finance Associations (Seoul)"
+    venue_short: "KFA '25"
+    year:        2025
+
+  - id:          kiie24-pairs
+    title:       "Pairs Trading Strategies based on Contrastive Learning in the US Stock Market"
+    authors:     ["Juhwan Kim", "Namhyoung Kim", "Seung Eun Ock", "Jae Wook Song"]
+    venue:       "Spring Joint Conference of KIIE/KORMS (Jeju)"
+    venue_short: "KIIE '24"
+    year:        2024
+
+  - id:          kiie23-vqgan
+    title:       "Data Augmentation in Embedding Space for NLP based on Vector Quantized Generative Adversarial Networks"
+    authors:     ["Minho Park", "Namhyoung Kim", "Jun Young Byun", "Jae Wook Song"]
+    venue:       "Spring Joint Conference of KIIE/KORMS (Jeju)"
+    venue_short: "KIIE '23"
+    year:        2023
+
+  - id:          kiie22-plm
+    title:       "Can a Pre-trained Language Model be a Superior Counsel in Equity Research Report-driven Investment Strategy?"
+    authors:     ["Namhyoung Kim", "Young Hoon Choi", "Minho Park", "Jae Wook Song"]
+    venue:       "Spring Joint Conference of KIIE/KORMS (Jeju)"
+    venue_short: "KIIE '22"
+    year:        2022

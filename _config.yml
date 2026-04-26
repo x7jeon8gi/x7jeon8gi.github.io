@@ -1,0 +1,77 @@
+# =============================================================================
+# Site settings — Namhyoung Kim · Personal Website
+# Hand-crafted minimal Jekyll site
+# =============================================================================
+
+title:        Namhyoung Kim
+tagline:      Quantitative AI Researcher
+description:  >
+  Personal website of Namhyoung Kim — Quantitative AI Researcher at Risk X
+  tech Lab and Ph.D. in Industrial Engineering from Hanyang University.
+  Research interests include representation learning in finance, portfolio
+  management, and generative models.
+author:       Namhyoung Kim
+email:        ai.namhyoung@gmail.com
+
+# Production URL (used by jekyll-seo-tag, sitemap, RSS)
+url:          "https://x7jeon8gi.github.io"
+baseurl:      ""
+
+# =============================================================================
+# Build settings
+# =============================================================================
+
+markdown:     kramdown
+highlighter:  rouge
+permalink:    pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - node_modules
+  - .DS_Store
+  - .git
+  - .gitignore
+
+sass:
+  style: compressed
+
+# =============================================================================
+# Site navigation
+# =============================================================================
+
+nav:
+  - title: About
+    url:   "/"
+  - title: Publications
+    url:   "/publications/"
+  - title: CV
+    url:   "/cv/"
+
+# =============================================================================
+# Social / external links (rendered in footer)
+# =============================================================================
+
+social:
+  - name: Email
+    icon: email
+    url:  "mailto:ai.namhyoung@gmail.com"
+  - name: GitHub
+    icon: github
+    url:  "https://github.com/x7jeon8gi"
+  - name: Google Scholar
+    icon: scholar
+    url:  ""              # ← Add when ready
+  - name: LinkedIn
+    icon: linkedin
+    url:  ""              # ← Add when ready
+  - name: CV (PDF)
+    icon: pdf
+    url:  "/assets/pdf/CV.pdf"

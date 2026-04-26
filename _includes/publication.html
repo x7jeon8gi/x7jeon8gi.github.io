@@ -1,0 +1,36 @@
+{%- comment -%}
+Render a single publication entry.
+Pass a `pub` and (optional) `kind` variable from the parent template:
+  {% include publication.html pub=p kind="international" %}
+kind can be: international (default), working, domestic, talk
+{%- endcomment -%}
+
+<li class="pub" data-kind="{{ include.kind | default: 'international' }}" id="{{ include.pub.id }}">
+  <div class="pub-venue">
+    {% if include.pub.venue_short %}
+      <span class="badge">{{ include.pub.venue_short }}</span>
+    {% endif %}
+  </div>
+  <div class="pub-body">
+    <div class="pub-title">
+      {% if include.pub.url %}
+        <a href="{{ include.pub.url }}" target="_blank" rel="noopener">{{ include.pub.title }}</a>
+      {% else %}
+        {{ include.pub.title }}
+      {% endif %}
+    </div>
+    <div class="pub-authors">
+      {% for a in include.pub.authors %}{%- assign last = forloop.last -%}{%- assign me = false -%}{% if a contains "Namhyoung" %}{% assign me = true %}{% endif %}{% if me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless last %}, {% endunless %}{% endfor %}
+    </div>
+    <div class="pub-meta">
+      <em>{{ include.pub.venue }}</em>{% if include.pub.year %}, {{ include.pub.year }}{% endif %}{% if include.pub.note %} · <span class="note">{{ include.pub.note }}</span>{% endif %}
+    </div>
+    {% if include.pub.links %}
+    <div class="pub-links">
+      {% for l in include.pub.links %}
+        <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</li>

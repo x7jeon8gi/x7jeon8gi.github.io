@@ -1,0 +1,95 @@
+# =============================================================================
+# CV data — rendered by /cv/index.html
+# =============================================================================
+
+education:
+  - when:  "2021.03 – 2026.02"
+    title: "Ph.D. in Industrial Engineering"
+    where: "Hanyang University, Seoul, Republic of Korea"
+    desc:
+      - "Dissertation: <em>Representation Learning in Financial Markets for Portfolio Management</em>"
+      - "Research Assistant, Financial Innovation & Decision Analytics (FINX) Lab"
+      - "Supervisor: Prof. Jae Wook Song"
+      - "GPA: 4.31 / 4.50"
+  - when:  "2016.03 – 2020.02"
+    title: "B.A. in Economics and Finance (Minor in Finance)"
+    where: "Hanyang University, Seoul, Republic of Korea"
+    desc:
+      - "Cum Laude · GPA: 4.00 / 4.50"
+
+experience:
+  - when:  "2025.07 – Present"
+    title: "Quantitative AI Researcher"
+    where: "Risk X tech Lab"
+  - when:  "2021.03 – 2026.02"
+    title: "Research Assistant"
+    where: "Financial Innovation & Decision Analytics (FINX) Lab, Hanyang University"
+    desc:
+      - "Advisor: Prof. Jae Wook Song"
+  - when:  "2019.08 – 2019.12"
+    title: "Undergraduate Intern"
+    where: "Business & A.I. Lab, Hanyang University"
+    desc:
+      - "Advisor: Prof. Jong Woo Kim"
+
+industry_projects:
+  - when:  "2025.03 – 2025.07"
+    title: "Analysis of Financial Activities using AI Technologies"
+    where: "Korea Financial Telecommunications & Clearings Institute (KFTC)"
+  - when:  "2024.03 – 2024.06"
+    title: "Machine Learning-Based Model Portfolios for Retirement Pension Management"
+    where: "FnDataLab"
+  - when:  "2023.07 – 2024.01"
+    title: "Pricing of Exotic Options and Structured Products via Machine Learning"
+    where: "Confidential"
+  - when:  "2023.05 – 2023.08"
+    title: "Machine Learning-driven Risk Rating Assessment of Global Investment Assets"
+    where: "FnDataLab"
+  - when:  "2022.08 – 2022.11"
+    title: "Sales Analytics based on Graph Neural Network and Natural Language Processing"
+    where: "IOI Soft"
+  - when:  "2021.10 – 2021.11"
+    title: "Business Analytics for Small and Medium-sized Enterprises"
+    where: "Hyperlounge"
+  - when:  "2021.05 – 2021.10"
+    title: "Business Effectiveness Analysis on Fine Dust Reduction Forest Project"
+    where: "KOFPI (Research Grant)"
+
+research_grants:
+  - when:  "2025.09 – 2026.08"
+    title: "Robust Generative Representation Learning of Financial Data Using VQ-VAE"
+    where: "NRF of Korea (Research Grant)"
+  - when:  "2023.06 – 2026.05"
+    title: "Applications of AI in Portfolio using Vector Quantization-VAE"
+    where: "NRF of Korea (Humanities & Social Sciences – Joint Research)"
+  - when:  "2021.06 – 2023.02"
+    title: "Loan Eligibility Classification using Explainable AI"
+    where: "NRF of Korea (Research Grant, RA)"
+  - when:  "2021.03 – Present"
+    title: "BK21 Four — Smart Systems Research Team"
+    where: "NRF of Korea"
+
+awards:
+  - when:  "2024"
+    title: "Outstanding Paper Award"
+    where: "Korean Management Science Review, KORMS"
+  - when:  "2021 – 2023"
+    title: "BK21 Scholarship"
+    where: "NRF of Korea"
+  - when:  "2020"
+    title: "A.I. Graduate School Support Project Scholarship"
+    where: "IITP of Korea"
+  - when:  "2020"
+    title: "Cum Laude"
+    where: "Hanyang University"
+  - when:  "2018"
+    title: "Financial Quant Professional Training Project Scholarship"
+    where: "Hanyang University"
+
+teaching:
+  - when:  "2025 Spring"
+    title: "Teaching Assistant — Creative Programming for Engineers (11391)"
+    where: "Hanyang University"
+
+skills:
+  - "Python, PyTorch"

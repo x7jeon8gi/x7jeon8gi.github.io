@@ -1,0 +1,105 @@
+---
+layout: page
+title: Curriculum Vitae
+permalink: /cv/
+---
+
+<p style="margin-top:-0.6em;">
+  <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">Download PDF version &darr;</a>
+</p>
+
+{% assign cv = site.data.cv %}
+
+<section class="cv-section">
+  <h2>Education</h2>
+  {% for e in cv.education %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+        {% if e.desc %}
+          <div class="desc"><ul>{% for d in e.desc %}<li>{{ d }}</li>{% endfor %}</ul></div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Experience</h2>
+  {% for e in cv.experience %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+        {% if e.desc %}
+          <div class="desc"><ul>{% for d in e.desc %}<li>{{ d }}</li>{% endfor %}</ul></div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Industry Projects</h2>
+  {% for e in cv.industry_projects %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Research Grants</h2>
+  {% for e in cv.research_grants %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Honors &amp; Awards</h2>
+  {% for e in cv.awards %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Teaching</h2>
+  {% for e in cv.teaching %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Technical Skills</h2>
+  <div class="cv-entry">
+    <div class="when">Programming</div>
+    <div class="what">
+      <div class="title">{{ cv.skills | join: ', ' }}</div>
+    </div>
+  </div>
+</section>

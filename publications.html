@@ -1,0 +1,56 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<p style="color:var(--fg-mute); font-size:0.95rem; margin-top:-0.6em; max-width:680px;">
+  <strong style="color:var(--c-orange)">Bold</strong> indicates the author of this site.
+  See also <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+  for citation counts <em>(link to be updated)</em>.
+</p>
+
+<section class="pub-section">
+  <h2>International Journals &amp; Conferences</h2>
+  <ul class="pub-list">
+    {% for p in site.data.publications.international %}
+      {% include publication.html pub=p kind="international" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="pub-section">
+  <h2>Working Papers</h2>
+  <ul class="pub-list">
+    {% for p in site.data.publications.working_papers %}
+      {% include publication.html pub=p kind="working" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="pub-section">
+  <h2>Domestic Journals</h2>
+  <ul class="pub-list">
+    {% for p in site.data.publications.domestic %}
+      {% include publication.html pub=p kind="domestic" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="pub-section">
+  <h2>International Talks &amp; Workshops</h2>
+  <ul class="pub-list">
+    {% for p in site.data.publications.international_talks %}
+      {% include publication.html pub=p kind="international" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="pub-section">
+  <h2>Domestic Talks</h2>
+  <ul class="pub-list">
+    {% for p in site.data.publications.domestic_talks %}
+      {% include publication.html pub=p kind="domestic" %}
+    {% endfor %}
+  </ul>
+</section>
