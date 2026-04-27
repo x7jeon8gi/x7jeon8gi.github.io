@@ -68,7 +68,7 @@ social:
     url:  "https://github.com/x7jeon8gi"
   - name: Google Scholar
     icon: scholar
-    url:  ""              # ← Add when ready
+    url:  "https://scholar.google.com/citations?user=YbxuDSIAAAAJ"
   - name: LinkedIn
     icon: linkedin
     url:  "https://www.linkedin.com/in/ai-namhyoung/"
