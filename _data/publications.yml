@@ -36,8 +36,10 @@ international:
     year:        2025
     note:        "Oral · Acceptance rate 15.5%"
     selected:    true
-    url:         ""
-    links:       []
+    url:         "https://dl.acm.org/doi/abs/10.1145/3768292.3770406"
+    links:
+      - { label: "ACM DL", url: "https://dl.acm.org/doi/abs/10.1145/3768292.3770406" }
+      - { label: "DOI",    url: "https://doi.org/10.1145/3768292.3770406" }
 
   - id:          kbs25-factorvqvae
     title:       "FactorVQVAE: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder"
