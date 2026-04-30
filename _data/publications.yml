@@ -20,8 +20,8 @@ international:
   - id:          ijcai26-vqfp
     title:       "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction"
     authors:     ["Namhyoung Kim", "Jae Wook Song"]
-    venue:       "Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI '26)"
-    venue_short: "IJCAI-ECAI '26"
+    venue:       "Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI '26)"
+    venue_short: "IJCAI '26"
     year:        2026
     note:        "To appear · CORE A* venue"
     selected:    true
