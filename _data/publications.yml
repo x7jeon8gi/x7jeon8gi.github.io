@@ -25,8 +25,9 @@ international:
     year:        2026
     note:        "To appear · CORE A* venue"
     selected:    true
-    url:         ""
-    links:       []
+    url:         "https://arxiv.org/abs/2605.13407"
+    links:
+      - { label: "arXiv", url: "https://arxiv.org/abs/2605.13407" }
 
   - id:          icaif25-deep-mr
     title:       "Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading"
