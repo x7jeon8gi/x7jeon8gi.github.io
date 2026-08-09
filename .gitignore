@@ -8,3 +8,9 @@ Gemfile.lock
 .DS_Store
 node_modules/
 *.swp
+
+# Personal documents kept in the repo root (resume, portfolio drafts).
+# These are local working files — do not publish them to the public site.
+# Site-facing PDFs live in assets/pdf/ and are still tracked.
+/*.pdf
+/*.docx

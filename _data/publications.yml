@@ -56,12 +56,19 @@ international:
       - { label: "DOI", url: "https://doi.org/10.1016/j.knosys.2025.113460" }
 
 working_papers:
+  - id:          wp-praxis
+    title:       "Praxis: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
+    authors:     ["Namhyoung Kim"]
+    venue:       "Under review"
+    venue_short: "Working"
+    year:        2026
+
   - id:          wp-lexicon
     title:       "LEXICON: Making Factors Talk with Language-Aligned Discrete Codebooks in Stock Return Prediction"
     authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song"]
-    venue:       "Under review"
-    venue_short: "Working"
-    year:        2025
+    venue:       "Revise &amp; Resubmit, ACM SIGKDD 2027 (1st Cycle)"
+    venue_short: "KDD '27"
+    year:        2026
 
   - id:          wp-pi-deepoption
     title:       "PI-DeepOption: Physics-Informed Operator Learning with Pretraining for Robust Option Pricing"
