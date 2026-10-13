@@ -23,11 +23,13 @@ international:
     venue:       "Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026)"
     venue_short: "IJCAI '26"
     year:        2026
-    note:        "Acceptance rate 13.6% · CORE A*"
+    note:        "pp. 4421–4429 · Acceptance rate 13.6% · CORE A*"
     selected:    true
-    url:         "https://arxiv.org/abs/2605.13407"
+    url:         "https://www.ijcai.org/proceedings/2026/492"
     links:
-      - { label: "arXiv", url: "https://arxiv.org/abs/2605.13407" }
+      - { label: "Proceedings", url: "https://www.ijcai.org/proceedings/2026/492" }
+      - { label: "DOI",         url: "https://doi.org/10.24963/ijcai.2026/492" }
+      - { label: "arXiv",       url: "https://arxiv.org/abs/2605.13407" }
 
   - id:          icaif26-harcev
     title:       "HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes"
