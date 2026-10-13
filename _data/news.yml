@@ -1,5 +1,17 @@
 # Most-recent first. Each item: { date: "YYYY-MM", html: "..." }
 
+- date: "2026-10"
+  html: "Our paper *HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* has been **accepted to ICAIF '26**."
+
+- date: "2026-08"
+  html: "Presented our IJCAI-ECAI 2026 paper on vector-quantized discrete latent factors in **Bremen, Germany**."
+
+- date: "2026-07"
+  html: "Presented the same work at the **Asian Quantitative Finance Conference (AQFC 2026)** in Pohang."
+
+- date: "2026-03"
+  html: "Appointed **Head of Research** at **Risk X tech Lab**."
+
 - date: "2026-05"
   html: "Our paper *Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* has been **accepted to IJCAI-ECAI 2026**."
 

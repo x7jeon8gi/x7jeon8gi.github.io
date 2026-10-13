@@ -6,8 +6,8 @@
 title:        Namhyoung Kim
 tagline:      Quantitative AI Researcher
 description:  >
-  Personal website of Namhyoung Kim — Quantitative AI Researcher at Risk X
-  tech Lab and Ph.D. in Industrial Engineering from Hanyang University.
+  Personal website of Namhyoung Kim, Head of Research at Risk X tech Lab
+  and Ph.D. in Industrial Engineering from Hanyang University.
   Research interests include representation learning in finance, portfolio
   management, and generative models.
 author:       Namhyoung Kim
@@ -39,6 +39,14 @@ exclude:
   - .DS_Store
   - .git
   - .gitignore
+  - "*.tex"
+  - "*.txt"
+  - "*.docx"
+  - "*.zip"
+  - Portfolio_Hana_source.html
+  - Namhyoung_Kim_*.pdf
+  - "이력서_*"
+  - website
 
 sass:
   style: compressed

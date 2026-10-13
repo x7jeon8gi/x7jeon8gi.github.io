@@ -14,3 +14,7 @@ node_modules/
 # Site-facing PDFs live in assets/pdf/ and are still tracked.
 /*.pdf
 /*.docx
+/*.tex
+/*.txt
+/*.zip
+/Portfolio_*_source.html

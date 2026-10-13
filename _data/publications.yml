@@ -23,11 +23,20 @@ international:
     venue:       "Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026)"
     venue_short: "IJCAI '26"
     year:        2026
-    note:        "To appear · CORE A* venue"
+    note:        "Acceptance rate 13.6% · CORE A*"
     selected:    true
     url:         "https://arxiv.org/abs/2605.13407"
     links:
       - { label: "arXiv", url: "https://arxiv.org/abs/2605.13407" }
+
+  - id:          icaif26-harcev
+    title:       "HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes"
+    authors:     ["Yosep Na", "Namhyoung Kim", "Joon Ho Jun", "Jae Wook Song"]
+    venue:       "Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)"
+    venue_short: "ICAIF '26"
+    year:        2026
+    note:        "To appear"
+    selected:    true
 
   - id:          icaif25-deep-mr
     title:       "Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading"
@@ -56,13 +65,6 @@ international:
       - { label: "DOI", url: "https://doi.org/10.1016/j.knosys.2025.113460" }
 
 working_papers:
-  - id:          wp-praxis
-    title:       "Praxis: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
-    authors:     ["Namhyoung Kim"]
-    venue:       "Under review"
-    venue_short: "Working"
-    year:        2026
-
   - id:          wp-lexicon
     title:       "LEXICON: Making Factors Talk with Language-Aligned Discrete Codebooks in Stock Return Prediction"
     authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song"]
@@ -70,12 +72,19 @@ working_papers:
     venue_short: "KDD '27"
     year:        2026
 
-  - id:          wp-pi-deepoption
-    title:       "PI-DeepOption: Physics-Informed Operator Learning with Pretraining for Robust Option Pricing"
-    authors:     ["Namhyoung Kim", "Jae Wook Song"]
+  - id:          wp-praxis
+    title:       "PRAXIS: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
+    authors:     ["Namhyoung Kim"]
     venue:       "Manuscript"
     venue_short: "Working"
-    year:        2025
+    year:        2026
+
+  - id:          wp-dsq
+    title:       "Decision Space Quantization"
+    authors:     ["Namhyoung Kim"]
+    venue:       "Manuscript"
+    venue_short: "Working"
+    year:        2026
 
 domestic:
   - id:          kmsr24-healthy
@@ -87,6 +96,13 @@ domestic:
     note:        "Outstanding Paper Award (KORMS, 2024)"
 
 international_talks:
+  - id:          aqfc26-vqfp
+    title:       "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction"
+    authors:     ["Namhyoung Kim", "Jae Wook Song"]
+    venue:       "Asian Quantitative Finance Conference (AQFC 2026, Pohang)"
+    venue_short: "AQFC '26"
+    year:        2026
+
   - id:          icaifw25-crypto
     title:       "Probabilistic Forecasting of High-Frequency Crypto Volatility via Decomposition-Integrated Recurrent Neural Networks"
     authors:     ["Yosep Na", "Jun Young Byun", "Jungyoon Song", "Namhyoung Kim", "Jae Wook Song"]
@@ -103,7 +119,7 @@ international_talks:
 
   - id:          informs24-hedging
     title:       "Deep Hedging of Equity-Linked Securities"
-    authors:     ["Jae Wook Song", "Namhyoung Kim", "Donwon Ryu"]
+    authors:     ["Jae Wook Song", "Namhyoung Kim", "Dongwon Ryu"]
     venue:       "INFORMS Annual Meeting (Seattle, WA, USA)"
     venue_short: "INFORMS '24"
     year:        2024
@@ -138,9 +154,9 @@ domestic_talks:
     year:        2025
 
   - id:          kiie24-pairs
-    title:       "Pairs Trading Strategies based on Contrastive Learning in the US Stock Market"
+    title:       "Pairs Trading via Contrastive Learning"
     authors:     ["Juhwan Kim", "Namhyoung Kim", "Seung Eun Ock", "Jae Wook Song"]
-    venue:       "Spring Joint Conference of KIIE/KORMS (Jeju)"
+    venue:       "Spring Joint Conference of KORMS/KIIE/KSS (Yeosu)"
     venue_short: "KIIE '24"
     year:        2024
 

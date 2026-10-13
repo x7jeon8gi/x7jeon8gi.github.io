@@ -146,6 +146,8 @@ git push -u origin main
 
 `_data/cv.yml` 의 해당 섹션을 직접 수정.
 PDF 도 갱신했다면 `assets/pdf/CV.pdf` 도 새 파일로 덮어쓰기.
+영문 CV 소스는 `_cv/cv_en.tex` (XeLaTeX, Erewhon 글꼴)이며, `_cv` 폴더에서
+`xelatex cv_en.tex` 로 빌드한 PDF를 `assets/pdf/CV.pdf` 로 복사하면 됨.
 
 ### 프로필 사진 추가
 

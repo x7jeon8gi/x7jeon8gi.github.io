@@ -18,9 +18,16 @@ education:
       - "Cum Laude · GPA: 4.00 / 4.50"
 
 experience:
-  - when:  "2025.07 – Present"
+  - when:  "2026.03 – Present"
+    title: "Head of Research"
+    where: "Risk X tech Lab"
+    desc:
+      - "Leads the AI research group for derivatives and structured products: research roadmap, government-funded R&D, intellectual property, and product integration."
+  - when:  "2025.07 – 2026.02"
     title: "Quantitative AI Researcher"
     where: "Risk X tech Lab"
+    desc:
+      - "Recommendation and valuation models for structured products; derivatives data pipeline."
   - when:  "2021.03 – 2026.02"
     title: "Research Assistant"
     where: "Financial Innovation & Decision Analytics (FINX) Lab, Hanyang University"
@@ -39,13 +46,13 @@ industry_projects:
   - when:  "2024.03 – 2024.06"
     title: "Machine Learning-Based Model Portfolios for Retirement Pension Management"
     where: "FnDataLab"
-  - when:  "2023.07 – 2024.01"
+  - when:  "2023.10 – 2024.01"
     title: "Pricing of Exotic Options and Structured Products via Machine Learning"
-    where: "Confidential"
+    where: "Risk X tech Lab"
   - when:  "2023.05 – 2023.08"
     title: "Machine Learning-driven Risk Rating Assessment of Global Investment Assets"
     where: "FnDataLab"
-  - when:  "2022.08 – 2022.11"
+  - when:  "2022.11"
     title: "Sales Analytics based on Graph Neural Network and Natural Language Processing"
     where: "IOI Soft"
   - when:  "2021.10 – 2021.11"
@@ -56,24 +63,35 @@ industry_projects:
     where: "KOFPI (Research Grant)"
 
 research_grants:
+  - when:  "2026.07 – Present"
+    title: "ELS Hedging Decision System via Neural Optimal Control"
+    where: "Seoul Business Agency (SBA), Fintech Commercialization Program · Project Lead"
+  - when:  "2026.04 – Present"
+    title: "Investor-Tailored Structured Derivatives via Time-Series Generation"
+    where: "TIPS R&D · Technical Lead"
   - when:  "2025.09 – 2026.08"
     title: "Robust Generative Representation Learning of Financial Data Using VQ-VAE"
     where: "NRF of Korea (Research Grant)"
-  - when:  "2023.06 – 2026.05"
+  - when:  "2023.06 – 2025.06"
     title: "Applications of AI in Portfolio using Vector Quantization-VAE"
     where: "NRF of Korea (Humanities & Social Sciences – Joint Research)"
   - when:  "2021.06 – 2023.02"
     title: "Loan Eligibility Classification using Explainable AI"
     where: "NRF of Korea (Research Grant, RA)"
-  - when:  "2021.03 – Present"
-    title: "BK21 Four — Smart Systems Research Team"
+  - when:  "2021.03 – 2025.07"
+    title: "BK21 Four, Smart Systems Research Team"
     where: "NRF of Korea"
+
+patents:
+  - when:  "2026"
+    title: "Three Korean patent applications"
+    where: "Market scenario generation via Lie algebra, deep hedging system for structured products, and others"
 
 awards:
   - when:  "2024"
     title: "Outstanding Paper Award"
     where: "Korean Management Science Review, KORMS"
-  - when:  "2021 – 2023"
+  - when:  "2021 – 2025"
     title: "BK21 Scholarship"
     where: "NRF of Korea"
   - when:  "2020"
@@ -88,8 +106,14 @@ awards:
 
 teaching:
   - when:  "2025 Spring"
-    title: "Teaching Assistant — Creative Programming for Engineers (11391)"
+    title: "Teaching Assistant, Creative Programming for Engineers (11391)"
     where: "Hanyang University"
 
 skills:
-  - "Python, PyTorch"
+  - "Python"
+  - "PyTorch"
+  - "LaTeX"
+  - "Git"
+  - "Docker"
+  - "Linux"
+  - "Weights & Biases"

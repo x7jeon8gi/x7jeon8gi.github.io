@@ -69,6 +69,19 @@ permalink: /cv/
 </section>
 
 <section class="cv-section">
+  <h2>Patents</h2>
+  {% for e in cv.patents %}
+    <div class="cv-entry">
+      <div class="when">{{ e.when }}</div>
+      <div class="what">
+        <div class="title">{{ e.title }}</div>
+        <div class="where">{{ e.where }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
   <h2>Honors &amp; Awards</h2>
   {% for e in cv.awards %}
     <div class="cv-entry">

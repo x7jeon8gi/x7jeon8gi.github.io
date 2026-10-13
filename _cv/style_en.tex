@@ -1,0 +1,75 @@
+% ============================================================
+%  Namhyoung Kim  |  CV style after the FINX Lab (Prof. Song) CV
+%  XeLaTeX, Erewhon (English CV for the homepage)
+% ============================================================
+\usepackage[a4paper,left=1.5cm,right=1.5cm,top=1.4cm,bottom=1.8cm,footskip=0.9cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Erewhon}[Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold,
+  ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic, SlantedFont=*-RegularSlanted]
+\usepackage{xcolor}
+\definecolor{navy}{rgb}{0.0,0.23,0.44}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[hidelinks,pdfencoding=auto]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\widowpenalty=10000 \clubpenalty=10000
+\AtBeginDocument{\raggedright\hyphenpenalty=10000\exhyphenpenalty=50}
+
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\makeatletter
+\newcommand{\keepspace}[1]{\par\begingroup
+  \dimen@=#1\relax\dimen@ii=\pagegoal\advance\dimen@ii-\pagetotal
+  \ifdim\dimen@>\dimen@ii\ifdim\dimen@ii>\z@\vfil\fi\break\fi\endgroup}
+\makeatother
+
+\newlength{\indA}\setlength{\indA}{1.08cm}   % sub-heading indent
+\newlength{\indB}\setlength{\indB}{2.08cm}   % content indent
+
+% ---------- header ----------
+\newcommand{\cvheader}{%
+  {\color{navy}\huge\bfseries Namhyoung Kim}\par
+  \vspace{5pt}\hrule height 0.6pt\par
+  \vspace{12pt}
+  \begin{tabular}{@{}p{\dimexpr\indB-\tabcolsep\relax}l@{}}
+    \textbf{Email}    & \href{mailto:ai.namhyoung@gmail.com}{ai.namhyoung@gmail.com}\\
+    \textbf{Phone}    & +82 10-4194-6929\\
+    \textbf{Homepage} & \href{https://x7jeon8gi.github.io}{x7jeon8gi.github.io}\\
+    \textbf{GitHub}   & \href{https://github.com/x7jeon8gi}{github.com/x7jeon8gi}\\
+    \textbf{LinkedIn} & \href{https://www.linkedin.com/in/ai-namhyoung}{linkedin.com/in/ai-namhyoung}\\
+    \textbf{Scholar}  & \href{https://scholar.google.com/citations?user=YbxuDSIAAAAJ}{scholar.google.com/citations?user=YbxuDSIAAAAJ}\\
+  \end{tabular}\par}
+
+% ---------- sections ----------
+\newcommand{\cvsection}[1]{%
+  \par\vspace{13pt}\keepspace{72pt}%
+  {\color{navy}\Large\bfseries\scshape #1}\par\nobreak\vspace{5pt}}
+\newcommand{\cvsub}[2][]{%
+  \par\vspace{3pt}\keepspace{56pt}%
+  \hspace*{\indA}{\large\scshape #2}\ifx\relax#1\relax\else\ {\footnotesize #1}\fi\par\nobreak\vspace{4pt}}
+\newcommand{\corr}{{\footnotesize ($^{\ast}$: Corresponding)}}
+
+% content block indented to the value column
+\newenvironment{ind}{\list{}{\leftmargin=\indB\rightmargin=0pt\topsep=0pt\partopsep=0pt\parsep=0pt\itemsep=0pt}\item\relax\def\\{\par\nobreak}}{\endlist}
+% organisation line in small caps (inside ind)
+\newcommand{\org}[1]{\par\keepspace{48pt}{\large\scshape #1}\par\nobreak}
+\newcommand{\gap}{\par\vspace{6pt}}
+
+% numbered list, labels given explicitly: \item[{[4]}]
+\newenvironment{nlist}{\begin{list}{}{\leftmargin=2.05cm\labelwidth=0.6cm\labelsep=0.22cm
+  \itemsep=5pt\topsep=1pt\partopsep=0pt\parsep=0pt\let\makelabel\nlabel}\interlinepenalty=10000 \def\\{\par\nobreak}}{\end{list}}
+\newcommand{\nlabel}[1]{\hfil #1}
+% bullets as in the reference
+\newenvironment{blist}[1][]{\begin{itemize}[label=\textbullet,leftmargin=2.05cm,labelsep=0.3cm,
+  itemsep=5pt,topsep=1pt,partopsep=0pt,parsep=0pt,#1]}{\end{itemize}}
+\newenvironment{dlist}{\begin{itemize}[label=\textendash,leftmargin=0.75cm,labelsep=0.3cm,
+  itemsep=2pt,topsep=4pt,partopsep=0pt,parsep=0pt]}{\end{itemize}}
+
+\newcommand{\me}{\textbf{Namhyoung Kim}}
+\newcommand{\mefirst}{\textbf{Kim, Namhyoung}}
+\newcommand{\song}{Jae Wook Song$^{\ast}$}
+\newcommand{\lastupdate}{\par\vspace{18pt}\hfill{\small Last Update: 2026-10-13}\par}
