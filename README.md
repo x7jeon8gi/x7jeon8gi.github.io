@@ -8,38 +8,43 @@ GitHub Pages에 그대로 배포됩니다 (`https://x7jeon8gi.github.io`).
 ## 디렉터리 구조
 
 ```
-홈페이지/
+git-homepage/
 ├── _config.yml            # 사이트 메타·플러그인·내비게이션·소셜 링크
 ├── Gemfile                # Ruby gem 의존성 (github-pages 묶음)
 ├── .gitignore
-├── .nojekyll              # 빌드된 폴더를 Jekyll이 다시 처리하지 않도록
 │
-├── _layouts/              # 페이지 뼈대
-│   ├── default.html       #  └ 모든 페이지 공통 (head + header + content + footer)
-│   └── page.html          #  └ default 위에 <h1> 한 줄을 더 얹는 일반 문서용
+├── _layouts/
+│   ├── default.html       #  └ 모든 페이지 공통 (head + 상단 내비 + content + footer)
+│   └── page.html          #  └ 하위 페이지용: 남색 배너(eyebrow·제목) + 본문
 │
-├── _includes/             # 부분(partial)
-│   ├── head.html          #  └ <head> 태그
-│   ├── header.html        #  └ 상단 내비
-│   ├── footer.html        #  └ 하단 소셜 + 카피라이트
-│   └── publication.html   #  └ 논문 한 건 렌더러
+├── _includes/
+│   ├── head.html          #  └ <head>, 글꼴(Source Serif 4 / Source Sans 3)
+│   ├── header.html        #  └ 상단 내비 바
+│   ├── footer.html        #  └ 하단 연락처·링크
+│   └── publication.html   #  └ 논문·발표 한 건 렌더러 (번호형 / 홈 요약형)
 │
 ├── _data/                 # ← 실제 내용은 거의 다 여기 있음
-│   ├── publications.yml   #  └ 모든 논문/발표 (가장 자주 손볼 파일)
-│   ├── news.yml           #  └ 홈 News 섹션 5줄
-│   └── cv.yml             #  └ CV 페이지 모든 항목
+│   ├── publications.yml   #  └ 논문·워킹페이퍼·국내외 발표 (가장 자주 손볼 파일)
+│   ├── projects.yml       #  └ 진행 중 과제·연구비·산학과제 (Projects, CV 페이지가 같이 읽음)
+│   ├── research.yml       #  └ 연구 분야 설명과 분야별 관련 논문·과제 id
+│   ├── news.yml           #  └ 홈 News
+│   └── cv.yml             #  └ 학력·경력·특허·수상·강의·기술
 │
-├── index.html             # 홈 (about + news + selected papers)
-├── publications.html      # 전체 publications 페이지
-├── cv.html                # CV 페이지
+├── index.html             # 홈 (소개 + News + Selected Publications)
+├── research.html          # /research/      연구 분야
+├── publications.html      # /publications/  학술지·학회 논문, 국내 학술지, 워킹페이퍼
+├── presentations.html     # /presentations/ 국제·국내 학회 발표
+├── projects.html          # /projects/      진행 중 과제, 연구비, 산학과제
+├── cv.html                # /cv/            CV
 │
+├── _cv/                   # 영문 PDF CV 소스 (XeLaTeX)
 └── assets/
-    ├── css/style.css      # 단일 스타일시트
-    ├── img/prof_pic.jpg   # 프로필 사진 (없어도 동작)
+    ├── css/main.css       # 단일 스타일시트 (상단 :root 변수에 색·글꼴)
+    ├── img/prof_pic.jpg   # 프로필 사진
     └── pdf/CV.pdf         # 다운로드용 CV
 ```
 
-> 무언가 고치고 싶을 때 가장 먼저 여는 파일은 `_data/*.yml` 세 개입니다.
+> 무언가 고치고 싶을 때 가장 먼저 여는 파일은 `_data/*.yml` 입니다.
 > HTML/CSS는 거의 손 댈 일이 없어요.
 
 ---
@@ -131,7 +136,22 @@ git push -u origin main
     - { label: "Code", url: "https://github.com/x7jeon8gi/..." }
 ```
 
+교신저자는 이름 뒤에 `*` 를 붙이고(`"Jae Wook Song*"`), FINX 페이지처럼 키워드를 달려면
+`keywords: ["Vector quantization", "Return prediction"]` 를 추가. 번호([4], [3] …)는 자동으로 매겨짐.
+학회 발표는 `international_talks` / `domestic_talks` 에 같은 형식으로 넣되 `year` 대신
+`date: "2026.07"` 과 `location: "Pohang, Korea"` 를 씀.
+
 저장 → `git commit -am "Add NeurIPS '26 paper" && git push` → 1~2분 뒤 자동 반영.
+
+### 과제 추가·종료
+
+`_data/projects.yml` 의 `ongoing` 맨 위에 추가. 끝난 과제는 기간을 고치고
+`grants`(정부 연구비) 또는 `industry`(산학) 로 옮기면 Projects 와 CV 페이지가 함께 바뀜.
+
+### 연구 분야 페이지
+
+`_data/research.yml` 에서 분야 설명(`desc`)과 관련 논문·과제 id 목록(`papers`, `projects`)을 수정.
+id 는 publications.yml / projects.yml 의 `id` 와 같아야 링크가 걸림.
 
 ### 새 소식 추가
 
@@ -152,7 +172,7 @@ PDF 도 갱신했다면 `assets/pdf/CV.pdf` 도 새 파일로 덮어쓰기.
 ### 프로필 사진 추가
 
 정사각형 사진 (예: 800×800) 을 `assets/img/prof_pic.jpg` 로 저장 → push.
-파일이 없으면 홈에 회색 동그라미 placeholder 가 표시돼요.
+파일이 없으면 홈에 빈 상자가 표시됨.
 
 ### 자기소개 본문 수정
 
@@ -161,7 +181,7 @@ PDF 도 갱신했다면 `assets/pdf/CV.pdf` 도 새 파일로 덮어쓰기.
 
 ### 색·폰트 변경
 
-`assets/css/style.css` 상단 `:root { … }` 의 CSS 변수만 바꾸면 사이트 전체 톤이 변함.
+`assets/css/main.css` 상단 `:root { … }` 의 CSS 변수만 바꾸면 사이트 전체 톤이 변함.
 
 ---
 

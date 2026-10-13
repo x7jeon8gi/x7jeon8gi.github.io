@@ -1,0 +1,104 @@
+# =============================================================================
+# Projects and grants, rendered on /projects/ and in the CV page.
+#
+#   ongoing        : running now (period ends with "Present")
+#   grants         : completed government research grants
+#   industry       : completed industry projects
+#
+# Fields: id, title, sponsor, program (optional), period, role (optional),
+#         desc (optional, one or two sentences)
+# When a project ends, change its period and move it to grants or industry.
+# =============================================================================
+
+ongoing:
+  - id:      sba26-els-hedging
+    title:   "ELS Hedging Decision System via Neural Optimal Control"
+    sponsor: "Seoul Business Agency (SBA)"
+    program: "Fintech Commercialization Program"
+    period:  "2026.07 – Present"
+    role:    "Project Lead"
+    desc:    "Formulates the hedge-ratio decision for structured products as an optimal control problem, with development carried out by research teams at Sungkyunkwan University and Hanyang University."
+
+  - id:      tips26-structured
+    title:   "Investor-Tailored Structured Derivatives via Time-Series Generation"
+    sponsor: "TIPS R&amp;D"
+    period:  "2026.04 – Present"
+    role:    "Technical Lead"
+    desc:    "Builds a recommendation and selection procedure for investor-tailored ELS with decision-focused learning (SPO+ surrogate loss), a capital-adjusted objective, and simulation-based screening of maturity exposure."
+
+grants:
+  - id:      nrf25-robust-vq
+    title:   "Robust Generative Representation Learning of Financial Data Using Vector Quantized Variational Autoencoder and Its Applications"
+    sponsor: "National Research Foundation of Korea"
+    program: "Research Grant"
+    period:  "2025.09 – 2026.08"
+
+  - id:      nrf23-vqvae-portfolio
+    title:   "Applications of Artificial Intelligence in Portfolio using Vector Quantization-Variational Autoencoder"
+    sponsor: "National Research Foundation of Korea"
+    program: "Humanities &amp; Social Sciences, Joint Research"
+    period:  "2023.06 – 2025.06"
+    role:    "Researcher"
+    desc:    "Discrete latent factor models based on vector quantization; results published in Knowledge-Based Systems and at IJCAI-ECAI 2026."
+
+  - id:      nrf21-xai-loan
+    title:   "Loan Eligibility Classification Model using Explainable Artificial Intelligence"
+    sponsor: "National Research Foundation of Korea"
+    program: "Research Grant"
+    period:  "2021.06 – 2023.02"
+    role:    "Research Assistant"
+
+  - id:      bk21-four
+    title:   "An Education and Research Team for Sharing and Cooperation based Smart Systems"
+    sponsor: "National Research Foundation of Korea"
+    program: "BK21 Four"
+    period:  "2021.03 – 2025.07"
+
+industry:
+  - id:      kftc25
+    title:   "Analysis of Financial Activities using AI Technologies"
+    sponsor: "Korea Financial Telecommunications &amp; Clearings Institute (KFTC)"
+    period:  "2025.03 – 2025.07"
+    role:    "Model design and implementation"
+    desc:    "Defined units of analysis for financial activity data and grouped activity patterns by combining contrastive embeddings with unsupervised clustering."
+
+  - id:      fndatalab24-pension
+    title:   "Machine Learning-Based Model Portfolios for Retirement Pension Management"
+    sponsor: "FnDataLab"
+    period:  "2024.03 – 2024.06"
+    role:    "Researcher"
+    desc:    "Asset embeddings from self-supervised learning, turned into allocations for each investor risk propensity and evaluated by backtest."
+
+  - id:      riskx23-exotic
+    title:   "Pricing of Exotic Options and Structured Products via Machine Learning"
+    sponsor: "Risk X tech Lab"
+    period:  "2023.10 – 2024.01"
+    role:    "Researcher"
+    desc:    "Deep hedging and neural-operator pricing models for ELS and other structured products, reducing the computational cost of conventional numerical methods."
+
+  - id:      fndatalab23-risk
+    title:   "Machine Learning-driven Risk Rating Assessment of Global Investment Assets"
+    sponsor: "FnDataLab"
+    period:  "2023.05 – 2023.08"
+    role:    "Model design and implementation"
+    desc:    "Contrastive clustering of assets with similar risk characteristics, mapped to risk grades and documented in a validation report."
+
+  - id:      ioisoft22-sales
+    title:   "Sales Analytics based on Graph Neural Network and Natural Language Processing"
+    sponsor: "IOI Soft"
+    period:  "2022.11"
+    role:    "Researcher"
+    desc:    "B2B transactions modeled as a graph, combining graph neural network representations with text embeddings of the related documents."
+
+  - id:      hyperlounge21
+    title:   "Business Analytics for Small and Medium-sized Enterprises"
+    sponsor: "Hyperlounge"
+    period:  "2021.10 – 2021.11"
+    role:    "Researcher"
+    desc:    "Organized the management data of small and medium-sized enterprises into an analyzable form and designed an analytics framework for decision-making."
+
+  - id:      kofpi21-forest
+    title:   "Business Effectiveness Analysis on Fine Dust Reduction Forest Project"
+    sponsor: "Korea Forestry Promotion Institute (KOFPI)"
+    program: "Research Grant"
+    period:  "2021.05 – 2021.10"

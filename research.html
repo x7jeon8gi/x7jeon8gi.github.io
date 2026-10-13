@@ -1,0 +1,61 @@
+---
+layout: page
+title: Research Areas
+eyebrow: Research
+permalink: /research/
+---
+
+{% assign R = site.data.research %}
+{% assign P = site.data.publications %}
+{% assign J = site.data.projects %}
+
+<p class="intro">{{ R.intro }}</p>
+
+{% for area in R.areas %}
+<section class="area" id="{{ area.id }}">
+  <div class="area-text">
+    <h2>{{ area.title }}</h2>
+    <p>{{ area.desc }}</p>
+  </div>
+
+  <div class="area-work">
+    <h3>Papers and talks</h3>
+    <ul class="related">
+      {% for rid in area.papers %}
+        {% assign hit = P.international | where: "id", rid | first %}
+        {% assign where_url = "/publications/" %}
+        {% unless hit %}{% assign hit = P.working_papers | where: "id", rid | first %}{% endunless %}
+        {% unless hit %}{% assign hit = P.domestic | where: "id", rid | first %}{% endunless %}
+        {% unless hit %}
+          {% assign where_url = "/presentations/" %}
+          {% assign hit = P.international_talks | where: "id", rid | first %}
+          {% unless hit %}{% assign hit = P.domestic_talks | where: "id", rid | first %}{% endunless %}
+        {% endunless %}
+        {% if hit %}
+        <li>
+          <span class="related-label">{{ hit.venue_short }}</span>
+          <a href="{{ where_url | append: '#' | append: hit.id | relative_url }}">{{ hit.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% if area.projects.size > 0 %}
+    <h3>Projects</h3>
+    <ul class="related">
+      {% for jid in area.projects %}
+        {% assign hit = J.ongoing | where: "id", jid | first %}
+        {% unless hit %}{% assign hit = J.grants | where: "id", jid | first %}{% endunless %}
+        {% unless hit %}{% assign hit = J.industry | where: "id", jid | first %}{% endunless %}
+        {% if hit %}
+        <li>
+          <span class="related-label">{{ hit.period | split: " " | first | split: "." | first }}</span>
+          <a href="{{ '/projects/#' | append: hit.id | relative_url }}">{{ hit.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}

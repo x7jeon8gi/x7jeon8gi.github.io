@@ -1,6 +1,6 @@
 # =============================================================================
 # Site settings — Namhyoung Kim · Personal Website
-# Hand-crafted minimal Jekyll site
+# Hand-crafted Jekyll site, laid out like a research-group page
 # =============================================================================
 
 title:        Namhyoung Kim
@@ -58,8 +58,14 @@ sass:
 nav:
   - title: About
     url:   "/"
+  - title: Research
+    url:   "/research/"
   - title: Publications
     url:   "/publications/"
+  - title: Presentations
+    url:   "/presentations/"
+  - title: Projects
+    url:   "/projects/"
   - title: CV
     url:   "/cv/"
 

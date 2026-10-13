@@ -1,0 +1,25 @@
+---
+layout: page
+title: Projects
+eyebrow: Research
+permalink: /projects/
+---
+
+{% assign J = site.data.projects %}
+{% assign groups = "ongoing|On-going Projects,grants|Research Grants,industry|Industry Projects" | split: "," %}
+
+{% for g in groups %}
+  {% assign key = g | split: "|" | first %}
+  {% assign label = g | split: "|" | last %}
+  <h2 class="band" id="{{ key }}">{{ label }}</h2>
+  <div class="projects">
+    {% for e in J[key] %}
+    <article class="project" id="{{ e.id }}">
+      <p class="project-sponsor">{{ e.sponsor }}{% if e.program %} · {{ e.program }}{% endif %}</p>
+      <h3 class="project-title">{{ e.title }}</h3>
+      {% if e.desc %}<p class="project-desc">{{ e.desc }}</p>{% endif %}
+      <p class="project-meta">{{ e.period }}{% if e.role %} · {{ e.role }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}

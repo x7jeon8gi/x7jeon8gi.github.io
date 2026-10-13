@@ -1,56 +1,40 @@
 ---
 layout: page
 title: Publications
+eyebrow: Research
 permalink: /publications/
 ---
 
-<p style="color:var(--fg-mute); font-size:0.95rem; margin-top:-0.6em; max-width:680px;">
-  <strong style="color:var(--c-orange)">Bold</strong> indicates the author of this site.
-  See also <a href="https://scholar.google.com/citations?user=YbxuDSIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-  for citation counts.
+{% assign P = site.data.publications %}
+
+<p class="legend">
+  <strong>Bold</strong>: author of this site &nbsp;/&nbsp; *: corresponding author.
+  Citation counts are on <a href="https://scholar.google.com/citations?user=YbxuDSIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
 </p>
 
-<section class="pub-section">
-  <h2>International Journals &amp; Conferences</h2>
-  <ul class="pub-list">
-    {% for p in site.data.publications.international %}
-      {% include publication.html pub=p kind="international" %}
-    {% endfor %}
-  </ul>
-</section>
+<h2 class="band" id="international">International Journals &amp; Conference Proceedings</h2>
+<ol class="pub-list">
+  {% assign total = P.international.size %}
+  {% for p in P.international %}
+    {% assign n = total | minus: forloop.index0 %}
+    {% include publication.html pub=p num=n %}
+  {% endfor %}
+</ol>
 
-<section class="pub-section">
-  <h2>Working Papers</h2>
-  <ul class="pub-list">
-    {% for p in site.data.publications.working_papers %}
-      {% include publication.html pub=p kind="working" %}
-    {% endfor %}
-  </ul>
-</section>
+<h2 class="band" id="domestic">Domestic Journals</h2>
+<ol class="pub-list">
+  {% assign total = P.domestic.size %}
+  {% for p in P.domestic %}
+    {% assign n = total | minus: forloop.index0 %}
+    {% include publication.html pub=p num=n %}
+  {% endfor %}
+</ol>
 
-<section class="pub-section">
-  <h2>Domestic Journals</h2>
-  <ul class="pub-list">
-    {% for p in site.data.publications.domestic %}
-      {% include publication.html pub=p kind="domestic" %}
-    {% endfor %}
-  </ul>
-</section>
-
-<section class="pub-section">
-  <h2>International Talks &amp; Workshops</h2>
-  <ul class="pub-list">
-    {% for p in site.data.publications.international_talks %}
-      {% include publication.html pub=p kind="international" %}
-    {% endfor %}
-  </ul>
-</section>
-
-<section class="pub-section">
-  <h2>Domestic Talks</h2>
-  <ul class="pub-list">
-    {% for p in site.data.publications.domestic_talks %}
-      {% include publication.html pub=p kind="domestic" %}
-    {% endfor %}
-  </ul>
-</section>
+<h2 class="band" id="working-papers">Working Papers</h2>
+<ol class="pub-list">
+  {% assign total = P.working_papers.size %}
+  {% for p in P.working_papers %}
+    {% assign n = total | minus: forloop.index0 %}
+    {% include publication.html pub=p num=n %}
+  {% endfor %}
+</ol>

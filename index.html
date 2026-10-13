@@ -3,30 +3,29 @@ layout: default
 title: About
 ---
 
+<div class="wrap home">
+
 <section class="hero">
   <div class="avatar-wrap">
-    {% comment %}If you upload a profile photo to assets/img/prof_pic.jpg this <img> will show. Otherwise the placeholder appears.{% endcomment %}
+    {% comment %}Profile photo at assets/img/prof_pic.jpg; a plain box shows if it is missing.{% endcomment %}
     <img class="avatar" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Namhyoung Kim"
-         onerror="this.outerHTML='<div class=&quot;avatar-placeholder&quot;>Drop a photo at<br>assets/img/<br>prof_pic.jpg</div>'">
+         onerror="this.outerHTML='<div class=&quot;avatar-placeholder&quot;>assets/img/<br>prof_pic.jpg</div>'">
   </div>
 
   <h1>Namhyoung Kim</h1>
 
-  <div class="role">
-    Head of Research at
-    <a href="https://riskx.tech" target="_blank" rel="noopener">Risk X tech Lab</a>
-    <br>
-    Ph.D., Industrial Engineering ·
-    <a href="https://www.hanyang.ac.kr/" target="_blank" rel="noopener">Hanyang University</a>
-  </div>
+  <p class="role">
+    Head of Research, <a href="https://riskx.tech" target="_blank" rel="noopener">Risk X tech Lab</a><br>
+    Ph.D. in Industrial Engineering, <a href="https://www.hanyang.ac.kr/" target="_blank" rel="noopener">Hanyang University</a>
+  </p>
 
-  <div class="contact-line">
-    <a href="mailto:ai.namhyoung@gmail.com">✉ ai.namhyoung@gmail.com</a>
-    <a href="https://github.com/x7jeon8gi" target="_blank" rel="noopener">↗ GitHub</a>
-    <a href="https://scholar.google.com/citations?user=YbxuDSIAAAAJ" target="_blank" rel="noopener">⌕ Scholar</a>
-    <a href="https://www.linkedin.com/in/ai-namhyoung/" target="_blank" rel="noopener">in LinkedIn</a>
-    <a href="/assets/pdf/CV.pdf">↓ CV</a>
-  </div>
+  <p class="contact-line">
+    <a href="mailto:ai.namhyoung@gmail.com">ai.namhyoung@gmail.com</a>
+    <a href="https://github.com/x7jeon8gi" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=YbxuDSIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/ai-namhyoung/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">CV (PDF)</a>
+  </p>
 </section>
 
 <div class="bio">
@@ -36,7 +35,7 @@ title: About
   where I lead the research team, and received my Ph.D. in Industrial Engineering
   from Hanyang University in 2026, advised by
   <a href="https://finx.hanyang.ac.kr/members/director" target="_blank" rel="noopener">Prof. Jae Wook Song</a>
-  at the <strong>Financial Innovation &amp; Decision Analytics (FINX) Lab</strong>.
+  at the <a href="https://finx.hanyang.ac.kr" target="_blank" rel="noopener">Financial Innovation &amp; Decision Analytics (FINX) Lab</a>.
 </p>
 
 <p>
@@ -57,27 +56,15 @@ title: About
 </p>
 </div>
 
-{% comment %}--- Stat highlights ---{% endcomment %}
-{% assign all_pubs = site.data.publications %}
-{% assign intl_count = all_pubs.international | size %}
-{% assign work_count = all_pubs.working_papers | size %}
-{% assign talk_count = all_pubs.international_talks | size | plus: all_pubs.domestic_talks.size %}
-<div class="stats">
-  <div class="stat">
-    <strong>{{ intl_count }}</strong>
-    <span>Int'l Journals / Conferences</span>
-  </div>
-  <div class="stat">
-    <strong>{{ work_count }}</strong>
-    <span>Working Papers</span>
-  </div>
-  <div class="stat">
-    <strong>{{ talk_count }}</strong>
-    <span>Conference Talks</span>
-  </div>
-</div>
+{% assign P = site.data.publications %}
+{% assign n_talks = P.international_talks.size | plus: P.domestic_talks.size %}
+<ul class="counts">
+  <li><a href="{{ '/publications/' | relative_url }}"><strong>{{ P.international.size }}</strong> international journal and conference papers</a></li>
+  <li><a href="{{ '/publications/#working-papers' | relative_url }}"><strong>{{ P.working_papers.size }}</strong> working papers</a></li>
+  <li><a href="{{ '/presentations/' | relative_url }}"><strong>{{ n_talks }}</strong> conference presentations</a></li>
+</ul>
 
-<h2 id="news">News</h2>
+<h2 class="band" id="news">News</h2>
 <ul class="news-list">
   {% for n in site.data.news %}
     <li>
@@ -87,14 +74,14 @@ title: About
   {% endfor %}
 </ul>
 
-<h2 id="selected-papers">Selected Publications</h2>
+<h2 class="band" id="selected-papers">Selected Publications</h2>
 <ul class="pub-list">
-  {% for p in site.data.publications.international %}
+  {% for p in P.international %}
     {% if p.selected %}
-      {% include publication.html pub=p %}
+      {% include publication.html pub=p compact=true %}
     {% endif %}
   {% endfor %}
 </ul>
-<div class="see-all">
-  <a href="/publications/">See all publications →</a>
+<p class="see-all"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
+
 </div>

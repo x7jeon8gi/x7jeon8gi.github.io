@@ -1,0 +1,40 @@
+# =============================================================================
+# Research areas, rendered on /research/.
+#   papers   : ids from publications.yml (papers, working papers or talks)
+#   projects : ids from projects.yml
+# =============================================================================
+
+intro: >
+  My research develops representation learning methods for financial markets
+  and applies them to portfolio management, generative modeling, and derivatives.
+  The work below is grouped into three connected lines.
+
+areas:
+  - id:    discrete-factors
+    title: "Discrete Latent Factor Models"
+    desc: >
+      Learning discrete latent factors with vector quantization for
+      cross-sectional stock return prediction, fusing them with financial priors
+      for portfolio construction, and aligning factor codebooks with language
+      so that each factor can be read and explained.
+    papers:   [ijcai26-vqfp, kbs25-factorvqvae, wp-lexicon, cikmw25-fpqvae, kafo25-prismvq, kiie25-vq]
+    projects: [nrf25-robust-vq, nrf23-vqvae-portfolio]
+
+  - id:    physics-informed
+    title: "Physics-Informed Learning for Trading and Volatility"
+    desc: >
+      Building the structure of stochastic processes, mean reversion in
+      particular, into neural models: contrastive learning for pairs trading and
+      volatility forecasting that holds up under economic regimes not seen in
+      training.
+    papers:   [icaif26-harcev, icaif25-deep-mr, icaifw25-crypto, kiie24-pairs]
+    projects: []
+
+  - id:    deep-hedging
+    title: "Deep Hedging and Structured Products"
+    desc: >
+      Neural hedging and pricing of equity-linked securities and other
+      structured products, with attention to robustness and interpretability,
+      now carried forward in government-funded R&amp;D at Risk X tech Lab.
+    papers:   [wp-praxis, informs24-hedging]
+    projects: [sba26-els-hedging, tips26-structured, riskx23-exotic]
