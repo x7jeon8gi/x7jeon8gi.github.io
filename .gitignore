@@ -18,3 +18,6 @@ node_modules/
 /*.txt
 /*.zip
 /Portfolio_*_source.html
+
+# Files the Claude desktop app saves from chats
+/Claude outputs/
