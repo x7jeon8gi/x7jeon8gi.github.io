@@ -275,6 +275,14 @@ h2.band {
 .hero .contact-line { grid-area: contact; }
 
 .avatar-wrap { width: 156px; height: 156px; position: relative; }
+button.avatar-wrap {
+  display: block;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+button.avatar-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .avatar-wrap img.avatar {
   position: absolute;
   inset: 0;
@@ -370,6 +378,9 @@ h2.band {
 @media (prefers-reduced-motion: reduce) {
   .avatar-wrap img.avatar-alt { animation: none; }
 }
+/* with JavaScript the swap is driven by a class, so a click can flip it */
+.avatar-wrap.js img.avatar-alt { animation: none; transition: opacity 0.5s ease-in-out; }
+.avatar-wrap.js.show-alt img.avatar-alt { opacity: 1; }
 
 /* news */
 .news-list { list-style: none; padding: 0; margin: 0; }
