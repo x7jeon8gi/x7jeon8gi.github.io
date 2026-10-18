@@ -3,7 +3,7 @@
 #   papers   : ids from publications.yml (papers, working papers or talks)
 #   projects : ids from projects.yml
 #   intro_ko, title_ko, desc_ko : Korean text for /ko/research/
-#   figure   : optional { src, alt, caption, caption_ko }, shown under the area
+#   figure   : optional { src, alt, caption, caption_ko }, small, under the description
 #              (images in assets/img/research/, cropped from the papers)
 # =============================================================================
 
@@ -36,8 +36,8 @@ areas:
     figure:
       src:        "/assets/img/research/prism-vq.jpg"
       alt:        "Overview of the PRISM-VQ framework"
-      caption:    "Overview of PRISM-VQ (IJCAI-ECAI 2026). Like a prism separating light, it decomposes cross-sectional market structure with discrete vector quantization, then uses the codes to gate experts over financial-prior and latent factors."
-      caption_ko: "PRISM-VQ 개요 (IJCAI-ECAI 2026). 프리즘이 빛을 나누듯 벡터 양자화로 횡단면 시장 구조를 이산 코드로 분해하고, 그 코드로 금융 사전 팩터와 잠재 팩터 위의 전문가 모형을 선택함."
+      caption:    "PRISM-VQ overview (IJCAI-ECAI 2026)"
+      caption_ko: "PRISM-VQ 개요 (IJCAI-ECAI 2026)"
 
   - id:    structure-informed
     title: "Structure-Informed Learning"
@@ -53,8 +53,8 @@ areas:
     figure:
       src:        "/assets/img/research/orca.jpg"
       alt:        "Architecture of ORCA"
-      caption:    "ORCA, the model in Deep Mean-Reversion (ICAIF '25). Two augmented views share a Transformer encoder and are trained with instance- and cluster-level contrastive losses, plus a physics-informed loss that enforces Ornstein-Uhlenbeck dynamics."
-      caption_ko: "Deep Mean-Reversion(ICAIF '25)의 ORCA 구조. 두 증강 뷰가 Transformer 인코더를 공유하고 인스턴스·군집 수준 대조학습으로 학습되며, Ornstein-Uhlenbeck 동역학을 강제하는 물리 정보 손실이 더해짐."
+      caption:    "ORCA architecture (ICAIF '25)"
+      caption_ko: "ORCA 구조 (ICAIF '25)"
 
   - id:    interpretable-robust
     title: "Interpretable and Group-Robust Models"
@@ -71,5 +71,5 @@ areas:
     figure:
       src:        "/assets/img/research/lexicon.jpg"
       alt:        "Overview of the LEXICON framework"
-      caption:    "Overview of LEXICON. Factor representations are aligned with human-language anchors through an optimal transport plan, so that each prediction can be read through the semantics of its factors."
-      caption_ko: "LEXICON 개요. 최적수송 계획으로 팩터 표현을 자연어 앵커에 정렬해, 각 예측을 팩터의 의미로 읽을 수 있게 함."
+      caption:    "LEXICON overview"
+      caption_ko: "LEXICON 개요"
