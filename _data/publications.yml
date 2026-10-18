@@ -161,7 +161,7 @@ domestic:
 
 working_papers:
   - id:          wp-lexicon
-    title:       "LEXICON: Making Factors Talk with Language-Aligned Discrete Codebooks in Stock Return Prediction"
+    title:       "LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction"
     authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song*"]
     venue:       "Revise &amp; Resubmit, ACM SIGKDD 2027 (Cycle 1)"
     venue_short: "KDD '27 R&R"

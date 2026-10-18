@@ -61,11 +61,12 @@ areas:
     title_ko: "해석 가능하고 집단에 강건한 모형"
     desc: >
       Making factor models and decision policies explainable and robust across
-      groups: aligning factor codebooks with language so that each factor can
-      be read, defining groups by text for distributionally robust stock
-      ranking, and coupling group robustness with interpretable hedging
-      policies.
-    desc_ko: "팩터 모형과 의사결정 정책을 설명 가능하고 집단 간에 강건하게 만드는 연구. 팩터 코드북을 언어와 정렬해 각 팩터를 읽을 수 있게 하고, 텍스트로 정의한 종목 집단에 대해 분포적으로 강건한 순위 학습을 하며, 해석 가능한 헤징 정책에 집단 강건성을 결합함."
+      groups: composing factors from language-grounded anchors that describe
+      observable financial states, so that each factor can be read and every
+      prediction decomposes exactly into named contributions; defining groups
+      by text for distributionally robust stock ranking; and coupling group
+      robustness with interpretable hedging policies.
+    desc_ko: "팩터 모형과 의사결정 정책을 설명 가능하고 집단 간에 강건하게 만드는 연구. 관측 가능한 금융 상태를 자연어 anchor로 표현해 팩터를 구성함으로써 각 팩터를 읽을 수 있고 예측이 이름 붙은 기여도로 정확히 분해되도록 하며, 텍스트로 정의한 종목 집단에 대해 분포적으로 강건한 순위 학습을 하고, 해석 가능한 헤징 정책에 집단 강건성을 결합함."
     papers:   [wp-lexicon, wp-tagdro, wp-praxis]
     projects: []
     figure:
