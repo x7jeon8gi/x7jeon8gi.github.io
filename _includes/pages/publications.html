@@ -23,6 +23,7 @@
 </ol>
 
 <h2 class="band" id="working-papers">{{ T.h_working }}</h2>
+{% if T.wp_note != "" %}<p class="band-note">{{ T.wp_note }}</p>{% endif %}
 <ol class="pub-list">
   {% assign total = P.working_papers.size %}
   {% for p in P.working_papers %}

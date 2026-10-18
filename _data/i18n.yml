@@ -17,6 +17,7 @@ en:
   name:          "Namhyoung Kim"
   role:          "Head of Research, Risk X tech Lab"
   copy:          "Built with Jekyll and hosted on GitHub Pages."
+  wp_note:       ""
   present:       "Present"
   news:          "News"
   selected:      "Selected Publications"
@@ -46,7 +47,8 @@ en:
 ko:
   name:          "김남형"
   role:          "Risk X tech Lab 연구소장"
-  copy:          "Jekyll로 만들어 GitHub Pages에서 운영합니다."
+  copy:          "Jekyll로 만들어 GitHub Pages에서 운영합니다. 코드북은 이븐하게 익혔습니다."
+  wp_note:       "심사 중이거나 다듬고 있는 원고입니다. 중요한 건 꺾이지 않는 마음."
   present:       "현재"
   news:          "소식"
   selected:      "주요 논문"

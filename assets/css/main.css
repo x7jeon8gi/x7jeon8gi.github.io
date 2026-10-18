@@ -236,6 +236,13 @@ h2.band {
 .legend + h2.band,
 .intro + h2.band { margin-top: 28px; }
 
+.band-note {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--fg-mute);
+  margin: -4px 0 2px;
+}
+
 .legend {
   font-family: var(--sans);
   font-size: 0.92rem;

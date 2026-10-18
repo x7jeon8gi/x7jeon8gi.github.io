@@ -44,6 +44,7 @@ grants:
     program: "Research Grant"
     period:  "2025.09 – 2026.08"
     sponsor_ko: "한국연구재단"
+    title_ko: "벡터 양자화 변분 오토인코더를 활용한 금융 데이터의 강건한 생성적 표현 학습 및 응용"
 
   - id:      nrf23-vqvae-portfolio
     title:   "Applications of Artificial Intelligence in Portfolio using Vector Quantization-Variational Autoencoder"
@@ -145,3 +146,4 @@ industry:
     program: "Research Grant"
     period:  "2021.05 – 2021.10"
     sponsor_ko: "한국임업진흥원(KOFPI)"
+    title_ko: "미세먼지 저감 산림사업 효과성 분석"
