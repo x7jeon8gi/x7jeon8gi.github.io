@@ -274,8 +274,10 @@ h2.band {
 .hero .role         { grid-area: role; }
 .hero .contact-line { grid-area: contact; }
 
-.avatar-wrap { width: 156px; height: 156px; }
+.avatar-wrap { width: 156px; height: 156px; position: relative; }
 .avatar-wrap img.avatar {
+  position: absolute;
+  inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
   border-radius: 2px;
@@ -353,6 +355,20 @@ h2.band {
   .counts { flex-direction: column; }
   .counts li + li { margin-left: 0; padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
   .banner-title { font-size: 1.7rem; }
+}
+
+/* the second photo fades in and out over the first: about 4 s each */
+.avatar-wrap img.avatar-alt {
+  opacity: 0;
+  animation: avatar-swap 10s ease-in-out infinite;
+}
+@keyframes avatar-swap {
+  0%, 40%  { opacity: 0; }
+  50%, 90% { opacity: 1; }
+  100%     { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .avatar-wrap img.avatar-alt { animation: none; }
 }
 
 /* news */

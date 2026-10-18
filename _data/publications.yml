@@ -46,7 +46,7 @@ international:
     note_ko: "pp. 4421–4429 · 채택률 13.6% · CORE A*"
 
   - id:          icaif26-harcev
-    title:       "HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes"
+    title:       "HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift"
     authors:     ["Yosep Na", "Namhyoung Kim", "Joon Ho Jun", "Jae Wook Song*"]
     venue:       "Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)"
     venue_short: "ICAIF '26"

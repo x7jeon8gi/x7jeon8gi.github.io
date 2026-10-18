@@ -2,8 +2,8 @@
 # html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-10"
-  html: "Our paper *HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* has been **accepted to ICAIF ’26**."
-  html_ko: "*HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* 논문이 **ICAIF ’26**에 채택되었습니다."
+  html: "Our paper *HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* has been **accepted to ICAIF ’26**."
+  html_ko: "*HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* 논문이 **ICAIF ’26**에 채택되었습니다."
 
 - date: "2026-08"
   html: "Presented our IJCAI-ECAI 2026 paper on vector-quantized discrete latent factors in **Bremen, Germany**."
