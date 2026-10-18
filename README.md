@@ -18,17 +18,21 @@ git-homepage/
 │   └── page.html          #  └ 하위 페이지용: 남색 배너(eyebrow·제목) + 본문
 │
 ├── _includes/
-│   ├── head.html          #  └ <head>, 글꼴(Source Serif 4 / Source Sans 3)
-│   ├── header.html        #  └ 상단 내비 바
+│   ├── head.html          #  └ <head>, 글꼴(Source Serif 4 / Source Sans 3, 한글은 Noto Sans KR)
+│   ├── header.html        #  └ 상단 내비 바 + EN/한국어 전환
 │   ├── footer.html        #  └ 하단 연락처·링크
-│   └── publication.html   #  └ 논문·발표 한 건 렌더러 (번호형 / 홈 요약형)
+│   ├── lang-urls.html     #  └ 현재 언어와 영문·국문 짝 페이지 주소 계산
+│   ├── publication.html   #  └ 논문·발표 한 건 렌더러 (번호형 / 홈 요약형)
+│   ├── cv-entries.html    #  └ CV 항목 렌더러
+│   └── pages/             #  └ 각 페이지 본문 (영문·국문 페이지가 같은 본문을 공유)
 │
 ├── _data/                 # ← 실제 내용은 거의 다 여기 있음
 │   ├── publications.yml   #  └ 논문·워킹페이퍼·국내외 발표 (가장 자주 손볼 파일)
 │   ├── projects.yml       #  └ 진행 중 과제·연구비·산학과제 (Projects, CV 페이지가 같이 읽음)
 │   ├── research.yml       #  └ 연구 분야 설명과 분야별 관련 논문·과제 id
 │   ├── news.yml           #  └ 홈 News
-│   └── cv.yml             #  └ 학력·경력·특허·수상·강의·기술
+│   ├── cv.yml             #  └ 학력·경력·특허·수상·강의·기술
+│   └── i18n.yml           #  └ 메뉴와 화면 문구 (영문·국문)
 │
 ├── index.html             # 홈 (소개 + News + Selected Publications)
 ├── research.html          # /research/      연구 분야
@@ -36,6 +40,7 @@ git-homepage/
 ├── presentations.html     # /presentations/ 국제·국내 학회 발표
 ├── projects.html          # /projects/      진행 중 과제, 연구비, 산학과제
 ├── cv.html                # /cv/            CV
+├── ko/                    # 국문 페이지 (/ko/, /ko/research/ …), 파일마다 lang: ko
 │
 ├── _cv/                   # 영문 PDF CV 소스 (XeLaTeX)
 └── assets/
@@ -142,6 +147,15 @@ git push -u origin main
 `date: "2026.07"` 과 `location: "Pohang, Korea"` 를 씀.
 
 저장 → `git commit -am "Add NeurIPS '26 paper" && git push` → 1~2분 뒤 자동 반영.
+
+### 한국어 페이지
+
+영문 페이지는 `/`, 국문 페이지는 `/ko/` 아래에 있고 상단 오른쪽 EN / 한국어 버튼으로 같은 페이지끼리 오감.
+두 언어가 같은 데이터 파일을 읽으며, 국문 문구는 같은 항목에 `_ko` 를 붙인 필드로 넣음
+(`title_ko`, `desc_ko`, `html_ko`, `authors_ko`, `venue_ko` 등). `_ko` 필드가 없으면 영문이 그대로 보임.
+논문 제목은 원제 그대로 두고, 국내 학회 발표만 저자·학회명을 한글로 표기함.
+메뉴와 섹션 제목 같은 화면 문구는 `_data/i18n.yml` 에서 고침.
+새 소식을 올릴 때는 `html` 아래에 `html_ko` 한 줄을 같이 넣으면 됨.
 
 ### 과제 추가·종료
 

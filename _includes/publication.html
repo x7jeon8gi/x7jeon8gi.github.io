@@ -1,9 +1,17 @@
 {%- comment -%}
 One publication or presentation.
-  {% include publication.html pub=p num=4 %}      numbered entry (publications, presentations)
+  {% include publication.html pub=p num=4 %}       numbered entry (publications, presentations)
   {% include publication.html pub=p compact=true %} short entry with a venue label (home page)
+On Korean pages the *_ko fields (title_ko, authors_ko, venue_ko, location_ko,
+note_ko) are used when present.
 {%- endcomment -%}
 {%- assign p = include.pub -%}
+{%- assign L = page.lang | default: "en" -%}{%- assign sfx = "_" | append: L -%}
+{%- assign k = "title" | append: sfx -%}{%- assign p_title = p[k] | default: p.title -%}
+{%- assign k = "authors" | append: sfx -%}{%- assign p_authors = p[k] | default: p.authors -%}
+{%- assign k = "venue" | append: sfx -%}{%- assign p_venue = p[k] | default: p.venue -%}
+{%- assign k = "location" | append: sfx -%}{%- assign p_location = p[k] | default: p.location -%}
+{%- assign k = "note" | append: sfx -%}{%- assign p_note = p[k] | default: p.note -%}
 <li class="pub{% if include.compact %} pub-compact{% endif %}" id="{{ p.id }}">
   <div class="pub-mark">
     {%- if include.num -%}<span class="pub-num">[{{ include.num }}]</span>
@@ -11,19 +19,19 @@ One publication or presentation.
   </div>
   <div class="pub-body">
     <div class="pub-title">
-      {%- if p.url -%}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{%- else -%}{{ p.title }}{%- endif -%}
+      {%- if p.url -%}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p_title }}</a>{%- else -%}{{ p_title }}{%- endif -%}
     </div>
     <div class="pub-authors">
-      {%- for a in p.authors -%}
-        {%- if a contains "Namhyoung" -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+      {%- for a in p_authors -%}
+        {%- if a contains "Namhyoung" or a contains "김남형" -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
         {%- unless forloop.last -%}, {% endunless -%}
       {%- endfor -%}
     </div>
     <div class="pub-venue">
-      <em>{{ p.venue }}</em>
+      <em>{{ p_venue }}</em>
       {%- if p.date -%}, {{ p.date }}{%- elsif p.year -%}, {{ p.year }}{%- endif -%}
-      {%- if p.location -%}, {{ p.location }}{%- endif -%}
-      {%- if p.note %} <span class="pub-note">· {{ p.note }}</span>{%- endif -%}
+      {%- if p_location -%}, {{ p_location }}{%- endif -%}
+      {%- if p_note %} <span class="pub-note">· {{ p_note }}</span>{%- endif -%}
     </div>
     {%- unless include.compact -%}
     {%- if p.keywords %}

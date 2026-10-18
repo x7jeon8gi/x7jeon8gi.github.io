@@ -1,0 +1,61 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n[L] -%}
+{%- assign sfx = "_" | append: L -%}
+{%- if L == "ko" -%}{%- assign base = "/ko" -%}{%- else -%}{%- assign base = "" -%}{%- endif -%}
+{%- assign R = site.data.research -%}
+{%- assign P = site.data.publications -%}
+{%- assign J = site.data.projects -%}
+{%- assign k_intro = "intro" | append: sfx -%}
+{%- assign k_title = "title" | append: sfx -%}
+{%- assign k_desc = "desc" | append: sfx -%}
+
+<p class="intro">{{ R[k_intro] | default: R.intro }}</p>
+
+{% for area in R.areas %}
+<section class="area" id="{{ area.id }}">
+  <div class="area-text">
+    <h2>{{ area[k_title] | default: area.title }}</h2>
+    <p>{{ area[k_desc] | default: area.desc }}</p>
+  </div>
+
+  <div class="area-work">
+    <h3>{{ T.papers_talks }}</h3>
+    <ul class="related">
+      {% for rid in area.papers %}
+        {% assign hit = P.international | where: "id", rid | first %}
+        {% assign where_url = "/publications/" %}
+        {% unless hit %}{% assign hit = P.working_papers | where: "id", rid | first %}{% endunless %}
+        {% unless hit %}{% assign hit = P.domestic | where: "id", rid | first %}{% endunless %}
+        {% unless hit %}
+          {% assign where_url = "/presentations/" %}
+          {% assign hit = P.international_talks | where: "id", rid | first %}
+          {% unless hit %}{% assign hit = P.domestic_talks | where: "id", rid | first %}{% endunless %}
+        {% endunless %}
+        {% if hit %}
+        <li>
+          <span class="related-label">{{ hit.venue_short }}</span>
+          <a href="{{ base | append: where_url | append: '#' | append: hit.id | relative_url }}">{{ hit[k_title] | default: hit.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% if area.projects.size > 0 %}
+    <h3>{{ T.projects }}</h3>
+    <ul class="related">
+      {% for jid in area.projects %}
+        {% assign hit = J.ongoing | where: "id", jid | first %}
+        {% unless hit %}{% assign hit = J.grants | where: "id", jid | first %}{% endunless %}
+        {% unless hit %}{% assign hit = J.industry | where: "id", jid | first %}{% endunless %}
+        {% if hit %}
+        <li>
+          <span class="related-label">{{ hit.period | split: " " | first | split: "." | first }}</span>
+          <a href="{{ base | append: '/projects/#' | append: hit.id | relative_url }}">{{ hit[k_title] | default: hit.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}

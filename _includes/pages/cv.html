@@ -1,0 +1,50 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n[L] -%}
+{%- assign sfx = "_" | append: L -%}
+{%- if L == "ko" -%}{%- assign base = "/ko" -%}{%- else -%}{%- assign base = "" -%}{%- endif -%}
+{%- assign cv = site.data.cv -%}
+{%- assign J = site.data.projects -%}
+{%- assign k_title = "title" | append: sfx -%}
+{%- assign k_sponsor = "sponsor" | append: sfx -%}
+{%- assign k_role = "role" | append: sfx -%}
+
+<p class="legend"><a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">{{ T.cv_pdf }}</a></p>
+
+<h2 class="band">{{ T.h_education }}</h2>
+{% include cv-entries.html items=cv.education %}
+
+<h2 class="band">{{ T.h_experience }}</h2>
+{% include cv-entries.html items=cv.experience %}
+
+{% assign grants = J.ongoing | concat: J.grants %}
+{% assign blocks = "h_grants,h_industry" | split: "," %}
+{% for b in blocks %}
+<h2 class="band">{{ T[b] }}</h2>
+{% if b == "h_grants" %}{% assign items = grants %}{% else %}{% assign items = J.industry %}{% endif %}
+{% for e in items %}
+{% if L == "ko" %}{% assign prog = e.program_ko %}{% else %}{% assign prog = e.program %}{% endif %}
+{% assign role = e[k_role] | default: e.role %}
+<div class="cv-entry">
+  <div class="when">{{ e.period | replace: "Present", T.present }}</div>
+  <div class="what">
+    <div class="title"><a href="{{ base | append: '/projects/#' | append: e.id | relative_url }}">{{ e[k_title] | default: e.title }}</a></div>
+    <div class="where">{{ e[k_sponsor] | default: e.sponsor }}{% if prog %} · {{ prog }}{% endif %}{% if role and b == "h_grants" %} · {{ role }}{% endif %}</div>
+  </div>
+</div>
+{% endfor %}
+{% endfor %}
+
+<h2 class="band">{{ T.h_patents }}</h2>
+{% include cv-entries.html items=cv.patents %}
+
+<h2 class="band">{{ T.h_awards }}</h2>
+{% include cv-entries.html items=cv.awards %}
+
+<h2 class="band">{{ T.h_teaching }}</h2>
+{% include cv-entries.html items=cv.teaching %}
+
+<h2 class="band">{{ T.h_skills }}</h2>
+<div class="cv-entry">
+  <div class="when">{{ T.programming }}</div>
+  <div class="what"><div class="title">{{ cv.skills | join: ', ' }}</div></div>
+</div>

@@ -1,0 +1,74 @@
+# =============================================================================
+# Interface text for the English and Korean versions of the site.
+# Pages under /ko/ set `lang: ko` in their front matter; every other page is en.
+# Data files add Korean text with a _ko suffix (title_ko, desc_ko, ...); when a
+# _ko field is missing the English one is shown.
+# =============================================================================
+
+nav:
+  - { url: "/",               en: "About",         ko: "소개" }
+  - { url: "/research/",      en: "Research",      ko: "연구" }
+  - { url: "/publications/",  en: "Publications",  ko: "논문" }
+  - { url: "/presentations/", en: "Presentations", ko: "발표" }
+  - { url: "/projects/",      en: "Projects",      ko: "과제" }
+  - { url: "/cv/",            en: "CV",            ko: "CV" }
+
+en:
+  name:          "Namhyoung Kim"
+  role:          "Head of Research, Risk X tech Lab"
+  copy:          "Built with Jekyll and hosted on GitHub Pages."
+  present:       "Present"
+  news:          "News"
+  selected:      "Selected Publications"
+  all_pubs:      "All publications"
+  legend:        "<strong>Bold</strong>: author of this site &nbsp;/&nbsp; *: corresponding author."
+  legend_pubs:   "Citation counts are on <a href=\"https://scholar.google.com/citations?user=YbxuDSIAAAAJ\" target=\"_blank\" rel=\"noopener\">Google Scholar</a>."
+  legend_talks:  "Main-conference presentations of accepted papers are listed under <a href=\"{pubs}\">Publications</a>."
+  h_intl:        "International Journals &amp; Conference Proceedings"
+  h_domestic:    "Domestic Journals"
+  h_working:     "Working Papers"
+  h_talk_intl:   "International Conferences"
+  h_talk_dom:    "Domestic Conferences"
+  h_ongoing:     "On-going Projects"
+  h_grants:      "Research Grants"
+  h_industry:    "Industry Projects"
+  papers_talks:  "Papers and talks"
+  projects:      "Projects"
+  cv_pdf:        "Download the PDF version"
+  h_education:   "Education"
+  h_experience:  "Experience"
+  h_patents:     "Patents"
+  h_awards:      "Honors &amp; Awards"
+  h_teaching:    "Teaching"
+  h_skills:      "Technical Skills"
+  programming:   "Programming"
+
+ko:
+  name:          "김남형"
+  role:          "Risk X tech Lab 연구소장"
+  copy:          "Jekyll로 만들어 GitHub Pages에서 운영합니다."
+  present:       "현재"
+  news:          "소식"
+  selected:      "주요 논문"
+  all_pubs:      "전체 논문 보기"
+  legend:        "<strong>굵은 글씨</strong>: 김남형 &nbsp;/&nbsp; *: 교신저자."
+  legend_pubs:   "인용 정보는 <a href=\"https://scholar.google.com/citations?user=YbxuDSIAAAAJ\" target=\"_blank\" rel=\"noopener\">Google Scholar</a>에서 확인할 수 있습니다."
+  legend_talks:  "채택 논문의 본 학회 발표는 <a href=\"{pubs}\">논문</a> 목록에 함께 정리했습니다."
+  h_intl:        "국제 학술지 및 학회 논문"
+  h_domestic:    "국내 학술지"
+  h_working:     "워킹페이퍼"
+  h_talk_intl:   "국제 학술대회"
+  h_talk_dom:    "국내 학술대회"
+  h_ongoing:     "진행 중인 과제"
+  h_grants:      "정부 연구과제"
+  h_industry:    "산학 과제"
+  papers_talks:  "논문 및 발표"
+  projects:      "과제"
+  cv_pdf:        "PDF 내려받기 (영문)"
+  h_education:   "학력"
+  h_experience:  "경력"
+  h_patents:     "특허"
+  h_awards:      "수상"
+  h_teaching:    "강의"
+  h_skills:      "기술"
+  programming:   "프로그래밍"

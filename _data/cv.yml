@@ -1,5 +1,7 @@
 # =============================================================================
-# CV data, rendered by cv.html (projects and grants come from projects.yml)
+# CV data, rendered by the CV page (projects and grants come from projects.yml)
+# Korean pages read when_ko, title_ko, where_ko and desc_ko when present and
+# fall back to the English field otherwise.
 # =============================================================================
 
 education:
@@ -11,11 +13,21 @@ education:
       - "Research Assistant, Financial Innovation & Decision Analytics (FINX) Lab"
       - "Supervisor: Prof. Jae Wook Song"
       - "GPA: 4.31 / 4.50"
+    where_ko: "한양대학교"
+    desc_ko:
+      - "학위논문: <em>Representation Learning in Financial Markets for Portfolio Management</em>"
+      - "Financial Innovation & Decision Analytics (FINX) Lab 연구원"
+      - "지도교수: 송재욱"
+      - "GPA: 4.31 / 4.50"
   - when:  "2016.03 – 2020.02"
     title: "B.A. in Economics and Finance (Minor in Finance)"
     where: "Hanyang University, Seoul, Republic of Korea"
     desc:
       - "Cum Laude · GPA: 4.00 / 4.50"
+    title_ko: "B.A. in Economics and Finance"
+    where_ko: "한양대학교, 부전공 파이낸스경영"
+    desc_ko:
+      - "우등졸업 Cum Laude · GPA: 4.00 / 4.50"
 
 experience:
   - when:  "2026.03 – Present"
@@ -23,21 +35,34 @@ experience:
     where: "Risk X tech Lab"
     desc:
       - "Leads the AI research group for derivatives and structured products: research roadmap, government-funded R&D, intellectual property, and product integration."
+    title_ko: "연구소장"
+    desc_ko:
+      - "파생 및 구조화상품 AI 연구조직 총괄. 연구 로드맵 수립, 정부지원 연구개발과제 총괄, 지식재산 확보, 제품 연동까지 담당."
   - when:  "2025.07 – 2026.02"
     title: "Quantitative AI Researcher"
     where: "Risk X tech Lab"
     desc:
       - "Recommendation and valuation models for structured products; derivatives data pipeline."
+    desc_ko:
+      - "구조화상품 추천 및 가치평가 모형 연구개발, 파생 데이터 파이프라인 설계."
   - when:  "2021.03 – 2026.02"
     title: "Research Assistant"
     where: "Financial Innovation & Decision Analytics (FINX) Lab, Hanyang University"
     desc:
       - "Advisor: Prof. Jae Wook Song"
+    title_ko: "박사과정 연구원"
+    where_ko: "한양대학교 Financial Innovation & Decision Analytics (FINX) Lab"
+    desc_ko:
+      - "지도교수: 송재욱"
   - when:  "2019.08 – 2019.12"
     title: "Undergraduate Intern"
     where: "Business & A.I. Lab, Hanyang University"
     desc:
       - "Advisor: Prof. Jong Woo Kim"
+    title_ko: "학부 연구 인턴"
+    where_ko: "한양대학교 Business & A.I. Lab"
+    desc_ko:
+      - "지도교수: 김종우"
 
 # Industry projects and research grants live in _data/projects.yml.
 
@@ -45,28 +70,43 @@ patents:
   - when:  "2026"
     title: "Three Korean patent applications"
     where: "Market scenario generation via Lie algebra, deep hedging system for structured products, and others"
+    title_ko: "국내 특허 3건 출원"
+    where_ko: "리 대수 기반 시장 시나리오 생성, 구조화상품 딥헤징 시스템 등"
 
 awards:
   - when:  "2024"
     title: "Outstanding Paper Award"
     where: "Korean Management Science Review, KORMS"
+    title_ko: "우수논문상"
+    where_ko: "한국경영과학회(KORMS)"
   - when:  "2021 – 2025"
     title: "BK21 Scholarship"
     where: "NRF of Korea"
+    title_ko: "BK21 Four 연구장학금"
+    where_ko: "한국연구재단"
   - when:  "2020"
     title: "A.I. Graduate School Support Project Scholarship"
     where: "IITP of Korea"
+    title_ko: "AI 대학원 지원사업 장학금"
+    where_ko: "정보통신기획평가원(IITP)"
   - when:  "2020"
     title: "Cum Laude"
     where: "Hanyang University"
+    title_ko: "우등졸업 Cum Laude"
+    where_ko: "한양대학교"
   - when:  "2018"
     title: "Financial Quant Professional Training Project Scholarship"
     where: "Hanyang University"
+    title_ko: "금융 퀀트 전문 양성 사업 장학금"
+    where_ko: "한양대학교"
 
 teaching:
   - when:  "2025 Spring"
     title: "Teaching Assistant, Creative Programming for Engineers (11391)"
     where: "Hanyang University"
+    when_ko: "2025년 1학기"
+    title_ko: "공학도를 위한 창의적 프로그래밍(11391) 조교"
+    where_ko: "한양대학교"
 
 skills:
   - "Python"

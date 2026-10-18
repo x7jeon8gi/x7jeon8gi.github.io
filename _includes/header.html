@@ -1,10 +1,19 @@
+{%- include lang-urls.html -%}
+{%- assign I = site.data.i18n -%}
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a class="site-title" href="{{ base | append: '/' | relative_url }}">{{ I[L].name }}</a>
     <nav class="site-nav" aria-label="Main">
-      {% for item in site.nav %}
-        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% for item in I.nav %}{% assign u = base | append: item.url %}
+        <a href="{{ u | relative_url }}"{% if page.url == u %} class="active" aria-current="page"{% endif %}>{{ item[L] }}</a>
       {% endfor %}
     </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      {% if L == "ko" -%}
+        <a href="{{ url_en | relative_url }}" lang="en" hreflang="en">EN</a><span aria-current="true">한국어</span>
+      {%- else -%}
+        <span aria-current="true">EN</span><a href="{{ url_ko | relative_url }}" lang="ko" hreflang="ko">한국어</a>
+      {%- endif %}
+    </div>
   </div>
 </header>

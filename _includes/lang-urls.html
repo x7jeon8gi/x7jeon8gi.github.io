@@ -1,0 +1,14 @@
+{%- comment -%}
+Sets L (page language), base ("" or "/ko"), url_en and url_ko for the current
+page. English pages live at /path/, Korean pages at /ko/path/.
+{%- endcomment -%}
+{%- assign L = page.lang | default: "en" -%}
+{%- if L == "ko" -%}
+  {%- assign base = "/ko" -%}
+  {%- assign url_ko = page.url -%}
+  {%- assign url_en = page.url | remove_first: "/ko" -%}
+{%- else -%}
+  {%- assign base = "" -%}
+  {%- assign url_en = page.url -%}
+  {%- assign url_ko = "/ko" | append: page.url -%}
+{%- endif -%}

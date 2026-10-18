@@ -11,7 +11,9 @@
 
 :root {
   --serif: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
-  --sans:  'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  --sans:  'Source Sans 3', 'Source Sans Pro', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Helvetica Neue', Arial, sans-serif;
+  /* Korean pages: Latin from Source Sans, Hangul from Noto Sans KR */
+  --sans-ko: 'Source Sans 3', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
   --max-w: 980px;
 
@@ -80,8 +82,7 @@ p, ul, ol { margin: 0 0 1em; }
 .site-header .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px 28px;
+  gap: 8px 24px;
   flex-wrap: wrap;
   min-height: 62px;
   padding-top: 10px;
@@ -97,6 +98,7 @@ p, ul, ol { margin: 0 0 1em; }
 .site-title:hover { color: var(--bar-fg); text-decoration: none; }
 
 .site-nav {
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -125,6 +127,27 @@ p, ul, ol { margin: 0 0 1em; }
   text-decoration-color: var(--bar-hi);
   text-decoration-thickness: 2px;
   text-underline-offset: 7px;
+}
+
+/* language toggle: EN | 한국어, the current language filled */
+.lang-switch {
+  display: flex;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.lang-switch > * { padding: 2px 9px; }
+.lang-switch span[aria-current] { background: var(--bar-fg); color: var(--bar); }
+.lang-switch a { color: var(--bar-soft); }
+.lang-switch a:hover { color: var(--bar-fg); text-decoration: none; }
+
+@media (max-width: 680px) {
+  .site-title   { order: 1; }
+  .lang-switch  { order: 2; margin-left: auto; }
+  .site-nav     { order: 3; margin-left: 0; width: 100%; }
 }
 
 /* --------------------------------------------------------------- banner -- */
@@ -261,6 +284,13 @@ h2.band {
   text-align: center;
 }
 
+.hero h1 .name-alt {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--fg-mute);
+  margin-left: 10px;
+  letter-spacing: 0;
+}
 .hero h1 {
   font-size: 2.3rem;
   font-weight: 700;
@@ -517,3 +547,24 @@ code {
   padding: 0.1em 0.35em;
   border-radius: 2px;
 }
+
+/* --------------------------------------------------------- korean pages -- */
+html[lang="ko"] body {
+  font-family: var(--sans-ko);
+  font-size: 16.5px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+html[lang="ko"] .site-title,
+html[lang="ko"] .counts strong { font-family: var(--sans-ko); margin: 0 1px 0 0; }
+html[lang="ko"] .site-nav      { letter-spacing: 0.04em; font-size: 0.86rem; }
+html[lang="ko"] .banner-title  { letter-spacing: 0; }
+html[lang="ko"] .banner-eyebrow{ letter-spacing: 0.08em; }
+html[lang="ko"] h2.band        { letter-spacing: 0.02em; font-size: 0.98rem; }
+html[lang="ko"] .area h3       { letter-spacing: 0.02em; font-size: 0.84rem; }
+html[lang="ko"] .pub-title,
+html[lang="ko"] .project-title,
+html[lang="ko"] .cv-entry .title { font-weight: 700; }
+html[lang="ko"] .pub-venue em  { font-style: normal; }
+

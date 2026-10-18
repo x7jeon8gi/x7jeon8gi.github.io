@@ -1,0 +1,32 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n[L] -%}
+{%- assign P = site.data.publications -%}
+
+<p class="legend">{{ T.legend }} {{ T.legend_pubs }}</p>
+
+<h2 class="band" id="international">{{ T.h_intl }}</h2>
+<ol class="pub-list">
+  {% assign total = P.international.size %}
+  {% for p in P.international %}
+    {% assign n = total | minus: forloop.index0 %}
+    {% include publication.html pub=p num=n %}
+  {% endfor %}
+</ol>
+
+<h2 class="band" id="domestic">{{ T.h_domestic }}</h2>
+<ol class="pub-list">
+  {% assign total = P.domestic.size %}
+  {% for p in P.domestic %}
+    {% assign n = total | minus: forloop.index0 %}
+    {% include publication.html pub=p num=n %}
+  {% endfor %}
+</ol>
+
+<h2 class="band" id="working-papers">{{ T.h_working }}</h2>
+<ol class="pub-list">
+  {% assign total = P.working_papers.size %}
+  {% for p in P.working_papers %}
+    {% assign n = total | minus: forloop.index0 %}
+    {% include publication.html pub=p num=n %}
+  {% endfor %}
+</ol>

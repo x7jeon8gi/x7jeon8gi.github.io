@@ -52,22 +52,11 @@ sass:
   style: compressed
 
 # =============================================================================
-# Site navigation
+# Site navigation and interface text live in _data/i18n.yml (English and
+# Korean). Korean pages are the files under ko/ with `lang: ko`.
 # =============================================================================
 
-nav:
-  - title: About
-    url:   "/"
-  - title: Research
-    url:   "/research/"
-  - title: Publications
-    url:   "/publications/"
-  - title: Presentations
-    url:   "/presentations/"
-  - title: Projects
-    url:   "/projects/"
-  - title: CV
-    url:   "/cv/"
+lang: en
 
 # =============================================================================
 # Social / external links (rendered in footer)

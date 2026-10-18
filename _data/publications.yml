@@ -21,6 +21,10 @@
 # Presentations (international_talks, domestic_talks) also take
 #   date         : "YYYY.MM"
 #   location     : city, country
+#
+# Korean pages (/ko/) read title_ko, authors_ko, venue_ko, location_ko and
+# note_ko when present and fall back to the English field otherwise.
+# Paper titles stay in their original language.
 # =============================================================================
 
 international:
@@ -38,6 +42,7 @@ international:
       - { label: "Proceedings", url: "https://www.ijcai.org/proceedings/2026/492" }
       - { label: "DOI",         url: "https://doi.org/10.24963/ijcai.2026/492" }
       - { label: "arXiv",       url: "https://arxiv.org/abs/2605.13407" }
+    note_ko: "pp. 4421–4429 · 채택률 13.6% · CORE A*"
 
   - id:          icaif26-harcev
     title:       "HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes"
@@ -48,6 +53,7 @@ international:
     note:        "Accepted, to appear"
     keywords:    ["Realized variance", "Volatility forecasting", "Stochastic differential equations", "Economic regimes", "Zero-shot forecasting", "HAR model"]
     selected:    true
+    note_ko: "게재 예정"
 
   - id:          icaif25-deep-mr
     title:       "Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading"
@@ -62,6 +68,7 @@ international:
     links:
       - { label: "ACM DL", url: "https://dl.acm.org/doi/abs/10.1145/3768292.3770406" }
       - { label: "DOI",    url: "https://doi.org/10.1145/3768292.3770406" }
+    note_ko: "구두발표 · 채택률 15.5%"
 
   - id:          kbs25-factorvqvae
     title:       "FactorVQVAE: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder"
@@ -76,6 +83,7 @@ international:
     url:         "https://doi.org/10.1016/j.knosys.2025.113460"
     links:
       - { label: "DOI", url: "https://doi.org/10.1016/j.knosys.2025.113460" }
+    note_ko: "Article 113460 · IF 7.6 · JCR Q1 (AI/CS 분야 상위 6%)"
 
 domestic:
   - id:          kmsr24-healthy
@@ -85,6 +93,10 @@ domestic:
     venue_short: "KMSR '24"
     year:        2024
     note:        "Outstanding Paper Award (KORMS, 2024)"
+    title_ko:   "기계학습 기반 시군구 건강수명 산정 모형 및 경상북도 데이터를 이용한 실증"
+    authors_ko: ["옥승은", "변준영", "김남형", "송재욱*"]
+    venue_ko:   "경영과학, 41(1), 51–70"
+    note_ko:    "한국경영과학회 우수논문상 (2024)"
 
 working_papers:
   - id:          wp-lexicon
@@ -157,6 +169,9 @@ domestic_talks:
     venue_short: "KAFO '25"
     date:        "2025.12"
     location:    "Seoul, Korea"
+    authors_ko:  ["김남형", "송재욱*"]
+    venue_ko:    "한국파생상품학회 추계학술대회"
+    location_ko: "서울"
 
   - id:          kiie25-vq
     title:       "Vector Quantization for Efficient Financial Representation Learning"
@@ -165,6 +180,9 @@ domestic_talks:
     venue_short: "KIIE '25"
     date:        "2025.06"
     location:    "Jeju, Korea"
+    authors_ko:  ["김남형", "김주환", "송재욱*"]
+    venue_ko:    "대한산업공학회·한국경영과학회·한국시뮬레이션학회 춘계공동학술대회"
+    location_ko: "제주"
 
   - id:          kfa25-factorvqvae
     title:       "FactorVQVAE: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder"
@@ -173,6 +191,9 @@ domestic_talks:
     venue_short: "KFA '25"
     date:        "2025.05"
     location:    "Seoul, Korea"
+    authors_ko:  ["김남형", "옥승은", "송재욱*"]
+    venue_ko:    "재무금융 공동학술대회"
+    location_ko: "서울"
 
   - id:          kiie24-pairs
     title:       "Pairs Trading via Contrastive Learning"
@@ -181,6 +202,9 @@ domestic_talks:
     venue_short: "KIIE '24"
     date:        "2024.05"
     location:    "Yeosu, Korea"
+    authors_ko:  ["김주환", "김남형", "옥승은", "송재욱*"]
+    venue_ko:    "한국경영과학회·대한산업공학회·한국시뮬레이션학회 춘계공동학술대회"
+    location_ko: "여수"
 
   - id:          kiie23-vqgan
     title:       "Data Augmentation in Embedding Space for Natural Language Processing based on the Vector Quantized Generative Adversarial Networks"
@@ -189,6 +213,9 @@ domestic_talks:
     venue_short: "KIIE '23"
     date:        "2023.06"
     location:    "Jeju, Korea"
+    authors_ko:  ["박민호", "김남형", "변준영", "송재욱*"]
+    venue_ko:    "대한산업공학회·한국경영과학회 춘계공동학술대회"
+    location_ko: "제주"
 
   - id:          kiie22-plm
     title:       "Can a Pre-trained Language Model Be a Superior Counsel in Equity Research Report-Driven Investment Strategy?"
@@ -197,3 +224,6 @@ domestic_talks:
     venue_short: "KIIE '22"
     date:        "2022.06"
     location:    "Jeju, Korea"
+    authors_ko:  ["김남형", "최영훈", "박민호", "송재욱*"]
+    venue_ko:    "한국경영과학회·대한산업공학회 춘계공동학술대회"
+    location_ko: "제주"

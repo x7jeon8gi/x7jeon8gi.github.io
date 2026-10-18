@@ -1,0 +1,28 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n[L] -%}
+{%- assign sfx = "_" | append: L -%}
+{%- assign J = site.data.projects -%}
+{%- assign k_title = "title" | append: sfx -%}
+{%- assign k_sponsor = "sponsor" | append: sfx -%}
+{%- assign k_desc = "desc" | append: sfx -%}
+{%- assign k_role = "role" | append: sfx -%}
+{%- assign groups = "ongoing|h_ongoing,grants|h_grants,industry|h_industry" | split: "," -%}
+
+{% for g in groups %}
+  {% assign key = g | split: "|" | first %}
+  {% assign hkey = g | split: "|" | last %}
+  <h2 class="band" id="{{ key }}">{{ T[hkey] }}</h2>
+  <div class="projects">
+    {% for e in J[key] %}
+    {% if L == "ko" %}{% assign prog = e.program_ko %}{% else %}{% assign prog = e.program %}{% endif %}
+    {% assign role = e[k_role] | default: e.role %}
+    <article class="project" id="{{ e.id }}">
+      <p class="project-sponsor">{{ e[k_sponsor] | default: e.sponsor }}{% if prog %} · {{ prog }}{% endif %}</p>
+      <h3 class="project-title">{{ e[k_title] | default: e.title }}</h3>
+      {% assign desc = e[k_desc] | default: e.desc %}
+      {% if desc %}<p class="project-desc">{{ desc }}</p>{% endif %}
+      <p class="project-meta">{{ e.period | replace: "Present", T.present }}{% if role %} · {{ role }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}

@@ -8,6 +8,8 @@
 # Fields: id, title, sponsor, program (optional), period, role (optional),
 #         desc (optional, one or two sentences)
 # When a project ends, change its period and move it to grants or industry.
+# Korean pages read title_ko, sponsor_ko, program_ko, role_ko and desc_ko; a
+# missing _ko field falls back to English (program is hidden on /ko/ without one).
 # =============================================================================
 
 ongoing:
@@ -18,6 +20,11 @@ ongoing:
     period:  "2026.07 – Present"
     role:    "Project Lead"
     desc:    "Formulates the hedge-ratio decision for structured products as an optimal control problem, with development carried out by research teams at Sungkyunkwan University and Hanyang University."
+    title_ko:   "신경망 기반 최적제어를 활용한 ELS 헤징 의사결정 시스템 개발"
+    sponsor_ko: "서울경제진흥원(SBA)"
+    program_ko: "핀테크 기술사업화 지원사업"
+    role_ko:    "과제 총괄"
+    desc_ko:    "구조화상품의 헤지 비중 결정을 최적제어 문제로 정식화하는 과제. 개발은 성균관대학교와 한양대학교 연구팀이 수행하고, 과제 총괄과 연구 방향 설정, 기관 간 조율을 담당."
 
   - id:      tips26-structured
     title:   "Investor-Tailored Structured Derivatives via Time-Series Generation"
@@ -25,6 +32,10 @@ ongoing:
     period:  "2026.04 – Present"
     role:    "Technical Lead"
     desc:    "Builds a recommendation and selection procedure for investor-tailored ELS with decision-focused learning (SPO+ surrogate loss), a capital-adjusted objective, and simulation-based screening of maturity exposure."
+    title_ko:   "시계열 생성 기반 투자자 맞춤 구조화 파생상품 개발"
+    sponsor_ko: "팁스(TIPS) R&amp;D"
+    role_ko:    "기술 총괄"
+    desc_ko:    "투자자 맞춤 구조화상품(ELS) 추천 및 선택 체계를 구축하는 과제. 최종 선택의 손실을 직접 줄이는 의사결정 중심 학습을 적용하고 SPO+ 대리손실로 추천 모형을 학습해 예측 단계와 선택 단계의 목적을 일치시킴. 자본 점유를 보정한 목적함수와 시뮬레이션 기반 만기 노출 선별을 결합해 운용 제약을 감안한 추천 절차를 정립."
 
 grants:
   - id:      nrf25-robust-vq
@@ -32,6 +43,7 @@ grants:
     sponsor: "National Research Foundation of Korea"
     program: "Research Grant"
     period:  "2025.09 – 2026.08"
+    sponsor_ko: "한국연구재단"
 
   - id:      nrf23-vqvae-portfolio
     title:   "Applications of Artificial Intelligence in Portfolio using Vector Quantization-Variational Autoencoder"
@@ -40,6 +52,10 @@ grants:
     period:  "2023.06 – 2025.06"
     role:    "Researcher"
     desc:    "Discrete latent factor models based on vector quantization; results published in Knowledge-Based Systems and at IJCAI-ECAI 2026."
+    title_ko:   "벡터 양자화 변분 오토인코더를 활용한 포트폴리오 분야 인공지능 응용연구"
+    sponsor_ko: "한국연구재단"
+    role_ko:    "연구원"
+    desc_ko:    "벡터 양자화 기반 이산 잠재 팩터 모형 연구를 수행하고 성과를 Knowledge-Based Systems와 IJCAI-ECAI 2026 논문으로 발표."
 
   - id:      nrf21-xai-loan
     title:   "Loan Eligibility Classification Model using Explainable Artificial Intelligence"
@@ -47,12 +63,18 @@ grants:
     program: "Research Grant"
     period:  "2021.06 – 2023.02"
     role:    "Research Assistant"
+    title_ko:   "설명 가능한 인공지능을 활용한 대출자격 분류모형 연구"
+    sponsor_ko: "한국연구재단"
+    role_ko:    "연구원"
 
   - id:      bk21-four
     title:   "An Education and Research Team for Sharing and Cooperation based Smart Systems"
     sponsor: "National Research Foundation of Korea"
     program: "BK21 Four"
     period:  "2021.03 – 2025.07"
+    title_ko:   "공유와 협력에 기반한 스마트 시스템 교육연구팀"
+    sponsor_ko: "한국연구재단"
+    program_ko: "4단계 BK21"
 
 industry:
   - id:      kftc25
@@ -61,6 +83,10 @@ industry:
     period:  "2025.03 – 2025.07"
     role:    "Model design and implementation"
     desc:    "Defined units of analysis for financial activity data and grouped activity patterns by combining contrastive embeddings with unsupervised clustering."
+    title_ko:   "AI 기술을 활용한 금융 활동 분석"
+    sponsor_ko: "금융결제원(KFTC)"
+    role_ko:    "연구원, 모형 설계 및 구현"
+    desc_ko:    "금융 활동 데이터의 분석 단위를 정의하고 대조학습 임베딩과 비지도 군집을 결합해 활동 패턴을 유형화. 군집별 특성을 정성적, 정량적으로 해석해 보고서로 정리."
 
   - id:      fndatalab24-pension
     title:   "Machine Learning-Based Model Portfolios for Retirement Pension Management"
@@ -68,6 +94,9 @@ industry:
     period:  "2024.03 – 2024.06"
     role:    "Researcher"
     desc:    "Asset embeddings from self-supervised learning, turned into allocations for each investor risk propensity and evaluated by backtest."
+    title_ko: "퇴직연금 관리를 위한 기계학습 기반 모델 포트폴리오"
+    role_ko:  "연구원"
+    desc_ko:  "자기지도 학습으로 자산 임베딩을 구성하고 가입자의 위험 성향별 배분을 산출하는 체계를 설계. 백테스트 기반 성과 평가 담당."
 
   - id:      riskx23-exotic
     title:   "Pricing of Exotic Options and Structured Products via Machine Learning"
@@ -75,6 +104,9 @@ industry:
     period:  "2023.10 – 2024.01"
     role:    "Researcher"
     desc:    "Deep hedging and neural-operator pricing models for ELS and other structured products, reducing the computational cost of conventional numerical methods."
+    title_ko: "기계학습을 통한 이색 옵션 및 구조화상품 프라이싱"
+    role_ko:  "연구원"
+    desc_ko:  "ELS를 포함한 구조화상품의 페이오프 구조를 정리하고 딥헤징 프레임워크와 Neural Operator 기반 가격산출 모형을 구현해 기존 수치해법의 계산 부담을 완화."
 
   - id:      fndatalab23-risk
     title:   "Machine Learning-driven Risk Rating Assessment of Global Investment Assets"
@@ -82,6 +114,9 @@ industry:
     period:  "2023.05 – 2023.08"
     role:    "Model design and implementation"
     desc:    "Contrastive clustering of assets with similar risk characteristics, mapped to risk grades and documented in a validation report."
+    title_ko: "기계학습 기반 글로벌 투자자산 위험등급 산정"
+    role_ko:  "연구원, 모형 설계 및 구현"
+    desc_ko:  "투자자산의 시계열 및 재무 특성을 정제하고 대조 군집화로 위험 특성이 유사한 자산을 묶은 뒤, 군집을 위험등급으로 사상하는 평가 모형을 설계, 구현하고 검증 리포트를 작성."
 
   - id:      ioisoft22-sales
     title:   "Sales Analytics based on Graph Neural Network and Natural Language Processing"
@@ -89,6 +124,9 @@ industry:
     period:  "2022.11"
     role:    "Researcher"
     desc:    "B2B transactions modeled as a graph, combining graph neural network representations with text embeddings of the related documents."
+    title_ko: "그래프 신경망과 자연어 처리 기반 세일즈 애널리틱스"
+    role_ko:  "연구원"
+    desc_ko:  "B2B 거래 데이터를 그래프로 구성하고 그래프 신경망 표현과 텍스트 임베딩을 결합해, 거래 관계와 문서 정보를 함께 활용하는 분석 모형을 설계."
 
   - id:      hyperlounge21
     title:   "Business Analytics for Small and Medium-sized Enterprises"
@@ -96,9 +134,14 @@ industry:
     period:  "2021.10 – 2021.11"
     role:    "Researcher"
     desc:    "Organized the management data of small and medium-sized enterprises into an analyzable form and designed an analytics framework for decision-making."
+    title_ko:   "중소기업 맞춤형 비즈니스 애널리틱스 개발"
+    sponsor_ko: "하이퍼라운지"
+    role_ko:    "연구원"
+    desc_ko:    "중소기업의 경영 데이터를 분석 가능한 형태로 정리하고 의사결정에 활용할 분석 체계를 설계."
 
   - id:      kofpi21-forest
     title:   "Business Effectiveness Analysis on Fine Dust Reduction Forest Project"
     sponsor: "Korea Forestry Promotion Institute (KOFPI)"
     program: "Research Grant"
     period:  "2021.05 – 2021.10"
+    sponsor_ko: "한국임업진흥원(KOFPI)"

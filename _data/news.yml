@@ -1,32 +1,43 @@
-# Most-recent first. Each item: { date: "YYYY-MM", html: "..." }
+# Most-recent first. Each item: { date: "YYYY-MM", html: "...", html_ko: "..." }
+# html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-10"
   html: "Our paper *HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* has been **accepted to ICAIF '26**."
+  html_ko: "*HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* 논문이 **ICAIF '26**에 채택되었습니다."
 
 - date: "2026-08"
   html: "Presented our IJCAI-ECAI 2026 paper on vector-quantized discrete latent factors in **Bremen, Germany**."
+  html_ko: "벡터 양자화 기반 이산 잠재 팩터에 관한 IJCAI-ECAI 2026 논문을 **독일 브레멘**에서 발표했습니다."
 
 - date: "2026-07"
   html: "Presented the same work at the **Asian Quantitative Finance Conference (AQFC 2026)** in Pohang."
+  html_ko: "같은 연구를 포항에서 열린 **AQFC 2026**(Asian Quantitative Finance Conference)에서 발표했습니다."
 
 - date: "2026-05"
   html: "Our paper *Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* has been **accepted to IJCAI-ECAI 2026**."
+  html_ko: "*Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* 논문이 **IJCAI-ECAI 2026**에 채택되었습니다."
 
 - date: "2026-03"
   html: "Appointed **Head of Research** at **Risk X tech Lab**."
+  html_ko: "**Risk X tech Lab** 연구소장을 맡게 되었습니다."
 
 - date: "2026-02"
   html: "Successfully defended my Ph.D. dissertation, *Representation Learning in Financial Markets for Portfolio Management*, at Hanyang University."
+  html_ko: "한양대학교에서 박사 학위논문 *Representation Learning in Financial Markets for Portfolio Management* 심사를 통과했습니다."
 
 - date: "2025-11"
   html: "Our paper *Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* was accepted to **ICAIF '25** as an **oral presentation** (acceptance rate 15.5%)."
+  html_ko: "*Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* 논문이 **ICAIF '25** 구두발표 논문으로 채택되었습니다(채택률 15.5%)."
 
 - date: "2025-07"
   html: "Joined **Risk X tech Lab** as a Quantitative AI Researcher."
+  html_ko: "**Risk X tech Lab**에 Quantitative AI Researcher로 합류했습니다."
 
 - date: "2025-04"
   html: "*FactorVQVAE* has been published in **Knowledge-Based Systems**."
+  html_ko: "*FactorVQVAE* 논문이 **Knowledge-Based Systems**에 게재되었습니다."
 
 - date: "2024-11"
   html: "Received the **Outstanding Paper Award** from *Korean Management Science Review* (KORMS, 2024)."
+  html_ko: "공저 논문으로 **한국경영과학회 우수논문상**을 받았습니다."
 

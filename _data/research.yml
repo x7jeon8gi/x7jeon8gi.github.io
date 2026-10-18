@@ -2,6 +2,7 @@
 # Research areas, rendered on /research/.
 #   papers   : ids from publications.yml (papers, working papers or talks)
 #   projects : ids from projects.yml
+#   intro_ko, title_ko, desc_ko : Korean text for /ko/research/
 # =============================================================================
 
 intro: >
@@ -9,9 +10,15 @@ intro: >
   and applies them to portfolio management, generative modeling, and derivatives.
   The work below is grouped into three connected lines.
 
+intro_ko: >
+  금융 시장의 표현학습 방법론을 연구하고 이를 포트폴리오 관리와 생성 모형,
+  파생상품에 적용하고 있습니다. 연구는 서로 맞물린 세 갈래로 이어집니다.
+
 areas:
   - id:    discrete-factors
     title: "Discrete Latent Factor Models"
+    title_ko: "이산 잠재 팩터 모형"
+    desc_ko: "벡터 양자화로 이산 잠재 팩터를 학습해 횡단면 주식 수익률을 예측하고, 금융 사전지식과 결합해 포트폴리오를 구성하며, 팩터 코드북을 언어와 정렬해 각 팩터의 의미를 해석하는 연구."
     desc: >
       Learning discrete latent factors with vector quantization for
       cross-sectional stock return prediction, fusing them with financial priors
@@ -22,6 +29,8 @@ areas:
 
   - id:    physics-informed
     title: "Physics-Informed Learning for Trading and Volatility"
+    title_ko: "물리 정보 기반 트레이딩·변동성 모형"
+    desc_ko: "평균회귀를 비롯한 확률과정의 구조를 신경망에 직접 반영하는 연구. 페어 트레이딩을 위한 대조학습과 학습 기간에 관측되지 않은 경제 국면에서도 성능이 유지되는 변동성 예측을 다룸."
     desc: >
       Building the structure of stochastic processes, mean reversion in
       particular, into neural models: contrastive learning for pairs trading and
@@ -32,6 +41,8 @@ areas:
 
   - id:    deep-hedging
     title: "Deep Hedging and Structured Products"
+    title_ko: "딥헤징과 구조화상품"
+    desc_ko: "주가연계증권(ELS)을 비롯한 구조화상품의 신경망 기반 헤징과 가격 산출을 강건성과 해석 가능성의 관점에서 다루는 연구. 현재 Risk X tech Lab의 정부지원 연구개발과제로 이어지고 있음."
     desc: >
       Neural hedging and pricing of equity-linked securities and other
       structured products, with attention to robustness and interpretability,

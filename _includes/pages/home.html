@@ -1,0 +1,126 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n[L] -%}
+{%- assign sfx = "_" | append: L -%}
+{%- if L == "ko" -%}{%- assign base = "/ko" -%}{%- else -%}{%- assign base = "" -%}{%- endif -%}
+{%- assign P = site.data.publications -%}
+<div class="wrap home">
+
+<section class="hero">
+  <div class="avatar-wrap">
+    {% comment %}Profile photo at assets/img/prof_pic.jpg; a plain box shows if it is missing.{% endcomment %}
+    <img class="avatar" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Namhyoung Kim"
+         onerror="this.outerHTML='<div class=&quot;avatar-placeholder&quot;>assets/img/<br>prof_pic.jpg</div>'">
+  </div>
+
+  {% if L == "ko" %}
+  <h1>김남형 <span class="name-alt">Namhyoung Kim</span></h1>
+  <p class="role">
+    <a href="https://riskx.tech" target="_blank" rel="noopener">Risk X tech Lab</a> 연구소장<br>
+    Ph.D. in Industrial Engineering, <a href="https://www.hanyang.ac.kr/" target="_blank" rel="noopener">한양대학교</a>
+  </p>
+  {% else %}
+  <h1>Namhyoung Kim</h1>
+  <p class="role">
+    Head of Research, <a href="https://riskx.tech" target="_blank" rel="noopener">Risk X tech Lab</a><br>
+    Ph.D. in Industrial Engineering, <a href="https://www.hanyang.ac.kr/" target="_blank" rel="noopener">Hanyang University</a>
+  </p>
+  {% endif %}
+
+  <p class="contact-line">
+    <a href="mailto:ai.namhyoung@gmail.com">ai.namhyoung@gmail.com</a>
+    <a href="https://github.com/x7jeon8gi" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=YbxuDSIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/ai-namhyoung/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">CV (PDF)</a>
+  </p>
+</section>
+
+<div class="bio">
+{% if L == "ko" %}
+<p>
+  <a href="https://riskx.tech" target="_blank" rel="noopener">Risk X tech Lab</a>에서
+  연구소장으로 연구조직을 맡고 있습니다. 2026년 한양대학교에서 산업공학 박사 학위를 받았으며,
+  재학 중에는 <a href="https://finx.hanyang.ac.kr/members/director" target="_blank" rel="noopener">송재욱 교수</a>의 지도 아래
+  <a href="https://finx.hanyang.ac.kr" target="_blank" rel="noopener">Financial Innovation &amp; Decision Analytics (FINX) Lab</a>에서 연구했습니다.
+</p>
+
+<p>
+  <strong>머신러닝과 계량금융</strong>이 만나는 지점에서 <strong>금융 시장의 표현학습</strong>을 연구하며,
+  그 결과를 <strong>포트폴리오 관리와 생성 모형, 파생상품 가치평가</strong>에 적용하고 있습니다.
+  특히 벡터 양자화 기반 잠재 팩터 모형과 물리 정보 기반 뉴럴 오퍼레이터, 언어와 정렬된 표현처럼
+  금융 사전지식과 최신 딥러닝 구조를 잇는 방법에 관심이 있습니다.
+</p>
+
+<p>
+  벡터 양자화 기반 이산 잠재 팩터 연구는 <strong>IJCAI-ECAI&nbsp;2026</strong>에 게재되었고,
+  경제 국면 변화에 강건한 변동성 예측을 다룬 공저 논문은 <strong>ICAIF&nbsp;2026</strong>에 채택되었습니다.
+  연구에 관한 논의는 언제든 환영합니다.
+</p>
+{% else %}
+<p>
+  I am Head of Research at
+  <a href="https://riskx.tech" target="_blank" rel="noopener">Risk X tech Lab</a>,
+  where I lead the research team, and received my Ph.D. in Industrial Engineering
+  from Hanyang University in 2026, advised by
+  <a href="https://finx.hanyang.ac.kr/members/director" target="_blank" rel="noopener">Prof. Jae Wook Song</a>
+  at the <a href="https://finx.hanyang.ac.kr" target="_blank" rel="noopener">Financial Innovation &amp; Decision Analytics (FINX) Lab</a>.
+</p>
+
+<p>
+  My research lies at the intersection of <strong>machine learning and quantitative
+  finance</strong>, focusing on <strong>representation learning for financial markets</strong>
+  with applications to <strong>portfolio management, generative modeling, and derivative
+  pricing</strong>. I am particularly interested in vector-quantized latent factor models,
+  physics-informed neural operators, and language-aligned representations that bridge
+  fundamental financial priors with modern deep architectures.
+</p>
+
+<p>
+  My recent work on <em>vector-quantized discrete latent factors</em> appeared at
+  <strong>IJCAI-ECAI&nbsp;2026</strong>, and a co-authored paper on volatility
+  forecasting under unseen economic regimes has been <strong>accepted to
+  ICAIF&nbsp;2026</strong>. I am always open to research discussions, so feel free
+  to reach out.
+</p>
+{% endif %}
+</div>
+
+{% assign n_talks = P.international_talks.size | plus: P.domestic_talks.size %}
+{% assign u_pubs = base | append: '/publications/' | relative_url %}
+{% assign u_wp = base | append: '/publications/#working-papers' | relative_url %}
+{% assign u_talks = base | append: '/presentations/' | relative_url %}
+<ul class="counts">
+  {% if L == "ko" %}
+  <li><a href="{{ u_pubs }}">국제 학술지·학회 논문 <strong>{{ P.international.size }}</strong>편</a></li>
+  <li><a href="{{ u_wp }}">워킹페이퍼 <strong>{{ P.working_papers.size }}</strong>편</a></li>
+  <li><a href="{{ u_talks }}">학회 발표 <strong>{{ n_talks }}</strong>건</a></li>
+  {% else %}
+  <li><a href="{{ u_pubs }}"><strong>{{ P.international.size }}</strong> international journal and conference papers</a></li>
+  <li><a href="{{ u_wp }}"><strong>{{ P.working_papers.size }}</strong> working papers</a></li>
+  <li><a href="{{ u_talks }}"><strong>{{ n_talks }}</strong> conference presentations</a></li>
+  {% endif %}
+</ul>
+
+<h2 class="band" id="news">{{ T.news }}</h2>
+<ul class="news-list">
+  {% assign k_html = "html" | append: sfx %}
+  {% for n in site.data.news %}
+    {% assign text = n[k_html] | default: n.html %}
+    <li>
+      <span class="date">{{ n.date }}</span>
+      <span class="item">{{ text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2 class="band" id="selected-papers">{{ T.selected }}</h2>
+<ul class="pub-list">
+  {% for p in P.international %}
+    {% if p.selected %}
+      {% include publication.html pub=p compact=true %}
+    {% endif %}
+  {% endfor %}
+</ul>
+<p class="see-all"><a href="{{ u_pubs }}">{{ T.all_pubs }}</a></p>
+
+</div>

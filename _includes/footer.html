@@ -1,8 +1,10 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n[L] -%}
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-id">
-      <strong>{{ site.author }}</strong>
-      <span>Head of Research, Risk X tech Lab</span>
+      <strong>{{ T.name }}</strong>
+      <span>{{ T.role }}</span>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
     <div class="footer-links">
@@ -10,6 +12,6 @@
         <a href="{{ s.url | relative_url }}"{% unless s.icon == "pdf" %} target="_blank" rel="noopener"{% endunless %}>{{ s.name }}</a>
       {% endunless %}{% endfor %}
     </div>
-    <p class="copy">© {{ "now" | date: "%Y" }} {{ site.author }}. Built with Jekyll and hosted on GitHub Pages.</p>
+    <p class="copy">© {{ "now" | date: "%Y" }} {{ T.name }}. {{ T.copy }}</p>
   </div>
 </footer>

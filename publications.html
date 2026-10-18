@@ -1,40 +1,9 @@
 ---
 layout: page
+lang: en
 title: Publications
 eyebrow: Research
 permalink: /publications/
 ---
 
-{% assign P = site.data.publications %}
-
-<p class="legend">
-  <strong>Bold</strong>: author of this site &nbsp;/&nbsp; *: corresponding author.
-  Citation counts are on <a href="https://scholar.google.com/citations?user=YbxuDSIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
-</p>
-
-<h2 class="band" id="international">International Journals &amp; Conference Proceedings</h2>
-<ol class="pub-list">
-  {% assign total = P.international.size %}
-  {% for p in P.international %}
-    {% assign n = total | minus: forloop.index0 %}
-    {% include publication.html pub=p num=n %}
-  {% endfor %}
-</ol>
-
-<h2 class="band" id="domestic">Domestic Journals</h2>
-<ol class="pub-list">
-  {% assign total = P.domestic.size %}
-  {% for p in P.domestic %}
-    {% assign n = total | minus: forloop.index0 %}
-    {% include publication.html pub=p num=n %}
-  {% endfor %}
-</ol>
-
-<h2 class="band" id="working-papers">Working Papers</h2>
-<ol class="pub-list">
-  {% assign total = P.working_papers.size %}
-  {% for p in P.working_papers %}
-    {% assign n = total | minus: forloop.index0 %}
-    {% include publication.html pub=p num=n %}
-  {% endfor %}
-</ol>
+{% include pages/publications.html %}

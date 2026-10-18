@@ -1,32 +1,9 @@
 ---
 layout: page
+lang: en
 title: Presentations
 eyebrow: Research
 permalink: /presentations/
 ---
 
-{% assign P = site.data.publications %}
-
-<p class="legend">
-  <strong>Bold</strong>: author of this site &nbsp;/&nbsp; *: corresponding author.
-  Main-conference presentations of accepted papers are listed under
-  <a href="{{ '/publications/' | relative_url }}">Publications</a>.
-</p>
-
-<h2 class="band" id="international">International Conferences</h2>
-<ol class="pub-list">
-  {% assign total = P.international_talks.size %}
-  {% for p in P.international_talks %}
-    {% assign n = total | minus: forloop.index0 %}
-    {% include publication.html pub=p num=n %}
-  {% endfor %}
-</ol>
-
-<h2 class="band" id="domestic">Domestic Conferences</h2>
-<ol class="pub-list">
-  {% assign total = P.domestic_talks.size %}
-  {% for p in P.domestic_talks %}
-    {% assign n = total | minus: forloop.index0 %}
-    {% include publication.html pub=p num=n %}
-  {% endfor %}
-</ol>
+{% include pages/presentations.html %}
