@@ -7,9 +7,9 @@
 
 <section class="hero">
   <div class="avatar-wrap">
-    {% comment %}Two photos crossfade every few seconds (assets/img/prof_pic_formal.jpg first, then prof_pic.jpg).{% endcomment %}
-    <img class="avatar" src="{{ '/assets/img/prof_pic_formal.jpg' | relative_url }}" alt="Namhyoung Kim">
-    <img class="avatar avatar-alt" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="" aria-hidden="true">
+    {% comment %}Two photos crossfade every 2.5 s (assets/img/prof_pic.jpg first, then prof_pic_formal.jpg).{% endcomment %}
+    <img class="avatar" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Namhyoung Kim">
+    <img class="avatar avatar-alt" src="{{ '/assets/img/prof_pic_formal.jpg' | relative_url }}" alt="" aria-hidden="true">
   </div>
 
   {% if L == "ko" %}

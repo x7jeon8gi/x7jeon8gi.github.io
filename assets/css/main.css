@@ -357,10 +357,10 @@ h2.band {
   .banner-title { font-size: 1.7rem; }
 }
 
-/* the second photo fades in and out over the first: about 4 s each */
+/* the second photo fades in and out over the first: 2.5 s each */
 .avatar-wrap img.avatar-alt {
   opacity: 0;
-  animation: avatar-swap 10s ease-in-out infinite;
+  animation: avatar-swap 5s ease-in-out infinite;
 }
 @keyframes avatar-swap {
   0%, 40%  { opacity: 0; }
