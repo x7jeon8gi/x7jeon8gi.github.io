@@ -8,7 +8,8 @@
 #   id           : unique slug, also the anchor (#id) other pages link to
 #   title        : paper title
 #   authors      : list; the entry containing "Namhyoung" is bolded,
-#                  a trailing "*" marks the corresponding author
+#                  a trailing "*" marks the corresponding author,
+#                  a trailing "†" marks equal contribution
 #   venue        : full venue name (italic on the site)
 #   venue_short  : short label used on the home and research pages
 #   year         : 4-digit year
@@ -108,7 +109,7 @@ working_papers:
 
   - id:          wp-tagdro
     title:       "Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking"
-    authors:     ["Jiwon Park", "Namhyoung Kim", "Seungwon Shin", "Jae Wook Song*"]
+    authors:     ["Jiwon Park†", "Namhyoung Kim†", "Seungwon Shin", "Jae Wook Song*"]
     venue:       "IAFM '26: Workshop on Interpretability and Alignment of Financial Models, ACM ICAIF 2026"
     venue_short: "IAFM '26"
     note:        "Under review"

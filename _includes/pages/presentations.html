@@ -4,7 +4,7 @@
 {%- assign P = site.data.publications -%}
 {%- assign u_pubs = base | append: '/publications/' | relative_url -%}
 
-<p class="legend">{{ T.legend }} {{ T.legend_talks | replace: "PUBS_URL", u_pubs }}</p>
+<p class="legend">{{ T.legend }}. {{ T.legend_talks | replace: "PUBS_URL", u_pubs }}</p>
 
 <h2 class="band" id="international">{{ T.h_talk_intl }}</h2>
 <ol class="pub-list">
