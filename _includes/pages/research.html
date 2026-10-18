@@ -57,5 +57,15 @@
     </ul>
     {% endif %}
   </div>
+
+  {% if area.figure %}
+  {% assign k_cap = "caption" | append: sfx %}
+  <figure class="area-fig">
+    <a href="{{ area.figure.src | relative_url }}" target="_blank" rel="noopener">
+      <img src="{{ area.figure.src | relative_url }}" alt="{{ area.figure.alt }}" loading="lazy">
+    </a>
+    <figcaption>{{ area.figure[k_cap] | default: area.figure.caption }}</figcaption>
+  </figure>
+  {% endif %}
 </section>
 {% endfor %}

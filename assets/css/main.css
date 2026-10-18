@@ -553,8 +553,31 @@ button.avatar-wrap:focus-visible { outline: 2px solid var(--accent); outline-off
 .related a { color: var(--fg); }
 .related a:hover { color: var(--accent); }
 
+/* one figure per area, cropped from the paper, spanning both columns */
+.area-fig { grid-column: 1 / -1; margin: 4px 0 0; }
+.area-fig a { display: block; max-width: 860px; }
+.area-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.area-fig figcaption {
+  max-width: 860px;
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--fg-mute);
+}
+
 @media (max-width: 760px) {
   .area { grid-template-columns: 1fr; gap: 16px; }
+  .area-fig img { padding: 6px; }
 }
 
 /* ------------------------------------------------------------- projects -- */
