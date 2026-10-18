@@ -459,6 +459,46 @@ button.avatar-wrap:focus-visible { outline: 2px solid var(--accent); outline-off
   color: var(--fg-soft);
 }
 .pub-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.pub-body { min-width: 0; }
+
+/* BibTeX: a chip like the links above, opening a small code box with a copy button */
+.bib-toggle, .bib-copy {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: none;
+  color: var(--fg-soft);
+  cursor: pointer;
+}
+.bib-toggle:hover, .bib-copy:hover { border-color: var(--accent); color: var(--accent); }
+.bib-toggle[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
+.bib {
+  position: relative;
+  margin-top: 8px;
+}
+.bib pre {
+  margin: 0;
+  padding: 10px 12px;
+  padding-right: 72px;
+  background: var(--band);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+}
+.bib .bib-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--bg);
+}
 
 .pub:target { background: var(--band); box-shadow: 0 0 0 10px var(--band); }
 

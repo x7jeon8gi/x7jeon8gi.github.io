@@ -1,0 +1,33 @@
+<script>
+  /* BibTeX: the button under a paper opens its entry; Copy puts it on the clipboard. */
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('.bib-toggle') : null;
+    if (t) {
+      var box = t.closest('.pub-body').querySelector('.bib');
+      box.hidden = !box.hidden;
+      t.setAttribute('aria-expanded', String(!box.hidden));
+      return;
+    }
+    var c = e.target.closest ? e.target.closest('.bib-copy') : null;
+    if (!c) return;
+    var pre = c.parentNode.querySelector('pre');
+    function done() {
+      var label = c.textContent;
+      c.textContent = c.getAttribute('data-done');
+      setTimeout(function () { c.textContent = label; }, 1500);
+    }
+    function fallback() {
+      var r = document.createRange();
+      r.selectNodeContents(pre);
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+      try { if (document.execCommand('copy')) done(); } catch (err) {}
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(pre.textContent).then(done, fallback);
+    } else {
+      fallback();
+    }
+  });
+</script>

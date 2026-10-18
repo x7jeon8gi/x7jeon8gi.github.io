@@ -38,8 +38,18 @@ note_ko) are used when present.
     <div class="pub-tags">{% for k in p.keywords %}<span>#{{ k }}</span>{% endfor %}</div>
     {%- endif -%}
     {%- endunless -%}
-    {%- if p.links %}
-    <div class="pub-links">{% for l in p.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}</div>
+    {%- if p.links or p.bibtex %}
+    <div class="pub-links">
+      {%- for l in p.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor -%}
+      {%- if p.bibtex %}<button type="button" class="bib-toggle" aria-expanded="false">BibTeX</button>{% endif -%}
+    </div>
+    {%- endif %}
+    {%- if p.bibtex %}
+    {%- assign T = site.data.i18n[L] %}
+    <div class="bib" hidden>
+      <pre>{{ p.bibtex | strip | escape }}</pre>
+      <button type="button" class="bib-copy" data-done="{{ T.bib_copied }}">{{ T.bib_copy }}</button>
+    </div>
     {%- endif %}
   </div>
 </li>

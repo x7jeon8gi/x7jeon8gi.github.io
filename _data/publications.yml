@@ -18,6 +18,9 @@
 #   selected     : true shows the paper under "Selected Publications" on home
 #   url          : link the title points to
 #   links        : optional extra links [{label: "PDF", url: "..."}]
+#   bibtex       : optional BibTeX entry (block scalar, "bibtex: |"); shows a
+#                  BibTeX button with a copy button. Entries with a DOI were
+#                  taken from Crossref (api.crossref.org/works/<doi>/transform/application/x-bibtex)
 #
 # Presentations (international_talks, domestic_talks) also take
 #   date         : "YYYY.MM"
@@ -44,6 +47,16 @@ international:
       - { label: "DOI",         url: "https://doi.org/10.24963/ijcai.2026/492" }
       - { label: "arXiv",       url: "https://arxiv.org/abs/2605.13407" }
     note_ko: "pp. 4421–4429 · 채택률 13.6% · CORE A*"
+    bibtex: |
+      @inproceedings{kim2026vector,
+        title     = {Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction},
+        author    = {Kim, Namhyoung and Song, Jae Wook},
+        booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence, {IJCAI-26}},
+        pages     = {4421--4429},
+        year      = {2026},
+        publisher = {International Joint Conferences on Artificial Intelligence Organization},
+        doi       = {10.24963/ijcai.2026/492}
+      }
 
   - id:          icaif26-harcev
     title:       "HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift"
@@ -55,6 +68,16 @@ international:
     keywords:    ["Realized variance", "Volatility forecasting", "Stochastic differential equations", "Economic regimes", "Zero-shot forecasting", "HAR model"]
     selected:    true
     note_ko: "게재 예정"
+    bibtex: |
+      @inproceedings{na2026harcev,
+        title     = {{HAR-CEV}: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift},
+        author    = {Na, Yosep and Kim, Namhyoung and Jun, Joon Ho and Song, Jae Wook},
+        booktitle = {Proceedings of the 7th ACM International Conference on AI in Finance},
+        series    = {ICAIF '26},
+        year      = {2026},
+        publisher = {ACM},
+        note      = {To appear}
+      }
 
   - id:          icaif25-deep-mr
     title:       "Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading"
@@ -62,14 +85,25 @@ international:
     venue:       "Proceedings of the 6th ACM International Conference on AI in Finance (ICAIF '25)"
     venue_short: "ICAIF '25"
     year:        2025
-    note:        "Oral · Acceptance rate 15.5%"
+    note:        "pp. 405–412 · Oral · Acceptance rate 15.5%"
     keywords:    ["Contrastive learning", "Physics-informed neural networks", "Mean-reversion", "Pairs trading", "Portfolio"]
     selected:    true
     url:         "https://dl.acm.org/doi/abs/10.1145/3768292.3770406"
     links:
       - { label: "ACM DL", url: "https://dl.acm.org/doi/abs/10.1145/3768292.3770406" }
       - { label: "DOI",    url: "https://doi.org/10.1145/3768292.3770406" }
-    note_ko: "구두발표 · 채택률 15.5%"
+    note_ko: "pp. 405–412 · 구두발표 · 채택률 15.5%"
+    bibtex: |
+      @inproceedings{kim2025deep,
+        title     = {Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading},
+        author    = {Kim, Namhyoung and Na, Yosep and Song, Jae Wook},
+        booktitle = {Proceedings of the 6th ACM International Conference on AI in Finance},
+        series    = {ICAIF '25},
+        pages     = {405--412},
+        year      = {2025},
+        publisher = {ACM},
+        doi       = {10.1145/3768292.3770406}
+      }
 
   - id:          kbs25-factorvqvae
     title:       "FactorVQVAE: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder"
@@ -78,13 +112,24 @@ international:
     venue_short: "KBS '25"
     year:        2025
     # IF and quartile change every year; update this line when a new JCR comes out.
-    note:        "Article 113460 · IF 7.6 · JCR Q1 (Top 6%, AI / Computer Science)"
+    note:        "Vol. 318, Article 113460 · IF 7.6 · JCR Q1 (Top 6%, AI / Computer Science)"
     keywords:    ["Dynamic latent factor model", "Vector quantization", "Autoencoder", "Transformer", "Portfolio investment"]
     selected:    true
     url:         "https://doi.org/10.1016/j.knosys.2025.113460"
     links:
       - { label: "DOI", url: "https://doi.org/10.1016/j.knosys.2025.113460" }
-    note_ko: "Article 113460 · IF 7.6 · JCR Q1 (AI/CS 분야 상위 6%)"
+    note_ko: "Vol. 318, Article 113460 · IF 7.6 · JCR Q1 (AI/CS 분야 상위 6%)"
+    bibtex: |
+      @article{kim2025factorvqvae,
+        title     = {{FactorVQVAE}: Discrete Latent Factor Model via Vector Quantized Variational Autoencoder},
+        author    = {Kim, Namhyoung and Ock, Seung Eun and Song, Jae Wook},
+        journal   = {Knowledge-Based Systems},
+        volume    = {318},
+        pages     = {113460},
+        year      = {2025},
+        publisher = {Elsevier},
+        doi       = {10.1016/j.knosys.2025.113460}
+      }
 
 domestic:
   - id:          kmsr24-healthy
@@ -94,10 +139,25 @@ domestic:
     venue_short: "KMSR '24"
     year:        2024
     note:        "Outstanding Paper Award (KORMS, 2024)"
+    url:         "https://doi.org/10.7737/kmsr.2024.41.1.051"
+    links:
+      - { label: "DOI", url: "https://doi.org/10.7737/kmsr.2024.41.1.051" }
     title_ko:   "기계학습 기반 시군구 건강수명 산정 모형 및 경상북도 데이터를 이용한 실증"
     authors_ko: ["옥승은", "변준영", "김남형", "송재욱*"]
     venue_ko:   "경영과학, 41(1), 51–70"
     note_ko:    "한국경영과학회 우수논문상 (2024)"
+    bibtex: |
+      @article{ock2024machine,
+        title     = {Machine Learning-based Regional Healthy Life Expectancy Estimation Model: An Empirical Analysis Using Gyeongsangbuk-do Data},
+        author    = {Ock, Seung Eun and Byun, Jun Young and Kim, Namhyoung and Song, Jae Wook},
+        journal   = {Korean Management Science Review},
+        volume    = {41},
+        number    = {1},
+        pages     = {51--70},
+        year      = {2024},
+        publisher = {The Korean Operations Research and Management Science Society},
+        doi       = {10.7737/kmsr.2024.41.1.051}
+      }
 
 working_papers:
   - id:          wp-lexicon

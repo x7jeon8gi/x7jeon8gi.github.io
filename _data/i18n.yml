@@ -46,6 +46,8 @@ en:
   h_teaching:    "Teaching"
   h_skills:      "Technical Skills"
   programming:   "Programming"
+  bib_copy:      "Copy"
+  bib_copied:    "Copied"
 
 ko:
   name:          "김남형"
@@ -80,3 +82,5 @@ ko:
   h_teaching:    "강의"
   h_skills:      "기술"
   programming:   "프로그래밍"
+  bib_copy:      "복사"
+  bib_copied:    "복사했습니다"
