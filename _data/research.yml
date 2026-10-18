@@ -35,9 +35,9 @@ areas:
     projects: [nrf25-robust-vq, nrf23-vqvae-portfolio]
     figure:
       src:        "/assets/img/research/prism-vq.jpg"
-      alt:        "Overview of the PRISM-VQ framework"
-      caption:    "PRISM-VQ overview (IJCAI-ECAI 2026)"
-      caption_ko: "PRISM-VQ 개요 (IJCAI-ECAI 2026)"
+      alt:        "Architecture of PRISM-VQ"
+      caption:    "PRISM-VQ architecture (IJCAI-ECAI 2026)"
+      caption_ko: "PRISM-VQ 구조 (IJCAI-ECAI 2026)"
 
   - id:    structure-informed
     title: "Structure-Informed Learning"
