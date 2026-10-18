@@ -6,7 +6,7 @@
 <div class="wrap home">
 
 <section class="hero">
-  {% comment %}Two photos swap every 2.5 s (prof_pic.jpg first, then prof_pic_formal.jpg); a click shows the other one.{% endcomment %}
+  {% comment %}Two photos swap every 3.5 s (prof_pic.jpg first, then prof_pic_formal.jpg); a click shows the other one.{% endcomment %}
   <button type="button" class="avatar-wrap" aria-label="{% if L == 'ko' %}다른 사진 보기{% else %}Show the other photo{% endif %}">
     <img class="avatar" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Namhyoung Kim">
     <img class="avatar avatar-alt" src="{{ '/assets/img/prof_pic_formal.jpg' | relative_url }}" alt="" aria-hidden="true">
@@ -125,7 +125,7 @@
 </div>
 
 <script>
-  /* Photo swap: every 2.5 s, and right away on click (the timer restarts after a click).
+  /* Photo swap: every 3.5 s, and right away on click (the timer restarts after a click).
      Without JavaScript the CSS animation in main.css does the automatic swap. */
   (function () {
     var w = document.querySelector('.avatar-wrap');
@@ -134,7 +134,7 @@
     var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var timer = null;
     function flip() { w.classList.toggle('show-alt'); }
-    function start() { if (still) return; clearInterval(timer); timer = setInterval(flip, 2500); }
+    function start() { if (still) return; clearInterval(timer); timer = setInterval(flip, 3500); }
     w.addEventListener('click', function () { flip(); start(); });
     start();
   })();

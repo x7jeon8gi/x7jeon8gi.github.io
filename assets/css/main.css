@@ -365,10 +365,10 @@ button.avatar-wrap:focus-visible { outline: 2px solid var(--accent); outline-off
   .banner-title { font-size: 1.7rem; }
 }
 
-/* the second photo fades in and out over the first: 2.5 s each */
+/* the second photo fades in and out over the first: 3.5 s each */
 .avatar-wrap img.avatar-alt {
   opacity: 0;
-  animation: avatar-swap 5s ease-in-out infinite;
+  animation: avatar-swap 7s ease-in-out infinite;
 }
 @keyframes avatar-swap {
   0%, 40%  { opacity: 0; }
