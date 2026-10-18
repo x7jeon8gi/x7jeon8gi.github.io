@@ -1,51 +1,56 @@
 # =============================================================================
-# Research areas, rendered on /research/.
+# Research areas, rendered on /research/ and /ko/research/.
 #   papers   : ids from publications.yml (papers, working papers or talks)
 #   projects : ids from projects.yml
 #   intro_ko, title_ko, desc_ko : Korean text for /ko/research/
 # =============================================================================
 
 intro: >
-  My research develops representation learning methods for financial markets
-  and applies them to portfolio management, generative modeling, and derivatives.
-  The work below is grouped into three connected lines.
+  My research studies representation learning for low signal-to-noise data,
+  where the signal worth learning is small next to the noise and changes over
+  time. Financial markets are the main testbed. The work is organized into
+  three connected lines.
 
 intro_ko: >
-  금융 시장의 표현학습 방법론을 연구하고 이를 포트폴리오 관리와 생성 모형,
-  파생상품에 적용하고 있습니다. 연구는 서로 맞물린 세 갈래로 이어집니다.
+  신호에 비해 잡음이 크고 그 신호마저 시간에 따라 바뀌는 데이터에서의 표현학습을
+  연구하며, 금융 시장을 주된 실증 무대로 삼고 있습니다. 연구는 서로 맞물린 세
+  갈래로 이어집니다.
 
 areas:
-  - id:    discrete-factors
-    title: "Discrete Latent Factor Models"
-    title_ko: "이산 잠재 팩터 모형"
-    desc_ko: "벡터 양자화로 이산 잠재 팩터를 학습해 횡단면 주식 수익률을 예측하고, 금융 사전지식과 결합해 포트폴리오를 구성하며, 팩터 코드북을 언어와 정렬해 각 팩터의 의미를 해석하는 연구."
+  - id:    discrete-representations
+    title: "Discrete Representation Learning"
+    title_ko: "이산 표현학습"
     desc: >
-      Learning discrete latent factors with vector quantization for
-      cross-sectional stock return prediction, fusing them with financial priors
-      for portfolio construction, and aligning factor codebooks with language
-      so that each factor can be read and explained.
+      Learning discrete latent factors with vector quantization from noisy
+      cross-sectional stock data, fusing them with financial priors for stock
+      ranking and portfolio construction, and aligning factor codebooks with
+      language so that each factor can be read and explained.
+    desc_ko: "벡터 양자화로 잡음이 큰 횡단면 주식 데이터에서 이산 잠재 팩터를 학습하고, 금융 사전지식과 결합해 종목 순위 예측과 포트폴리오 구성에 쓰며, 팩터 코드북을 언어와 정렬해 각 팩터를 읽고 설명할 수 있게 하는 연구."
     papers:   [ijcai26-vqfp, kbs25-factorvqvae, wp-lexicon, cikmw25-fpqvae, kafo25-prismvq, kiie25-vq]
     projects: [nrf25-robust-vq, nrf23-vqvae-portfolio]
 
-  - id:    physics-informed
-    title: "Physics-Informed Learning for Trading and Volatility"
-    title_ko: "물리 정보 기반 트레이딩·변동성 모형"
-    desc_ko: "평균회귀를 비롯한 확률과정의 구조를 신경망에 직접 반영하는 연구. 페어 트레이딩을 위한 대조학습과 학습 기간에 관측되지 않은 경제 국면에서도 성능이 유지되는 변동성 예측을 다룸."
+  - id:    decision-aware
+    title: "Decision-Aware Learning"
+    title_ko: "결정 지향 학습"
     desc: >
-      Building the structure of stochastic processes, mean reversion in
-      particular, into neural models: contrastive learning for pairs trading and
-      volatility forecasting that holds up under economic regimes not seen in
-      training.
-    papers:   [icaif26-harcev, icaif25-deep-mr, icaifw25-crypto, kiie24-pairs]
+      When the signal is weak, the model with the smallest prediction error is
+      not necessarily the one that leads to good decisions. This line studies
+      training objectives tied to the downstream portfolio decision, including
+      market states defined by portfolio regret rather than by statistical
+      similarity.
+    desc_ko: "신호가 약한 데이터에서는 예측 오차가 가장 작은 모형이 반드시 좋은 투자 결정으로 이어지지 않는다는 문제의식에서 출발해, 학습 목표를 포트폴리오 결정에 맞추는 연구. 시장 상태를 통계적 유사성이 아니라 포트폴리오 후회로 정의하는 방법을 포함함."
+    papers:   [wp-dsq]
     projects: []
 
-  - id:    deep-hedging
-    title: "Deep Hedging and Structured Products"
-    title_ko: "딥헤징과 구조화상품"
-    desc_ko: "주가연계증권(ELS)을 비롯한 구조화상품의 신경망 기반 헤징과 가격 산출을 강건성과 해석 가능성의 관점에서 다루는 연구. 현재 Risk X tech Lab의 정부지원 연구개발과제로 이어지고 있음."
+  - id:    regime-shift
+    title: "Robustness to Regime Shift"
+    title_ko: "국면 변화에 강건한 학습"
     desc: >
-      Neural hedging and pricing of equity-linked securities and other
-      structured products, with attention to robustness and interpretability,
-      now carried forward in government-funded R&amp;D at Risk X tech Lab.
-    papers:   [wp-praxis, informs24-hedging]
-    projects: [sba26-els-hedging, tips26-structured, riskx23-exotic]
+      Keeping models reliable when market regimes change. This line builds the
+      structure of stochastic processes, such as mean reversion, into neural
+      models, forecasts volatility under economic regimes not seen in training,
+      and applies distributionally robust training over groups, defined by text
+      for stock ranking and by regime composition for hedging policies.
+    desc_ko: "시장 국면이 바뀌어도 성능이 유지되는 모형을 다루는 연구. 평균회귀 같은 확률과정의 구조를 신경망에 반영하고, 학습 기간에 없던 경제 국면에서의 변동성을 예측하며, 텍스트로 정의한 종목 집단이나 국면 구성에 대해 분포적으로 강건한 학습을 적용함."
+    papers:   [icaif26-harcev, icaif25-deep-mr, wp-tagdro, wp-praxis, icaifw25-crypto, kiie24-pairs]
+    projects: []

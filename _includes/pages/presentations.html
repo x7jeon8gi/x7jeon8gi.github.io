@@ -16,6 +16,10 @@
 </ol>
 
 <h2 class="band" id="domestic">{{ T.h_talk_dom }}</h2>
+{% if T.talk_dom_note != "" %}
+  {%- assign n_jeju = P.domestic_talks | where: "location_ko", "제주" | size -%}
+  <p class="band-note">{{ T.talk_dom_note | replace: "N_TOTAL", P.domestic_talks.size | replace: "N_JEJU", n_jeju }}</p>
+{% endif %}
 <ol class="pub-list">
   {% assign total = P.domestic_talks.size %}
   {% for p in P.domestic_talks %}

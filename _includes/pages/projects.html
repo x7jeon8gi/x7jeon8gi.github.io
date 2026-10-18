@@ -12,6 +12,8 @@
   {% assign key = g | split: "|" | first %}
   {% assign hkey = g | split: "|" | last %}
   <h2 class="band" id="{{ key }}">{{ T[hkey] }}</h2>
+  {% assign nkey = key | append: "_note" %}
+  {% if T[nkey] and T[nkey] != "" %}<p class="band-note">{{ T[nkey] }}</p>{% endif %}
   <div class="projects">
     {% for e in J[key] %}
     {% if L == "ko" %}{% assign prog = e.program_ko %}{% else %}{% assign prog = e.program %}{% endif %}

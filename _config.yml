@@ -8,8 +8,9 @@ tagline:      Quantitative AI Researcher
 description:  >
   Personal website of Namhyoung Kim, Head of Research at Risk X tech Lab
   and Ph.D. in Industrial Engineering from Hanyang University.
-  Research interests include representation learning in finance, portfolio
-  management, and generative models.
+  Research interests include representation learning for low signal-to-noise
+  data, discrete latent factor models, decision-aware learning, and robustness
+  to regime shift.
 author:       Namhyoung Kim
 email:        ai.namhyoung@gmail.com
 

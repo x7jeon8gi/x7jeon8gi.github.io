@@ -45,10 +45,10 @@
 </p>
 
 <p>
-  <strong>머신러닝과 계량금융</strong>이 만나는 지점에서 <strong>금융 시장의 표현학습</strong>을 연구하며,
-  그 결과를 <strong>포트폴리오 관리와 생성 모형, 파생상품 가치평가</strong>에 적용하고 있습니다.
-  특히 벡터 양자화 기반 잠재 팩터 모형과 물리 정보 기반 뉴럴 오퍼레이터, 언어와 정렬된 표현처럼
-  금융 사전지식과 최신 딥러닝 구조를 잇는 방법에 관심이 있습니다.
+  신호에 비해 잡음이 큰 데이터에서의 <strong>표현학습</strong>을 연구하며, 금융 시장을 주된 실증 무대로 삼고 있습니다.
+  벡터 양자화 기반 잠재 팩터 모형을 중심으로 한 <strong>이산 표현학습</strong>,
+  학습 목표를 포트폴리오 결정에 맞추는 <strong>결정 지향 학습</strong>,
+  그리고 구조적 사전지식과 분포적으로 강건한 학습으로 <strong>국면 변화에 강건한 모형</strong>을 만드는 일을 하고 있습니다.
 </p>
 
 <p>
@@ -67,12 +67,12 @@
 </p>
 
 <p>
-  My research lies at the intersection of <strong>machine learning and quantitative
-  finance</strong>, focusing on <strong>representation learning for financial markets</strong>
-  with applications to <strong>portfolio management, generative modeling, and derivative
-  pricing</strong>. I am particularly interested in vector-quantized latent factor models,
-  physics-informed neural operators, and language-aligned representations that bridge
-  fundamental financial priors with modern deep architectures.
+  My research studies <strong>representation learning for low signal-to-noise data</strong>,
+  with financial markets as the main testbed. I work on <strong>discrete representation
+  learning</strong>, centered on vector-quantized latent factor models; on
+  <strong>decision-aware learning</strong>, which ties training objectives to the downstream
+  portfolio decision; and on <strong>robustness to regime shift</strong> through structural
+  priors and distributionally robust training.
 </p>
 
 <p>
@@ -92,11 +92,11 @@
 <ul class="counts">
   {% if L == "ko" %}
   <li><a href="{{ u_pubs }}">국제 학술지·학회 논문 <strong>{{ P.international.size }}</strong>편</a></li>
-  <li><a href="{{ u_wp }}">워킹페이퍼 <strong>{{ P.working_papers.size }}</strong>편</a></li>
+  <li><a href="{{ u_wp }}">심사·준비 중 논문 <strong>{{ P.working_papers.size }}</strong>편</a></li>
   <li><a href="{{ u_talks }}">학회 발표 <strong>{{ n_talks }}</strong>건</a></li>
   {% else %}
   <li><a href="{{ u_pubs }}"><strong>{{ P.international.size }}</strong> international journal and conference papers</a></li>
-  <li><a href="{{ u_wp }}"><strong>{{ P.working_papers.size }}</strong> working papers</a></li>
+  <li><a href="{{ u_wp }}"><strong>{{ P.working_papers.size }}</strong> papers under review or in progress</a></li>
   <li><a href="{{ u_talks }}"><strong>{{ n_talks }}</strong> conference presentations</a></li>
   {% endif %}
 </ul>
