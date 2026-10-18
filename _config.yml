@@ -9,8 +9,8 @@ description:  >
   Personal website of Namhyoung Kim, Head of Research at Risk X tech Lab
   and Ph.D. in Industrial Engineering from Hanyang University.
   Research interests include representation learning for low signal-to-noise
-  data, discrete latent factor models, decision-aware learning, and robustness
-  to regime shift.
+  data, discrete latent factor models, structure-informed learning, and
+  interpretable, group-robust models.
 author:       Namhyoung Kim
 email:        ai.namhyoung@gmail.com
 

@@ -8,13 +8,15 @@
 intro: >
   My research studies representation learning for low signal-to-noise data,
   where the signal worth learning is small next to the noise and changes over
-  time. Financial markets are the main testbed. The work is organized into
-  three connected lines.
+  time. Financial markets are the main testbed. The three lines below ask what
+  to discretize, which structure to build into a model, and how to keep models
+  interpretable and robust.
 
 intro_ko: >
   신호에 비해 잡음이 크고 그 신호마저 시간에 따라 바뀌는 데이터에서의 표현학습을
-  연구하며, 금융 시장을 주된 실증 무대로 삼고 있습니다. 연구는 서로 맞물린 세
-  갈래로 이어집니다.
+  연구하며, 금융 시장을 주된 실증 무대로 삼고 있습니다. 아래 세 갈래는 무엇을
+  이산화할지, 어떤 구조를 모형에 넣을지, 모형을 어떻게 해석 가능하고 강건하게
+  만들지를 각각 다룹니다.
 
 areas:
   - id:    discrete-representations
@@ -22,35 +24,35 @@ areas:
     title_ko: "이산 표현학습"
     desc: >
       Learning discrete latent factors with vector quantization from noisy
-      cross-sectional stock data, fusing them with financial priors for stock
-      ranking and portfolio construction, and aligning factor codebooks with
-      language so that each factor can be read and explained.
-    desc_ko: "벡터 양자화로 잡음이 큰 횡단면 주식 데이터에서 이산 잠재 팩터를 학습하고, 금융 사전지식과 결합해 종목 순위 예측과 포트폴리오 구성에 쓰며, 팩터 코드북을 언어와 정렬해 각 팩터를 읽고 설명할 수 있게 하는 연구."
-    papers:   [ijcai26-vqfp, kbs25-factorvqvae, wp-lexicon, cikmw25-fpqvae, kafo25-prismvq, kiie25-vq]
+      cross-sectional stock data and fusing them with financial priors for
+      stock ranking and portfolio construction. The next step discretizes
+      market states by the portfolio decision they call for rather than by
+      statistical similarity.
+    desc_ko: "벡터 양자화로 잡음이 큰 횡단면 주식 데이터에서 이산 잠재 팩터를 학습하고, 금융 사전지식과 결합해 종목 순위 예측과 포트폴리오 구성에 쓰는 연구. 다음 단계로 시장 상태를 통계적 유사성이 아니라 요구하는 포트폴리오 결정에 따라 이산화하는 방법을 다룸."
+    papers:   [ijcai26-vqfp, kbs25-factorvqvae, wp-dsq, cikmw25-fpqvae, kafo25-prismvq, kiie25-vq, kiie23-vqgan]
     projects: [nrf25-robust-vq, nrf23-vqvae-portfolio]
 
-  - id:    decision-aware
-    title: "Decision-Aware Learning"
-    title_ko: "결정 지향 학습"
+  - id:    structure-informed
+    title: "Structure-Informed Learning"
+    title_ko: "구조 기반 학습"
     desc: >
-      When the signal is weak, the model with the smallest prediction error is
-      not necessarily the one that leads to good decisions. This line studies
-      training objectives tied to the downstream portfolio decision, including
-      market states defined by portfolio regret rather than by statistical
-      similarity.
-    desc_ko: "신호가 약한 데이터에서는 예측 오차가 가장 작은 모형이 반드시 좋은 투자 결정으로 이어지지 않는다는 문제의식에서 출발해, 학습 목표를 포트폴리오 결정에 맞추는 연구. 시장 상태를 통계적 유사성이 아니라 포트폴리오 후회로 정의하는 방법을 포함함."
-    papers:   [wp-dsq]
+      Building known dynamics of financial time series into neural models as
+      inductive bias, such as mean reversion, the heterogeneous autoregressive
+      structure of volatility, and time-series decomposition, so that the
+      models hold up under regimes not seen in training.
+    desc_ko: "평균회귀, 변동성의 이질적 자기회귀(HAR) 구조, 시계열 분해처럼 금융 시계열에서 알려진 동역학을 신경망에 귀납적 편향으로 넣어, 학습 기간에 없던 국면에서도 성능이 유지되도록 하는 연구."
+    papers:   [icaif25-deep-mr, icaif26-harcev, icaifw25-crypto, kiie24-pairs]
     projects: []
 
-  - id:    regime-shift
-    title: "Robustness to Regime Shift"
-    title_ko: "국면 변화에 강건한 학습"
+  - id:    interpretable-robust
+    title: "Interpretable and Group-Robust Models"
+    title_ko: "해석 가능하고 집단에 강건한 모형"
     desc: >
-      Keeping models reliable when market regimes change. This line builds the
-      structure of stochastic processes, such as mean reversion, into neural
-      models, forecasts volatility under economic regimes not seen in training,
-      and applies distributionally robust training over groups, defined by text
-      for stock ranking and by regime composition for hedging policies.
-    desc_ko: "시장 국면이 바뀌어도 성능이 유지되는 모형을 다루는 연구. 평균회귀 같은 확률과정의 구조를 신경망에 반영하고, 학습 기간에 없던 경제 국면에서의 변동성을 예측하며, 텍스트로 정의한 종목 집단이나 국면 구성에 대해 분포적으로 강건한 학습을 적용함."
-    papers:   [icaif26-harcev, icaif25-deep-mr, wp-tagdro, wp-praxis, icaifw25-crypto, kiie24-pairs]
+      Making factor models and decision policies explainable and robust across
+      groups: aligning factor codebooks with language so that each factor can
+      be read, defining groups by text for distributionally robust stock
+      ranking, and coupling group robustness with interpretable hedging
+      policies.
+    desc_ko: "팩터 모형과 의사결정 정책을 설명 가능하고 집단 간에 강건하게 만드는 연구. 팩터 코드북을 언어와 정렬해 각 팩터를 읽을 수 있게 하고, 텍스트로 정의한 종목 집단에 대해 분포적으로 강건한 순위 학습을 하며, 해석 가능한 헤징 정책에 집단 강건성을 결합함."
+    papers:   [wp-lexicon, wp-tagdro, wp-praxis]
     projects: []
