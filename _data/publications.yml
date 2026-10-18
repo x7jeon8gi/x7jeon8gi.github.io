@@ -117,14 +117,14 @@ working_papers:
 
   - id:          wp-praxis
     title:       "PRAXIS: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
-    authors:     ["Namhyoung Kim"]
+    authors:     ["Namhyoung Kim", "Jae Wook Song*"]
     venue:       "Manuscript"
     venue_short: "Working paper"
     year:        2026
 
   - id:          wp-dsq
     title:       "Decision Space Quantization"
-    authors:     ["Namhyoung Kim"]
+    authors:     ["Namhyoung Kim", "Seungwon Shin", "Jiwon Park", "Jae Wook Song*"]
     venue:       "Manuscript"
     venue_short: "Working paper"
     year:        2026
