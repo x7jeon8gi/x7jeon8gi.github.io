@@ -2,8 +2,8 @@
 # html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-10"
-  html: "Our paper *HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* has been **accepted to ICAIF '26**."
-  html_ko: "*HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* 논문이 **ICAIF '26**에 채택되었습니다."
+  html: "Our paper *HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* has been **accepted to ICAIF ’26**."
+  html_ko: "*HAR-CEV: Attentive Mean-Reverting Volatility Forecasting under Unseen Economic Regimes* 논문이 **ICAIF ’26**에 채택되었습니다."
 
 - date: "2026-08"
   html: "Presented our IJCAI-ECAI 2026 paper on vector-quantized discrete latent factors in **Bremen, Germany**."
@@ -26,8 +26,8 @@
   html_ko: "한양대학교에서 박사 학위논문 *Representation Learning in Financial Markets for Portfolio Management* 심사를 통과했습니다."
 
 - date: "2025-11"
-  html: "Our paper *Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* was accepted to **ICAIF '25** as an **oral presentation** (acceptance rate 15.5%)."
-  html_ko: "*Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* 논문이 **ICAIF '25** 구두발표 논문으로 채택되었습니다(채택률 15.5%)."
+  html: "Our paper *Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* was accepted to **ICAIF ’25** as an **oral presentation** (acceptance rate 15.5%)."
+  html_ko: "*Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* 논문이 **ICAIF ’25** 구두발표 논문으로 채택되었습니다(채택률 15.5%)."
 
 - date: "2025-07"
   html: "Joined **Risk X tech Lab** as a Quantitative AI Researcher."
