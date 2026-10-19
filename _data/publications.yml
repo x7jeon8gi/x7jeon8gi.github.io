@@ -167,14 +167,6 @@ working_papers:
     venue_short: "KDD '27 R&R"
     year:        2026
 
-  - id:          wp-tagdro
-    title:       "Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking"
-    authors:     ["Jiwon Park†", "Namhyoung Kim†", "Seungwon Shin", "Jae Wook Song*"]
-    venue:       "IAFM '26: Workshop on Interpretability and Alignment of Financial Models, ACM ICAIF 2026"
-    venue_short: "IAFM '26"
-    note:        "Under review"
-    note_ko:     "심사 중"
-
   - id:          wp-praxis
     title:       "PRAXIS: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
     authors:     ["Namhyoung Kim", "Jae Wook Song*"]
@@ -190,6 +182,16 @@ working_papers:
     year:        2026
 
 international_talks:
+  - id:          icaifw26-tagdro
+    title:       "Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking"
+    authors:     ["Jiwon Park†", "Namhyoung Kim†", "Seungwon Shin", "Jae Wook Song*"]
+    venue:       "ACM ICAIF 2026 Workshop on Interpretability and Alignment of Financial Models (IAFM '26)"
+    venue_short: "IAFM '26"
+    date:        "2026.11"
+    location:    "Milan, Italy"
+    note:        "To be presented"
+    note_ko:     "발표 예정"
+
   - id:          aqfc26-vqfp
     title:       "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction"
     authors:     ["Namhyoung Kim", "Jae Wook Song*"]

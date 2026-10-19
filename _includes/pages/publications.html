@@ -2,7 +2,10 @@
 {%- assign T = site.data.i18n[L] -%}
 {%- assign P = site.data.publications -%}
 
-<p class="legend">{{ T.legend }}{{ T.legend_eq }}. {{ T.legend_pubs }}</p>
+{%- assign eq_list = P.international | concat: P.domestic | concat: P.working_papers -%}
+{%- assign has_eq = false -%}
+{%- for q in eq_list -%}{%- for a in q.authors -%}{%- if a contains "†" -%}{%- assign has_eq = true -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+<p class="legend">{{ T.legend }}{% if has_eq %}{{ T.legend_eq }}{% endif %}. {{ T.legend_pubs }}</p>
 
 <h2 class="band" id="international">{{ T.h_intl }}</h2>
 <ol class="pub-list">
