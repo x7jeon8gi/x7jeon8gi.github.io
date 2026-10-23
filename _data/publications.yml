@@ -240,11 +240,9 @@ domestic_talks:
     venue_short: "KSIE '26"
     date:        "2026.10"
     location:    "Jeju, Korea"
-    note:        "To be presented"
     authors_ko:  ["김남형", "송재욱*"]
     venue_ko:    "한국산업경영시스템학회 추계학술대회"
     location_ko: "제주"
-    note_ko:     "발표 예정"
 
   - id:          kafo25-prismvq
     title:       "PRISM-VQ: Fusing Financial Priors and Vector-Quantized Latent Factors for Dynamic Cross-Sectional Stock Prediction"

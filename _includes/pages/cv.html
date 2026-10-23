@@ -8,7 +8,7 @@
 {%- assign k_sponsor = "sponsor" | append: sfx -%}
 {%- assign k_role = "role" | append: sfx -%}
 
-<p class="legend"><a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">{{ T.cv_pdf }}</a></p>
+<p class="legend"><a href="{{ T.cv_pdf_url | relative_url }}">{{ T.cv_pdf }}</a> · <a href="{{ T.cv_pdf_other_url | relative_url }}">{{ T.cv_pdf_other }}</a></p>
 
 <h2 class="band">{{ T.h_education }}</h2>
 {% include cv-entries.html items=cv.education %}

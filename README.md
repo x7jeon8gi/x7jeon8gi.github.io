@@ -46,7 +46,7 @@ git-homepage/
 └── assets/
     ├── css/main.css       # 단일 스타일시트 (상단 :root 변수에 색·글꼴)
     ├── img/prof_pic.jpg   # 프로필 사진
-    └── pdf/CV.pdf         # 다운로드용 CV
+    └── pdf/              # 다운로드용 영문 CV.pdf 및 국문 CV_ko.pdf
 ```
 
 > 무언가 고치고 싶을 때 가장 먼저 여는 파일은 `_data/*.yml` 입니다.
@@ -180,8 +180,14 @@ id 는 publications.yml / projects.yml 의 `id` 와 같아야 링크가 걸림.
 
 `_data/cv.yml` 의 해당 섹션을 직접 수정.
 PDF 도 갱신했다면 `assets/pdf/CV.pdf` 도 새 파일로 덮어쓰기.
-영문 CV 소스는 `_cv/cv_en.tex` (XeLaTeX, Erewhon 글꼴)이며, `_cv` 폴더에서
-`xelatex cv_en.tex` 로 빌드한 PDF를 `assets/pdf/CV.pdf` 로 복사하면 됨.
+영문 CV 소스는 `_cv/cv_en.tex` (XeLaTeX/Tectonic, Erewhon 글꼴)이며,
+필요한 글꼴은 `_cv/fonts/`에 포함되어 별도로 설치할 필요가 없음.
+`_cv` 폴더에서 `tectonic cv_en.tex` 또는 `xelatex cv_en.tex`로 빌드한 PDF를
+`assets/pdf/CV.pdf`로 복사하면 됨. macOS ChatGPT 앱에 포함된 Tectonic은
+`/Applications/ChatGPT.app/Contents/Resources/tectonic/tectonic`에서 실행할 수 있음.
+국문 CV 소스는 `_cv/cv_ko.tex`이며, 필요한 나눔명조 글꼴도 `_cv/fonts/`에 포함되어 있음.
+같은 방식으로 빌드한 `cv_ko.pdf`를 `assets/pdf/CV_ko.pdf`로 복사하면 국문 페이지에서 다운로드할 수 있음.
+각 언어의 CV 페이지에서 다른 언어의 PDF도 함께 다운로드할 수 있음.
 
 ### 프로필 사진 추가
 

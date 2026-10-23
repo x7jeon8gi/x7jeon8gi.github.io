@@ -9,7 +9,8 @@
     </div>
     <div class="footer-links">
       {% for s in site.social %}{% unless s.icon == "email" %}
-        <a href="{{ s.url | relative_url }}"{% unless s.icon == "pdf" %} target="_blank" rel="noopener"{% endunless %}>{{ s.name }}</a>
+        {% if s.icon == "pdf" %}{% assign social_url = T.cv_pdf_url %}{% assign social_name = T.cv_pdf_short %}{% else %}{% assign social_url = s.url %}{% assign social_name = s.name %}{% endif %}
+        <a href="{{ social_url | relative_url }}"{% unless s.icon == "pdf" %} target="_blank" rel="noopener"{% endunless %}>{{ social_name }}</a>
       {% endunless %}{% endfor %}
     </div>
     <p class="copy">© {{ "now" | date: "%Y" }} {{ T.name }}. {{ T.copy }}</p>
