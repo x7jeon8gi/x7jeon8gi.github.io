@@ -2,6 +2,10 @@
 # html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-10"
+  html: "Received the **Best Research Presentation Award (Ph.D. Track)** at the **1st Graduate Research Presentation Competition**, hosted by the Korean Society of Industrial and Systems Engineering (KSIE)."
+  html_ko: "한국산업경영시스템학회 **제1회 대학원 우수 학술연구 발표대회**에서 **박사 트랙 최우수상**을 수상했습니다."
+
+- date: "2026-10"
   html: "Our paper *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* has been **accepted to IAFM ’26**, the ACM ICAIF 2026 Workshop on Interpretability and Alignment of Financial Models."
   html_ko: "*Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* 논문이 ACM ICAIF 2026 워크숍 **IAFM ’26**(Interpretability and Alignment of Financial Models)에 채택되었습니다."
 

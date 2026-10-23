@@ -74,6 +74,11 @@ patents:
     where_ko: "리 대수 기반 시장 시나리오 생성, 구조화상품 딥헤징 시스템 등"
 
 awards:
+  - when:  "2026.10"
+    title: "Best Research Presentation Award (Ph.D. Track)"
+    where: "1st Graduate Research Presentation Competition, Korean Society of Industrial and Systems Engineering (KSIE)"
+    title_ko: "최우수상 (박사 트랙)"
+    where_ko: "한국산업경영시스템학회 제1회 대학원 우수 학술연구 발표대회"
   - when:  "2024"
     title: "Outstanding Paper Award"
     where: "Korean Management Science Review, KORMS"
