@@ -36,8 +36,8 @@ areas:
     figure:
       src:        "/assets/img/research/prism-vq.jpg"
       alt:        "Architecture of PRISM-VQ"
-      caption:    "PRISM-VQ architecture (IJCAI-ECAI 2026)"
-      caption_ko: "PRISM-VQ 구조 (IJCAI-ECAI 2026)"
+      caption:    "PRISM-VQ architecture (IJCAI 2026)"
+      caption_ko: "PRISM-VQ 구조 (IJCAI 2026)"
 
   - id:    structure-informed
     title: "Structure-Informed Learning"

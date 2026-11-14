@@ -52,11 +52,11 @@ grants:
     program: "Humanities &amp; Social Sciences, Joint Research"
     period:  "2023.06 – 2025.06"
     role:    "Researcher"
-    desc:    "Discrete latent factor models based on vector quantization; results published in Knowledge-Based Systems and at IJCAI-ECAI 2026."
+    desc:    "Discrete latent factor models based on vector quantization; results published in Knowledge-Based Systems and at IJCAI 2026."
     title_ko:   "벡터 양자화 변분 오토인코더를 활용한 포트폴리오 분야 인공지능 응용연구"
     sponsor_ko: "한국연구재단"
     role_ko:    "연구원"
-    desc_ko:    "벡터 양자화 기반 이산 잠재 팩터 모형 연구를 수행하고 성과를 Knowledge-Based Systems와 IJCAI-ECAI 2026 논문으로 발표."
+    desc_ko:    "벡터 양자화 기반 이산 잠재 팩터 모형 연구를 수행하고 성과를 Knowledge-Based Systems와 IJCAI 2026 논문으로 발표."
 
   - id:      nrf21-xai-loan
     title:   "Loan Eligibility Classification Model using Explainable Artificial Intelligence"
