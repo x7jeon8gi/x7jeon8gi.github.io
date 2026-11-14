@@ -32,6 +32,27 @@
 # =============================================================================
 
 international:
+  - id:          kdd27-lexicon
+    title:       "LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction"
+    authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song*"]
+    venue:       "Proceedings of the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027)"
+    venue_short: "KDD '27"
+    year:        2027
+    note:        "Accepted · Research Track · To appear"
+    note_ko:     "Research Track 채택 · 게재 예정"
+    keywords:    ["Language-grounded anchors", "Interpretable factor models", "Stock return prediction"]
+    selected:    true
+    bibtex: |
+      @inproceedings{kim2027lexicon,
+        title     = {{LEXICON}: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction},
+        author    = {Kim, Namhyoung and Na, Yosep and Park, Jiwon and Song, Jae Wook},
+        booktitle = {Proceedings of the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+        series    = {KDD '27},
+        year      = {2027},
+        publisher = {ACM},
+        note      = {Research Track, to appear}
+      }
+
   - id:          ijcai26-vqfp
     title:       "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction"
     authors:     ["Namhyoung Kim", "Jae Wook Song*"]
@@ -160,13 +181,6 @@ domestic:
       }
 
 working_papers:
-  - id:          wp-lexicon
-    title:       "LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction"
-    authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song*"]
-    venue:       "Revise &amp; Resubmit, ACM SIGKDD 2027 (Cycle 1)"
-    venue_short: "KDD '27 R&R"
-    year:        2026
-
   - id:          wp-praxis
     title:       "PRAXIS: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
     authors:     ["Namhyoung Kim", "Jae Wook Song*"]

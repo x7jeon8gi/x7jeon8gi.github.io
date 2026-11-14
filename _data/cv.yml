@@ -35,10 +35,10 @@ experience:
     title: "Head of Research"
     where: "Risk X tech Lab"
     desc:
-      - "Leads the AI research group for derivatives and structured products: research roadmap, government-funded R&D, intellectual property, and product integration."
+      - "AI research on derivatives and structured products, including government-funded R&D, model development, intellectual property, and product integration."
     title_ko: "연구소장"
     desc_ko:
-      - "파생 및 구조화상품 AI 연구조직 총괄. 연구 로드맵 수립, 정부지원 연구개발과제 총괄, 지식재산 확보, 제품 연동까지 담당."
+      - "파생 및 구조화상품 AI 연구개발. 정부지원 연구개발과제, 모형 개발, 지식재산 확보, 제품 연동을 담당."
   - when:  "2025.07 – 2026.02"
     title: "Quantitative AI Researcher"
     where: "Risk X tech Lab"
