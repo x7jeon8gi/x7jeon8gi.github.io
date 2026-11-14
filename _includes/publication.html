@@ -21,12 +21,12 @@ note_ko) are used when present.
     <div class="pub-title">
       {%- if p.url -%}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p_title }}</a>{%- else -%}{{ p_title }}{%- endif -%}
     </div>
-    <div class="pub-authors">
+    {% if p_authors %}<div class="pub-authors">
       {%- for a in p_authors -%}
         {%- if a contains "Namhyoung" or a contains "김남형" -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
         {%- unless forloop.last -%}, {% endunless -%}
       {%- endfor -%}
-    </div>
+    </div>{% endif %}
     <div class="pub-venue">
       <em>{{ p_venue }}</em>
       {%- if p.date -%}, {{ p.date }}{%- elsif p.year -%}, {{ p.year }}{%- endif -%}

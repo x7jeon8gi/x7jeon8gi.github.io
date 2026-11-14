@@ -181,11 +181,22 @@ domestic:
       }
 
 working_papers:
+  - id:          wp-llm-stockdro
+    title:       "LLM-StockDRO (working title)"
+    title_ko:    "LLM-StockDRO (가제)"
+    venue:       "Working paper"
+    venue_ko:    "Working paper"
+    venue_short: "Working paper"
+    year:        2026
+    note:        "LLM-guided control of the adversarial scope for stock prediction."
+    note_ko:     "LLM으로 적대적 최적화의 범위를 조절하는 주식 예측 연구."
+
   - id:          wp-praxis
     title:       "PRAXIS: Policy-Coupled Group Robustness for Interpretable Deep Hedging"
     authors:     ["Namhyoung Kim", "Jae Wook Song*"]
-    venue:       "Manuscript"
-    venue_short: "Working paper"
+    venue:       "Expert Systems with Applications (under review)"
+    venue_ko:    "Expert Systems with Applications 심사 중"
+    venue_short: "Under review"
     year:        2026
 
   - id:          wp-dsq
