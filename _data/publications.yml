@@ -34,18 +34,18 @@
 international:
   - id:          kdd27-lexicon
     title:       "LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction"
-    authors:     ["Namhyoung Kim", "Yosep Na", "Jiwon Park", "Jae Wook Song*"]
+    authors:     ["Namhyoung Kim", "Jiwon Park", "Yosep Na", "Jae Wook Song*"]
     venue:       "Proceedings of the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2027)"
     venue_short: "KDD '27"
     year:        2027
-    note:        "Accepted · Research Track · To appear"
-    note_ko:     "Research Track 채택 · 게재 예정"
+    note:        "Accepted · Research Track · Acceptance rate 17.8% · To appear"
+    note_ko:     "Research Track 채택 · 채택률 17.8% · 게재 예정"
     keywords:    ["Language-grounded anchors", "Interpretable factor models", "Stock return prediction"]
     selected:    true
     bibtex: |
       @inproceedings{kim2027lexicon,
         title     = {{LEXICON}: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction},
-        author    = {Kim, Namhyoung and Na, Yosep and Park, Jiwon and Song, Jae Wook},
+        author    = {Kim, Namhyoung and Park, Jiwon and Na, Yosep and Song, Jae Wook},
         booktitle = {Proceedings of the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
         series    = {KDD '27},
         year      = {2027},
@@ -85,10 +85,10 @@ international:
     venue:       "Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)"
     venue_short: "ICAIF '26"
     year:        2026
-    note:        "Accepted, to appear"
+    note:        "Accepted · To appear · Acceptance rate ~22%"
     keywords:    ["Realized variance", "Volatility forecasting", "Stochastic differential equations", "Economic regimes", "Zero-shot forecasting", "HAR model"]
     selected:    true
-    note_ko: "게재 예정"
+    note_ko: "게재 예정 · 채택률 약 22%"
     bibtex: |
       @inproceedings{na2026harcev,
         title     = {{HAR-CEV}: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift},
@@ -190,7 +190,7 @@ working_papers:
 
   - id:          wp-dsq
     title:       "Decision Space Quantization"
-    authors:     ["Namhyoung Kim", "Seungwon Shin", "Jiwon Park", "Jae Wook Song*"]
+    authors:     ["Namhyoung Kim", "Sungweon Shin", "Jiwon Park", "Jae Wook Song*"]
     venue:       "Manuscript"
     venue_short: "Working paper"
     year:        2026
@@ -198,7 +198,7 @@ working_papers:
 international_talks:
   - id:          icaifw26-tagdro
     title:       "Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking"
-    authors:     ["Jiwon Park†", "Namhyoung Kim†", "Seungwon Shin", "Jae Wook Song*"]
+    authors:     ["Jiwon Park†", "Namhyoung Kim†", "Sungweon Shin", "Jae Wook Song*"]
     venue:       "ACM ICAIF 2026 Workshop on Interpretability and Alignment of Financial Models (IAFM '26)"
     venue_short: "IAFM '26"
     date:        "2026.11"

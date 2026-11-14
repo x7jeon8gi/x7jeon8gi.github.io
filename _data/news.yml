@@ -2,8 +2,8 @@
 # html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-11"
-  html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027**, the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining."
-  html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 제33회 ACM SIGKDD Conference on Knowledge Discovery and Data Mining의 **KDD 2027 Research Track**에 채택되었습니다."
+  html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027**, the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (acceptance rate 17.8%)."
+  html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 제33회 ACM SIGKDD Conference on Knowledge Discovery and Data Mining의 **KDD 2027 Research Track**에 채택되었습니다(채택률 17.8%)."
 
 - date: "2026-10"
   html: "Received the **Best Research Presentation Award (Ph.D. Track)** at the **1st Graduate Research Presentation Competition**, hosted by the Korean Society of Industrial and Systems Engineering (KSIE)."
@@ -14,20 +14,16 @@
   html_ko: "*Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* 논문이 ACM ICAIF 2026 워크숍 **IAFM ’26**(Interpretability and Alignment of Financial Models)에 채택되었습니다."
 
 - date: "2026-10"
-  html: "Our paper *HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* has been **accepted to ICAIF ’26**."
-  html_ko: "*HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* 논문이 **ICAIF ’26**에 채택되었습니다."
+  html: "Our paper *HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* has been **accepted to ICAIF ’26** (acceptance rate approximately 22%)."
+  html_ko: "*HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* 논문이 **ICAIF ’26**에 채택되었습니다(채택률 약 22%)."
 
 - date: "2026-08"
   html: "Presented our IJCAI-ECAI 2026 paper on vector-quantized discrete latent factors in **Bremen, Germany**."
   html_ko: "벡터 양자화 기반 이산 잠재 팩터에 관한 IJCAI-ECAI 2026 논문을 **독일 브레멘**에서 발표했습니다."
 
-- date: "2026-07"
-  html: "Presented the same work at the **Asian Quantitative Finance Conference (AQFC 2026)** in Pohang."
-  html_ko: "같은 연구를 포항에서 열린 **AQFC 2026**(Asian Quantitative Finance Conference)에서 발표했습니다."
-
 - date: "2026-05"
-  html: "Our paper *Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* has been **accepted to IJCAI-ECAI 2026**."
-  html_ko: "*Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* 논문이 **IJCAI-ECAI 2026**에 채택되었습니다."
+  html: "Our paper *Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* has been **accepted to IJCAI-ECAI 2026** (acceptance rate 13.6%)."
+  html_ko: "*Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* 논문이 **IJCAI-ECAI 2026**에 채택되었습니다(채택률 13.6%)."
 
 - date: "2026-02"
   html: "Successfully defended my Ph.D. dissertation, *Representation Learning in Financial Markets for Portfolio Management*, at Hanyang University."
