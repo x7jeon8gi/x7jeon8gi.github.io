@@ -2,8 +2,8 @@
 # html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-11"
-  html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027**, the 33rd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (acceptance rate 17.8%)."
-  html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 제33회 ACM SIGKDD Conference on Knowledge Discovery and Data Mining의 **KDD 2027 Research Track**에 채택되었습니다(채택률 17.8%)."
+  html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027** (acceptance rate 17.8%)."
+  html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 **KDD 2027 Research Track**에 채택되었습니다(채택률 17.8%)."
 
 - date: "2026-10"
   html: "Received the **Best Research Presentation Award (Ph.D. Track)** at the **1st Graduate Research Presentation Competition**, hosted by the Korean Society of Industrial and Systems Engineering (KSIE)."
