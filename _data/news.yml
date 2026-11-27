@@ -1,43 +1,52 @@
-# Most-recent first. Each item: { date: "YYYY-MM", html: "...", html_ko: "..." }
-# html is Markdown; html_ko is the Korean version shown on /ko/.
+# Newest first. Each item has one source shared by both languages.
+# link.label and link.label_ko describe what the visitor will find.
 
 - date: "2026-11"
-  html: "Our paper *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* was presented at [IAFM ’26](https://iafm-icaif.netlify.app/), an ICAIF 2026 workshop in Milan, on November 15."
-  html_ko: "11월 15일 밀라노에서 열린 ICAIF 2026 워크숍 [IAFM ’26](https://iafm-icaif.netlify.app/)에서 *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* 논문이 구두로 발표되었습니다."
+  html: "Our paper *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* was presented at **IAFM ’26**, an ICAIF 2026 workshop in Milan, on November 15."
+  html_ko: "11월 15일 밀라노에서 열린 ICAIF 2026 워크숍 **IAFM ’26**에서 *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* 논문이 구두로 발표되었습니다."
+  link: { label: "Workshop", label_ko: "워크숍", url: "https://iafm-icaif.netlify.app/" }
 
 - date: "2026-11"
   html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027** (acceptance rate 17.8%)."
   html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 **KDD 2027 Research Track**에 채택되었습니다(채택률 17.8%)."
+  link: { label: "Research track", label_ko: "리서치 트랙", url: "https://kdd2027.kdd.org/research-track-call-for-papers/" }
 
 - date: "2026-10"
   html: "Received the **Best Research Presentation Award (Ph.D. Track)** at the **1st Graduate Research Presentation Competition**, hosted by the Korean Society of Industrial and Systems Engineering (KSIE)."
   html_ko: "한국산업경영시스템학회 **제1회 대학원 우수 학술연구 발표대회**에서 **박사 트랙 최우수상**을 수상했습니다."
+  link: { label: "Competition", label_ko: "대회 안내", url: "https://www.ksie.or.kr/notice/view.php?idx=1794" }
 
 - date: "2026-10"
   html: "Our paper *HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* has been **accepted to ICAIF ’26** (acceptance rate approximately 22%)."
   html_ko: "*HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* 논문이 **ICAIF ’26**에 채택되었습니다(채택률 약 22%)."
+  link: { label: "Paper", label_ko: "논문", url: "https://doi.org/10.1145/3858063.3858770" }
 
 - date: "2026-08"
   html: "Presented our IJCAI 2026 paper on vector-quantized discrete latent factors in **Bremen, Germany**."
   html_ko: "벡터 양자화 기반 이산 잠재 팩터에 관한 IJCAI 2026 논문을 **독일 브레멘**에서 발표했습니다."
+  link: { label: "Paper", label_ko: "논문", url: "https://www.ijcai.org/proceedings/2026/492" }
 
 - date: "2026-05"
   html: "Our paper *Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* has been **accepted to IJCAI 2026** (acceptance rate 13.6%)."
   html_ko: "*Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction* 논문이 **IJCAI 2026**에 채택되었습니다(채택률 13.6%)."
+  link: { label: "Paper", label_ko: "논문", url: "https://www.ijcai.org/proceedings/2026/492" }
 
 - date: "2026-02"
   html: "Successfully defended my Ph.D. dissertation, *Representation Learning in Financial Markets for Portfolio Management*, at Hanyang University."
   html_ko: "한양대학교에서 박사 학위논문 *Representation Learning in Financial Markets for Portfolio Management* 심사를 통과했습니다."
+  link: { label: "Degree record", label_ko: "학위 정보", url: "https://finx.hanyang.ac.kr/members/alumni" }
 
 - date: "2025-11"
   html: "Our paper *Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* was accepted to **ICAIF ’25** as an **oral presentation** (acceptance rate 15.5%)."
   html_ko: "*Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* 논문이 **ICAIF ’25** 구두발표 논문으로 채택되었습니다(채택률 15.5%)."
+  link: { label: "Paper", label_ko: "논문", url: "https://doi.org/10.1145/3768292.3770406" }
 
 - date: "2025-04"
   html: "*FactorVQVAE* has been published in **Knowledge-Based Systems**."
   html_ko: "*FactorVQVAE* 논문이 **Knowledge-Based Systems**에 게재되었습니다."
+  link: { label: "Paper", label_ko: "논문", url: "https://doi.org/10.1016/j.knosys.2025.113460" }
 
 - date: "2024-11"
   html: "Received the **Outstanding Paper Award** from *Korean Management Science Review* (KORMS, 2024)."
   html_ko: "공저 논문으로 **한국경영과학회 우수논문상**을 받았습니다."
-
+  link: { label: "Award announcement", label_ko: "수상 공지", url: "https://korms.or.kr/board/notice/article/249803" }

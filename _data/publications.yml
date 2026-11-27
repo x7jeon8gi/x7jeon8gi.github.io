@@ -85,10 +85,13 @@ international:
     venue:       "Proceedings of the 7th ACM International Conference on AI in Finance (ICAIF '26)"
     venue_short: "ICAIF '26"
     year:        2026
-    note:        "Accepted · To appear · Acceptance rate ~22%"
+    note:        "pp. 1620–1628 · Acceptance rate ~22%"
     keywords:    ["Realized variance", "Volatility forecasting", "Stochastic differential equations", "Economic regimes", "Zero-shot forecasting", "HAR model"]
     selected:    true
-    note_ko: "게재 예정 · 채택률 약 22%"
+    note_ko: "pp. 1620–1628 · 채택률 약 22%"
+    url:         "https://doi.org/10.1145/3858063.3858770"
+    links:
+      - { label: "DOI", url: "https://doi.org/10.1145/3858063.3858770" }
     bibtex: |
       @inproceedings{na2026harcev,
         title     = {{HAR-CEV}: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift},
@@ -97,7 +100,8 @@ international:
         series    = {ICAIF '26},
         year      = {2026},
         publisher = {ACM},
-        note      = {To appear}
+        pages     = {1620--1628},
+        doi       = {10.1145/3858063.3858770}
       }
 
   - id:          icaif25-deep-mr
@@ -232,6 +236,8 @@ international_talks:
     venue_short: "ICAIF-W '25"
     date:        "2025.11"
     location:    "Singapore"
+    links:
+      - { label: "Workshop", url: "https://icaif25-rfts.github.io/" }
 
   - id:          cikmw25-fpqvae
     title:       "FPQ-VAE: A Dynamic Factor Model Fusing Financial Priors and Vector-Quantized Factors for Stock Rank Prediction"

@@ -103,7 +103,7 @@
     {% assign text = n[k_html] | default: n.html %}
     <li>
       <span class="date">{{ n.date }}</span>
-      <span class="item">{{ text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      <span class="item">{{ text | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if n.link %} · <a href="{{ n.link.url | escape }}">{% if L == "ko" %}{{ n.link.label_ko }}{% else %}{{ n.link.label }}{% endif %}</a>{% endif %}</span>
     </li>
   {% endfor %}
 </ul>
