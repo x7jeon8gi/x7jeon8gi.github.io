@@ -2,16 +2,16 @@
 # html is Markdown; html_ko is the Korean version shown on /ko/.
 
 - date: "2026-11"
+  html: "Our paper *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* was presented at [IAFM ’26](https://iafm-icaif.netlify.app/), an ICAIF 2026 workshop in Milan, on November 15."
+  html_ko: "11월 15일 밀라노에서 열린 ICAIF 2026 워크숍 [IAFM ’26](https://iafm-icaif.netlify.app/)에서 *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* 논문이 구두로 발표되었습니다."
+
+- date: "2026-11"
   html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027** (acceptance rate 17.8%)."
   html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 **KDD 2027 Research Track**에 채택되었습니다(채택률 17.8%)."
 
 - date: "2026-10"
   html: "Received the **Best Research Presentation Award (Ph.D. Track)** at the **1st Graduate Research Presentation Competition**, hosted by the Korean Society of Industrial and Systems Engineering (KSIE)."
   html_ko: "한국산업경영시스템학회 **제1회 대학원 우수 학술연구 발표대회**에서 **박사 트랙 최우수상**을 수상했습니다."
-
-- date: "2026-10"
-  html: "Our paper *Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* has been **accepted to IAFM ’26**, the ACM ICAIF 2026 Workshop on Interpretability and Alignment of Financial Models."
-  html_ko: "*Text as Structure, Not Signal: Text-Aligned Groups for Distributionally Robust Stock Ranking* 논문이 ACM ICAIF 2026 워크숍 **IAFM ’26**(Interpretability and Alignment of Financial Models)에 채택되었습니다."
 
 - date: "2026-10"
   html: "Our paper *HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* has been **accepted to ICAIF ’26** (acceptance rate approximately 22%)."

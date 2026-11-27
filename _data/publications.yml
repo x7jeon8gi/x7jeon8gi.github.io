@@ -212,8 +212,10 @@ international_talks:
     venue_short: "IAFM '26"
     date:        "2026.11"
     location:    "Milan, Italy"
-    note:        "To be presented"
-    note_ko:     "발표 예정"
+    note:        "Oral presentation"
+    note_ko:     "구두 발표"
+    links:
+      - { label: "Workshop", url: "https://iafm-icaif.netlify.app/" }
 
   - id:          aqfc26-vqfp
     title:       "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction"
@@ -238,6 +240,8 @@ international_talks:
     venue_short: "CIKM-W '25"
     date:        "2025.11"
     location:    "Seoul, Korea"
+    links:
+      - { label: "Workshop", url: "https://advancesinfinancialai.com/" }
 
   - id:          informs24-hedging
     title:       "Deep Hedging of Equity-Linked Securities"
@@ -252,8 +256,10 @@ international_talks:
     authors:     ["Namhyoung Kim", "Seung Eun Ock", "Jae Wook Song*"]
     venue:       "IJCAI 2024 Workshop on Recommender Systems in Finance (FinRecSys)"
     venue_short: "IJCAI-W '24"
-    date:        "2024.07"
+    date:        "2024.08"
     location:    "Jeju, Korea"
+    links:
+      - { label: "Workshop", url: "https://sites.google.com/view/fin-recsys2024/program" }
 
 domestic_talks:
   - id:          ksie26-vqfp
