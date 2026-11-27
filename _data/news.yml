@@ -1,4 +1,5 @@
-# Newest first. Each item has one source shared by both languages.
+# Newest first. Link only to the paper, its presentation record, or the award result.
+# Omit link when no direct source is available.
 # link.label and link.label_ko describe what the visitor will find.
 
 - date: "2026-11"
@@ -9,12 +10,10 @@
 - date: "2026-11"
   html: "Our paper *LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* has been **accepted to the Research Track of KDD 2027** (acceptance rate 17.8%)."
   html_ko: "*LEXICON: Making Factors Talk with Language-Grounded Anchors in Stock Return Prediction* 논문이 **KDD 2027 Research Track**에 채택되었습니다(채택률 17.8%)."
-  link: { label: "Research track", label_ko: "리서치 트랙", url: "https://kdd2027.kdd.org/research-track-call-for-papers/" }
 
 - date: "2026-10"
   html: "Received the **Best Research Presentation Award (Ph.D. Track)** at the **1st Graduate Research Presentation Competition**, hosted by the Korean Society of Industrial and Systems Engineering (KSIE)."
   html_ko: "한국산업경영시스템학회 **제1회 대학원 우수 학술연구 발표대회**에서 **박사 트랙 최우수상**을 수상했습니다."
-  link: { label: "Competition", label_ko: "대회 안내", url: "https://www.ksie.or.kr/notice/view.php?idx=1794" }
 
 - date: "2026-10"
   html: "Our paper *HAR-CEV: Probabilistic Volatility Forecasting with Adaptive Mean Reversion under Distribution Shift* has been **accepted to ICAIF ’26** (acceptance rate approximately 22%)."
@@ -34,7 +33,6 @@
 - date: "2026-02"
   html: "Successfully defended my Ph.D. dissertation, *Representation Learning in Financial Markets for Portfolio Management*, at Hanyang University."
   html_ko: "한양대학교에서 박사 학위논문 *Representation Learning in Financial Markets for Portfolio Management* 심사를 통과했습니다."
-  link: { label: "Degree record", label_ko: "학위 정보", url: "https://finx.hanyang.ac.kr/members/alumni" }
 
 - date: "2025-11"
   html: "Our paper *Deep Mean-Reversion: A Physics-Informed Contrastive Approach to Pairs Trading* was accepted to **ICAIF ’25** as an **oral presentation** (acceptance rate 15.5%)."
